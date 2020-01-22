@@ -5,11 +5,13 @@ const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
 const gh = require('parse-github-url');
+const { exec } = require('child_process');
 
 const themesFolder = path.join(__dirname, '../content/theme');
 const hiresImagesFolder = path.join(__dirname, '../static/capture');
 
 const themeFiles = fs.readdirSync(themesFolder);
+const lightHouseData = [];
 
 console.log("******************")
 console.log("Taking Screenshots")
@@ -30,15 +32,45 @@ captureWebScreenshot = async theme => {
     let themeImage = `${themeKey}.png`
     const url = frontmatter.demo
 
+
+    exec(`npx lighthouse ${url} --output json`, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error}`);
+        return;
+      }
+      // console.log(`stdout: ${stdout}`);
+      // console.error(`stderr: ${stderr}`);
+      let out = {};
+      try {
+        out = JSON.parse(stdout);
+      } catch (err) {
+        console.log(err);
+        return;
+      }
+
+      const ddd = {}
+      ddd[`${provider}-${templateName}`] = {
+        lighthouse: {
+          performance: out.categories.performance.score * 100,
+          bestPractices: out.categories['best-practices'].score * 100,
+          accessibility: out.categories.accessibility.score * 100,
+          seo: out.categories.seo.score * 100,
+          pwa: out.categories.pwa.score * 100,
+        }
+      }
+      lightHouseData.push(ddd);
+      fs.writeFileSync(`${path.join(__dirname, '../data')}/themes-lh.json`, JSON.stringify(lightHouseData));
+    });
+
     if (fs.existsSync(path.join(hiresImagesFolder, themeImage))) {
       console.log(`${theme} skipped`)
       return false
     } else {
       console.log(`${theme} capturing`);
       const page = await new Pageres({
-          delay: 3,
-          filename: themeKey
-        })
+        delay: 3,
+        filename: themeKey
+      })
         .src(url, ['1500x1125'], {
           crop: true
         })
@@ -50,9 +82,9 @@ captureWebScreenshot = async theme => {
   return false;
 };
 
-const captureAll = async () => {
+const captureAll = () => {
   for (const theme of themeFiles) {
-    await captureWebScreenshot(theme)
+    captureWebScreenshot(theme)
   }
 }
 
