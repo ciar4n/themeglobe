@@ -1,0 +1,24 @@
+<div class="footer">
+
+  <div class="footer-column">
+    <h3>Template Providers</h3>
+    {{ range .Site.Taxonomies.provider }}
+      <a href="{{.Page.Permalink }}">{{.Page.Title}}</a>
+    {{ end }}
+  </div>
+
+  <div class="footer-column">
+    <h3>Template Archetypes</h3>
+    {{ range .Site.Taxonomies.archetype }}
+      <a href="{{.Page.Permalink }}">{{.Page.Title}}</a>
+    {{ end }}
+  </div>
+
+  <div class="footer-column footer-column-brand">
+    <h3>Joomla Templates</h3>
+    <a href="#" rel="nofollow">Submit a theme</a>
+    <a href="{{ "/index.json" | relURL }}">Templates JSON</a>
+    <a href="{{ "/index.xml" | relURL }}">Templates RSS</a>
+  </div>
+
+</div>

@@ -1,0 +1,38 @@
+
+<div
+  id="{{ .theme.Params.Title | urlize }}"
+  class="grid card {{ .classes }} {{ range .theme.Params.provider }}{{ . | urlize }} {{ end }}{{ range .theme.Params.cms }}{{ . | urlize }} {{end}}{{ range .theme.Params.css }}{{ . | urlize }} {{end}}{{ range .theme.Params.archetype }}{{ . | urlize }} {{end}}{{ range .theme.Params.services }}{{ . | urlize }} {{end}}"
+  data-stars="{{ if .repo }}{{ .repo.stars }}{{ else }}0{{ end }}"
+  data-last-commit="{{ if .repo }}{{ .repo.last_commit }}{{ end }}"
+  data-submitted="{{ .theme.Lastmod.Format "Jan 2, 2006" }}"
+  data-name="{{ .theme.Params.title }}"
+>
+
+  <div class="card-header">
+    <a href="{{ .theme.Permalink }}" title="{{ .theme.Params.title }}">
+
+      {{ $template_key := .theme.Page.File.BaseFileName | urlize }}
+      {{ $imagePath := print "images/theme/thumbnail/" $template_key ".jpg" }}
+      <img loading="lazy" src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+      <img src="{{ "images/default.png" | relURL }}" width="280" height="180" loading="lazy" alt="{{ .theme.Params.title }} screenshot" />
+
+    </a>
+  </div>
+
+  <div class="card-body">
+    <div class="card-title">
+      <h2>{{ .theme.Params.title }}</h2>
+      <div class="card-buttons">
+        <a class="button card-button" href="{{ .theme.Permalink }}" target="_blank" rel="noopener nofollow">Details</a>
+        <a class="button card-button" href="{{ .theme.Params.demo }}" target="_blank" rel="noopener nofollow">Demo</a>
+    </div>
+    </div>
+
+    {{ if .theme.Params.description }}
+      <p class="description">{{ .theme.Params.description | truncate 100 }}</p>
+    {{ else }}
+      <p class="description">{{ .theme.Summary | truncate 100 }}</p>
+    {{ end }}
+  </div>
+
+</div>

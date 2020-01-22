@@ -1,0 +1,66 @@
+.button {
+  padding: 5px;
+  background: $primary;
+  border-radius: 4px;
+  border: 0;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 5px 15px;
+  margin-right: 5px;
+  cursor: pointer;
+
+  @include breakpoint('small') {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: $primary;
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &.selected,
+  &.mixitup-control-active {
+    background: $secondary;
+    color: white;
+  }
+}
+
+.submit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 15px;
+
+  .submit-button {
+    display: flex;
+    align-items: center;
+
+    svg {
+      fill: white;
+      margin-left: 5px;
+    }
+  }
+
+  .submit-button-mobile {
+    display: block;
+
+    @include breakpoint('small') {
+      display: none;
+    }
+  }
+
+  .submit-button-desktop {
+    display: none;
+
+    @include breakpoint('small') {
+      display: block;
+    }
+  }
+
+}

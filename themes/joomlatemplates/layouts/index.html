@@ -1,0 +1,66 @@
+{{ define "title" }}Joomla Template Directory{{ end }}
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-home{{ end }}
+
+{{ define "meta_tags" }}
+{{ $themes := (where .Site.RegularPages "Type" "theme") }}
+{{ $themes := (where $themes ".Params.draft" "!=" true) }}
+{{ $themes := (where $themes ".Params.stale" "!=" true) }}
+{{ $themeCount := len $themes}}
+<meta name="description" content="A collection of the latest Joomla templates with over {{ $themeCount }} templates gathered from all the major Joomla template providers." />
+<link rel="canonical" href="https://jamstackthemes.dev" />
+{{ end }}
+
+{{ define "main" }}
+{{ $themes := (where .Site.RegularPages "Type" "theme") }}
+{{ $themes := (where $themes ".Params.draft" "!=" true) }}
+{{ $themes := (where $themes ".Params.stale" "!=" true) }}
+{{ $themeCount := len $themes}}
+
+<div class="sidebar">
+  {{ partial "filters.html" (dict "context" . "countAll" false) }}
+</div>
+
+<div class="main">
+
+  <div>
+    <div class="blurb blurb-desktop"><p>Welcome to the Joomla Template Directory. A collection of the latest <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers. This is an open project so feel free to contribute on our <a href="#" target="_blank" rel="noopener">Github</a> repo.</p></div>
+    <div class="blurb blurb-mobile"><p>Welcome to the Joomla Template Directory. A collection of <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers.</p></div>
+  </div>
+
+  <div class="intro">
+    <h1>Latest Joomla Templates</h1>
+    <div class="count"><span class="count-number">{{ $themeCount }}</span></div>
+  </div>
+
+  <div id="grids-homepage" class="grids">
+    {{ range $themes.ByPublishDate.Reverse }}
+      {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
+      {{ $repo := index .Site.Data.themes $repoName }}
+        {{ partial "template-card.html" (dict "theme" . "repo" $repo) }}
+    {{ end }}
+  </div>
+
+  <div class="controls-pagination">
+    <div class="mixitup-page-list"></div>
+    <div class="mixitup-page-stats"></div>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $mixitup := resources.Get "js/libs/mixitup.js" }}
+{{ $mixitupMultiFilter := resources.Get "js/libs/mixitup-multifilter.js" }}
+{{ $filterHash := resources.Get "js/filter-hash.js" }}
+{{ $filter := resources.Get "js/filter.js" }}
+{{ $scripts := resources.Get "js/scripts.js" }}
+{{ $bundle := slice $mixitup $mixitupMultiFilter $filterHash $filter $scripts  | resources.Concat "js/AllThemes.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($bundle | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

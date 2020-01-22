@@ -1,0 +1,67 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+
+{{ define "main" }}
+
+<div class="main">
+  <div class="theme-detail">
+    <div class="theme-detail-top">
+          <div class="theme-preview">
+        <div class="theme-image">
+          {{ $template_key := .File.BaseFileName | urlize }}
+          {{ $imagePath := print "images/theme/full/" $template_key ".jpg" }}
+          <img loading="lazy" src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+        </div>
+      </div>
+      <div class="theme-info">
+      
+          <h1 class="theme-detail-heading">{{ .Title }}</h1>
+          <p class="theme-detail-summary">{{ .Summary }}</p>
+          
+          <div class="theme-detail-buttons">
+            <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">Template Details</a>
+            <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
+          </div>
+
+          <div class="theme-detail-tags">
+
+            <div class="theme-detail-tag">
+              <span>Provider: 
+              {{ if .Params.provider }}
+                {{- range .Params.provider }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                    {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
+
+            <div class="theme-detail-tag">
+              <span>Archetypes: 
+              {{ if .Params.archetype }}
+                {{- range .Params.archetype }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "archetype/%s" (urlize .)) }}
+                    {{ if eq .Page.Title "No archetype" }}
+                    {{ else }}
+                    {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="theme-detail-bottom">
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+
+  {{ partial "footer.html" . }}
+
+</div>
+
+{{ end }}

@@ -1,0 +1,139 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-image: linear-gradient(90deg, $primary, $secondary);
+    z-index: 100;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    @include breakpoint('small') {
+      padding-left: 310px;
+    }
+  }
+
+  &.page-default-single {
+    .header {
+      .sort-buttons {
+        display: none;
+      }
+
+      @include breakpoint('small') {
+        padding-left: 50px;
+      }
+    }
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: white;
+    background-color: $sidebar-bg;
+    border-top: 4px solid $primary;
+    width: 110px;
+    overflow: auto;
+    padding: 0 0 20px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+
+    @include breakpoint('small') {
+      width: 320px;
+      padding: 1px 0 40px 60px;
+    }
+  }
+
+  .site-title {
+    position: fixed;
+    display: flex;
+    z-index: 20;
+    border-right: 1px solid $primary-light;
+    height: 100vh;
+    width: 60px;
+    background-color: #151739;
+
+    h1 {
+      position: absolute;
+      margin-bottom: 0;
+      transform: rotate(-90deg) translate(-100%, 0%);
+      transform-origin: 0 0;
+      padding: 12px 20px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: 300;
+      line-height: 12px;
+    }
+  }
+
+  .filters {}
+
+  .main {
+    flex: 1;
+    padding: 15px 20px 15px 20px;
+    background-color: $grey;
+
+    @include breakpoint('small') {
+      padding: 30px;
+    }
+  }
+
+  .main {
+    padding: 90px 20px 15px 100px;
+  }
+
+  .sidebar + .main {
+    @include breakpoint('small') {
+      padding: 90px 40px 20px 40px;
+    }
+  }
+
+  .footer {
+    justify-items: flex-end;
+  }
+}
+
+// Banner
+.page.body-banner {
+  .sidebar {
+    top: 110px;
+
+    @include breakpoint('small') {
+      top: 100px;
+    }
+  }
+
+  .wrapper {
+    padding-top: 110px;
+
+    @include breakpoint('small') {
+      padding-top: 100px;
+    }
+  }
+}
