@@ -82,9 +82,9 @@ captureWebScreenshot = async theme => {
   return false;
 };
 
-const captureAll = () => {
+const captureAll = async () => {
   for (const theme of themeFiles) {
-    captureWebScreenshot(theme)
+    await captureWebScreenshot(theme)
   }
 }
 
