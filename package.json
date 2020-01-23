@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build": "node ./scripts/generate-github.js && node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
-    "deploy": "node ./scripts/generate-github.js --latest && node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
+    "build": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
+    "deploy": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
     "fetch": "node ./scripts/generate-github.js --latest",
     "generate-github": "node ./scripts/generate-github.js",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
@@ -22,5 +22,9 @@
     "yaml-front-matter": "^4.0.0",
     "yargs": "^14.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lighthouse": "^5.6.0",
+    "lighthouse-logger": "^1.2.0",
+    "mkdirp": "^0.5.1"
+  }
 }

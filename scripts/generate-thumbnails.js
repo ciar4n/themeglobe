@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
+const mkdirp = require('mkdirp');
 const path = require('path');
 const sharp = require('sharp')
 
@@ -17,7 +18,6 @@ console.log("******************************************************")
 imageFiles.forEach((image) => {
   const inputImage = path.join(hiresImagesFolder, image)
   const imageName = path.parse(image).name
-  const imageExtension = path.parse(image).ext
   const outputImage = path.join(outputFolder, `${imageName}.jpg`)
   const outputImage2x = path.join(outputFolder2x, `${imageName}-2x.jpg`)
   const outputImageFull = path.join(outputFolderFull, `${imageName}.jpg`)
@@ -27,6 +27,10 @@ imageFiles.forEach((image) => {
     return false
   } else {
     console.log(`processing ${inputImage}`)
+    mkdirp(outputFolder);
+    mkdirp(outputFolder2x);
+    mkdirp(outputFolderFull);
+
     sharp(inputImage)
       .resize({
         width: 280,
