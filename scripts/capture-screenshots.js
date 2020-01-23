@@ -33,7 +33,7 @@ captureWebScreenshot = async theme => {
     const url = frontmatter.demo
 
 
-    exec(`npx lighthouse ${url} --output json`, (error, stdout, stderr) => {
+    exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
         return;
