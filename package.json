@@ -1,12 +1,9 @@
 {
   "scripts": {
-    "build": "node ./scripts/generate-github.js && node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
-    "deploy": "node ./scripts/generate-github.js --latest && node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
-    "fetch": "node ./scripts/generate-github.js --latest",
-    "generate-github": "node ./scripts/generate-github.js",
+    "build": " node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
+    "deploy": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js",
-    "scrub-themes": "node ./scripts/scrub-themes.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
