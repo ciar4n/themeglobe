@@ -29,7 +29,9 @@ All Tempaltes ({{ $themeCount }})
     {{ range $themes.ByPublishDate.Reverse }}
     {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
     {{ $repo := index .Site.Data.themes $repoName }}
-      {{ partial "template-card.html" (dict "theme" . "repo" $repo) }}
+    {{ $template_key := .File.BaseFileName | urlize }}
+    {{ $lighthouse := index .Site.Data.themes $template_key }}
+      {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
     {{ end }}
   </div>
 

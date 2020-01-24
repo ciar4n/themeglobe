@@ -7,6 +7,7 @@
 {{ $themes := (where $themes ".Params.draft" "!=" true) }}
 {{ $themes := (where $themes ".Params.stale" "!=" true) }}
 {{ $themeCount := len $themes}}
+
 <meta name="description" content="A collection of the latest Joomla templates with over {{ $themeCount }} templates gathered from all the major Joomla template providers." />
 <link rel="canonical" href="https://jamstackthemes.dev" />
 {{ end }}
@@ -36,9 +37,11 @@
   <div id="grids-homepage" class="grids">
     {{ range $themes.ByPublishDate.Reverse }}
       {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
+      {{ $template_key := .File.BaseFileName | urlize }}
+      {{ $lighthouse := index .Site.Data.themes $template_key }}
       {{ $repo := index .Site.Data.themes $repoName }}
-        {{ partial "template-card.html" (dict "theme" . "repo" $repo) }}
-    {{ end }}
+        {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+      {{ end }}
   </div>
 
   <div class="controls-pagination">
