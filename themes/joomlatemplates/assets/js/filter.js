@@ -33,8 +33,8 @@ const mixer = mixitup('#grids-homepage', {
   }
 });
 
-const providerGroup = ["joomla51", "rockettheme", "yootheme"]
-const archetypeGroup = ["advocate", "athlete", "caregiver", "creative", "explorer", "intellectual", "performer", "rebel", "royal", "spiritual", "tastemaker", "visionary"]
+const providerGroup = ["joomla51", "joomlashine", "rockettheme", "yootheme"]
+const archetypeGroup = ["advocate", "athlete", "caregiver", "creative", "explorer", "intellectual", "performer", "rebel", "royal", "tastemaker", "visionary"]
 
 const groups = {
   provider: providerGroup,
