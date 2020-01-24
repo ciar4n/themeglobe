@@ -1,4 +1,4 @@
 ---
-title: "JoomlaForest"
+title: "JoomForest"
 home_url: "https://www.joomforest.com/"
 ---
