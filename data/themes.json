@@ -1,1 +1,58 @@
-{"joomla51-scarlett":{"performance":62,"bestPractices":79,"accessibility":68,"seo":99,"pwa":57}}
+{
+  "yooTheme-balou": {
+    "performance": 98,
+    "bestPractices": 93,
+    "accessibility": 76,
+    "seo": 83,
+    "pwa": 59
+  },
+  "joomla51-scarlett": {
+    "performance": 76,
+    "bestPractices": 79,
+    "accessibility": 68,
+    "seo": 99,
+    "pwa": 57
+  },
+  "rockettheme-calla": {
+    "performance": 49,
+    "bestPractices": 79,
+    "accessibility": 81,
+    "seo": 91,
+    "pwa": 57
+  },
+  "rockettheme-reiko": {
+    "performance": 54,
+    "bestPractices": 71,
+    "accessibility": 95,
+    "seo": 91,
+    "pwa": 57
+  },
+  "rockettheme-fluent": {
+    "performance": 54,
+    "bestPractices": 71,
+    "accessibility": 87,
+    "seo": 92,
+    "pwa": 57
+  },
+  "rockettheme-koleti": {
+    "performance": 47,
+    "bestPractices": 79,
+    "accessibility": 98,
+    "seo": 92,
+    "pwa": 57
+  },
+  "rockettheme-zenith": {
+    "performance": 44,
+    "bestPractices": 79,
+    "accessibility": 96,
+    "seo": 92,
+    "pwa": 57
+  },
+  "rockettheme-denali": {
+    "performance": 52,
+    "bestPractices": 79,
+    "accessibility": 95,
+    "seo": 91,
+    "pwa": 57
+  }
+}

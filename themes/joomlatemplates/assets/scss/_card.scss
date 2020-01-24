@@ -27,14 +27,6 @@
     position: relative;
   }
 
-  .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
   .card-header {
     border-bottom: 1px solid $grey;
     max-height: 210px;

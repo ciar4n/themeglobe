@@ -9,6 +9,9 @@ $steel: #666666;
 $yellow: #f6d603;
 $blue: #57b8ff;
 $carbon: #2a2a2a;
+$red: #b9314f;
+$orange: #ffa400;
+$green: #315c2b;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
 
@@ -40,6 +43,7 @@ $breakpoints: ('small': 690px,
 @import 'intro';
 @import 'info';
 @import 'icon';
+@import 'lighthouse';
 @import 'footer';
 @import 'terms';
 @import 'count';

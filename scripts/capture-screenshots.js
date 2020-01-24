@@ -4,7 +4,9 @@ const Pageres = require('pageres');
 const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
-const { exec } = require('child_process');
+const {
+  exec
+} = require('child_process');
 
 const themesFolder = path.join(__dirname, '../content/theme');
 const hiresImagesFolder = path.join(__dirname, '../static/capture');
@@ -58,9 +60,9 @@ const screenshot = async (data) => {
     } else {
       console.log(`${data.theme} capturing`);
       await new Pageres({
-        delay: 3,
-        filename: themeKey
-      })
+          delay: 3,
+          filename: themeKey
+        })
         .src(url, ['1500x1125'], {
           crop: true
         })
@@ -78,7 +80,7 @@ const lh = (data) => {
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
   const url = data.frontmatter.demo
 
-  
+
   return new Promise((resolve, reject) => {
     if (lightHouseData[`${themeKey}`]) {
       console.log(`${data.theme} Lighthouse skipped, already processed`)
@@ -130,4 +132,3 @@ const lh = (data) => {
       })
   }
 })();
-
