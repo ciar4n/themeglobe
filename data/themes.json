@@ -54,5 +54,131 @@
     "accessibility": 95,
     "seo": 91,
     "pwa": 57
+  },
+  "yootheme-balou": {
+    "performance": 93,
+    "bestPractices": 93,
+    "accessibility": 76,
+    "seo": 83,
+    "pwa": 59
+  },
+  "joomlashine-agency": {
+    "performance": 19,
+    "bestPractices": 64,
+    "accessibility": 72,
+    "seo": 71,
+    "pwa": 30
+  },
+  "joomlashine-vintage-2": {
+    "performance": 8,
+    "bestPractices": 64,
+    "accessibility": 78,
+    "seo": 91,
+    "pwa": 22
+  },
+  "joomlashine-meetup": {
+    "performance": 4,
+    "bestPractices": 71,
+    "accessibility": 73,
+    "seo": 77,
+    "pwa": 30
+  },
+  "joomlashine-finance": {
+    "performance": 1,
+    "bestPractices": 71,
+    "accessibility": 72,
+    "seo": 82,
+    "pwa": 30
+  },
+  "joomlabamboo-onepagetwo": {
+    "performance": 67,
+    "bestPractices": 86,
+    "accessibility": 72,
+    "seo": 91,
+    "pwa": 57
+  },
+  "joomforest-business": {
+    "performance": 74,
+    "bestPractices": 79,
+    "accessibility": 47,
+    "seo": 73,
+    "pwa": 57
+  },
+  "joomforest-corporate": {
+    "performance": 69,
+    "bestPractices": 79,
+    "accessibility": 60,
+    "seo": 71,
+    "pwa": 57
+  },
+  "joomlabamboo-highline2": {
+    "performance": 82,
+    "bestPractices": 79,
+    "accessibility": 81,
+    "seo": 91,
+    "pwa": 57
+  },
+  "joomforest-chrome": {
+    "performance": 35,
+    "bestPractices": 71,
+    "accessibility": 47,
+    "seo": 73,
+    "pwa": 57
+  },
+  "joomlashine-festival": {
+    "performance": 4,
+    "bestPractices": 79,
+    "accessibility": 73,
+    "seo": 71,
+    "pwa": 30
+  },
+  "joomforest-social": {
+    "performance": 41,
+    "bestPractices": 79,
+    "accessibility": 47,
+    "seo": 64,
+    "pwa": 57
+  },
+  "joomlabamboo-utafiti": {
+    "performance": 54,
+    "bestPractices": 71,
+    "accessibility": 73,
+    "seo": 70,
+    "pwa": 57
+  },
+  "joomlashine-mall": {
+    "performance": 8,
+    "bestPractices": 64,
+    "accessibility": 73,
+    "seo": 78,
+    "pwa": 30
+  },
+  "joomlashine-cardealer": {
+    "performance": 9,
+    "bestPractices": 71,
+    "accessibility": 73,
+    "seo": 80,
+    "pwa": 30
+  },
+  "joomlashine-tastetea": {
+    "performance": 1,
+    "bestPractices": 64,
+    "accessibility": 73,
+    "seo": 81,
+    "pwa": 30
+  },
+  "icetheme-zen": {
+    "performance": 20,
+    "bestPractices": 57,
+    "accessibility": 72,
+    "seo": 82,
+    "pwa": 57
+  },
+  "joomlashine-miro": {
+    "performance": 19,
+    "bestPractices": 64,
+    "accessibility": 79,
+    "seo": 78,
+    "pwa": 57
   }
 }
