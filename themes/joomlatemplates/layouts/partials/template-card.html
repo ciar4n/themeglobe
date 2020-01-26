@@ -51,16 +51,6 @@
       {{ end }}
       <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchPerformance.Get "color" }}"></div>
 
-      {{ $scratchBest := newScratch }}
-      {{ $scratchBest.Add "color" "red" }}
-      {{ if gt .bestPractices 50 }}
-        {{ $scratchBest.Set "color" "orange" }}
-      {{ end }}
-      {{ if gt .bestPractices 90 }}
-        {{ $scratchBest.Set "color" "green" }}
-      {{ end }}
-      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchBest.Get "color" }}"></div>
-
       {{ $scratchA11y := newScratch }}
       {{ $scratchA11y.Add "color" "red" }}
       {{ if gt .accessibility 50 }}
@@ -70,6 +60,16 @@
         {{ $scratchA11y.Set "color" "green" }}
       {{ end }}
       <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchA11y.Get "color" }}"></div>
+
+      {{ $scratchBest := newScratch }}
+      {{ $scratchBest.Add "color" "red" }}
+      {{ if gt .bestPractices 50 }}
+        {{ $scratchBest.Set "color" "orange" }}
+      {{ end }}
+      {{ if gt .bestPractices 90 }}
+        {{ $scratchBest.Set "color" "green" }}
+      {{ end }}
+      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchBest.Get "color" }}"></div>
 
       {{ $scratchSEO := newScratch }}
       {{ $scratchSEO.Add "color" "red" }}

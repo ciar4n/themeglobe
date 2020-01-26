@@ -2,6 +2,7 @@
   "scripts": {
     "build": " node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
     "deploy": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
+    "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js"
   },

@@ -88,7 +88,9 @@ const lh = (data) => {
       return;
     }
 
-    exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, (error, stdout, stderr) => {
+    exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, {
+      maxBuffer: 1024 * 1024 * 10
+    }, (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
         reject(error)
