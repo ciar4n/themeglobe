@@ -1,0 +1,17 @@
+---
+title: "Yard"
+details: https://yootheme.com/joomla-templates/yard
+demo: https://demo.yootheme.com/themes/joomla/2018/yard
+date: 2018-11-10
+
+provider:
+  - YooTheme
+
+archetype:
+  - Spiritual
+  - Creative
+  - Visionary
+
+---
+
+With its clear business-like style, this YOOtheme Pro theme package is perfect for real estate, interior, architecture or other related websites. It's available for WordPress and Joomla.
