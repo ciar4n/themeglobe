@@ -30,11 +30,11 @@
   </div>
 
   <div class="intro">
-    <h1>Latest Joomla Templates</h1>
+    <h1>Joomla Templates</h1>
     <div class="count"><span class="count-number">{{ $themeCount }}</span></div>
   </div>
 
-  <div id="grids-homepage" class="grids">
+  <div id="grids-homepage" class="grid">
     {{ range $themes.ByPublishDate.Reverse }}
       {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
       {{ $template_key := .File.BaseFileName | urlize }}

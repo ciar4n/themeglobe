@@ -14,7 +14,7 @@ const mixer = mixitup('#grids-homepage', {
     enable: false,
   },
   selectors: {
-    target: '.grid'
+    target: '.grid-item'
   },
   load: {
     sort: sortOrder

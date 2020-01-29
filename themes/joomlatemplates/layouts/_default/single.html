@@ -63,7 +63,7 @@
             {{ if gt $lighthouse.performance 50 }}
               {{ .Scratch.Set "color" "orange" }}
             {{ end }}
-            {{ if gt $lighthouse.performance 90 }}
+            {{ if gt $lighthouse.performance 85 }}
               {{ .Scratch.Set "color" "green" }}
             {{ end }}
 
@@ -82,7 +82,7 @@
             {{ if gt $lighthouse.accessibility 50 }}
               {{ .Scratch.Set "color" "orange" }}
             {{ end }}
-            {{ if gt $lighthouse.accessibility 90 }}
+            {{ if gt $lighthouse.accessibility 85 }}
               {{ .Scratch.Set "color" "green" }}
             {{ end }}
 
@@ -102,7 +102,7 @@
             {{ if gt $lighthouse.bestPractices 50 }}
               {{ .Scratch.Set "color" "orange" }}
             {{ end }}
-            {{ if gt $lighthouse.bestPractices 90 }}
+            {{ if gt $lighthouse.bestPractices 85 }}
               {{ .Scratch.Set "color" "green" }}
             {{ end }}
 
@@ -122,7 +122,7 @@
             {{ if gt $lighthouse.seo 50 }}
               {{ .Scratch.Set "color" "orange" }}
             {{ end }}
-            {{ if gt $lighthouse.seo 90 }}
+            {{ if gt $lighthouse.seo 85 }}
               {{ .Scratch.Set "color" "green" }}
             {{ end }}
 

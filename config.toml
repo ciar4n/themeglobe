@@ -28,12 +28,8 @@ pygmentsUseClasses = true
 
 # Main Menu
 [[menu.main]]
-	name = "Latest"
+	name = "List All"
 	url = "/"
     weight = 1
 
-[[menu.main]]
-	name = "List All"
-	url = "/themes/"
-    weight = 2
 
