@@ -1,16 +1,14 @@
 ---
 title: "BuildUp"
 details: https://www.joomlashine.com/joomla-templates/jsn-buildup.html
-demo: https://demo.joomlashine.com/joomla-templates/jsn_miro/pro/buildup/
+demo: https://demo.joomlashine.com/joomla-templates/jsn_buildup/pro/lego/
 date: 2018-10-15
 
 provider: 
   - JoomlaShine
 
 archetype:
-  - Creative
-  - Intellectual
-  - Visionary
+  - Advocate
   
 ---
 
