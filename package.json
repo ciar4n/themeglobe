@@ -1,9 +1,8 @@
 {
   "scripts": {
-    "build": " node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
-    "deploy": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && hugo",
-    "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js",
+    "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
+    "capture-lighthouse": "node ./scripts/capture-lighthouse.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js"
   },
   "dependencies": {
