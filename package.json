@@ -1,6 +1,7 @@
 {
   "scripts": {
     "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js",
+    "deploy": "hugo",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "capture-lighthouse": "node ./scripts/capture-lighthouse.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js"
