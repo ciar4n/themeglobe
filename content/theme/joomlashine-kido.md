@@ -1,7 +1,7 @@
 ---
 title: "Kido"
 details: https://www.joomlashine.com/joomla-templates/jsn-kido.html
-demo: https://demo.joomlashine.com/joomla-templates/jsn_kido_2/pro/index.php
+demo: https://demo.joomlashine.com/joomla-templates/jsn_kido_2/pro/
 date: 2018-03-15
 
 provider: 

@@ -1,7 +1,7 @@
 ---
 title: "Blank"
 details: https://www.joomlashine.com/joomla-templates/jsn-blank.html
-demo: https://demo.joomlashine.com/joomla-templates/jsn_blank_2/pro/index.php
+demo: https://demo.joomlashine.com/joomla-templates/jsn_blank_2/pro/
 date: 2018-06-15
 
 provider: 

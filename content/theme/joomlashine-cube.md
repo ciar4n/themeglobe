@@ -1,7 +1,7 @@
 ---
 title: "Cube"
 details: https://www.joomlashine.com/joomla-templates/jsn-cube.html
-demo: https://demo.joomlashine.com/joomla-templates/jsn_cube_2/pro/index.php
+demo: https://demo.joomlashine.com/joomla-templates/jsn_cube_2/pro/
 date: 2018-04-15
 
 provider: 
