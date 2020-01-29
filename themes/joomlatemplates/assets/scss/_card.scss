@@ -27,14 +27,6 @@
     position: relative;
   }
 
-  .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
   .card-header {
     border-bottom: 1px solid $grey;
     max-height: 210px;
@@ -182,4 +174,32 @@
     display: inline-block;
     color: black;
   }
+}
+
+.card-lighthouse {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 4px 4px;
+}
+
+.card-lighthouse-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  background-color: #eee;
+
+  &-red {
+    background-color: $red;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-green {
+    background-color: $green;
+  }
+
+
 }

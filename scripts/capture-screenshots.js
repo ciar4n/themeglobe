@@ -4,13 +4,14 @@ const Pageres = require('pageres');
 const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
-const { exec } = require('child_process');
+const {
+  exec
+} = require('child_process');
 
 const themesFolder = path.join(__dirname, '../content/theme');
 const hiresImagesFolder = path.join(__dirname, '../static/capture');
 
 const themeFiles = fs.readdirSync(themesFolder);
-
 let lightHouseData = [];
 let lightHouseDataNew = [];
 
@@ -23,9 +24,7 @@ if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
   }
 }
 
-console.log("******************")
-console.log("Taking Screenshots")
-console.log("******************")
+let lightHouseData = {};
 
 const processTheme = (theme) => {
   return new Promise((resolve, reject) => {
@@ -136,7 +135,6 @@ const captureAll = async () => {
         console.log(err);
       })
   }
-
   await writeJson()
 }
 

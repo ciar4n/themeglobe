@@ -10,6 +10,7 @@ provider:
 archetype:
   - Creative
   - Performer
+  - Spiritual
   
 description: Zenith combines the powerful Gantry 5 framework with a breathtaking modern design.
 ---
