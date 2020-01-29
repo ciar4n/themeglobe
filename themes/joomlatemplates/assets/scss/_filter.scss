@@ -1,11 +1,9 @@
 .filters {
   .filter {
     border-bottom: 1px solid $primary-light;
-    padding: 15px 0;
+    padding: 20px 20px;
 
-    @include breakpoint('small') {
-      padding: 20px 20px;
-    }
+    @include breakpoint('small') {}
 
     &.closed {
       .filter-list {
@@ -135,7 +133,6 @@
       }
 
       .filter-name {
-        display: none;
 
         a {
           color: black;

@@ -1,6 +1,7 @@
 .sort-buttons {
   margin-bottom: 10px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   z-index: 1;
 
@@ -20,13 +21,9 @@
 
   button {
     outline: none;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    margin: 5px;
     cursor: pointer;
 
-    @include breakpoint('small') {
-      margin-bottom: 0;
-    }
   }
 
 }

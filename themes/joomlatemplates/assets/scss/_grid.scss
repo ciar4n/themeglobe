@@ -1,35 +1,7 @@
-.grids {
-  display: flex;
+.grid {
+  display: grid;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -15px;
-  margin-right: -15px;
-  position: relative;
-
-  @include breakpoint('small') {
-    justify-content: flex-start;
-  }
-
-  .grid {
-    max-width: 280px;
-    width: auto;
-    margin: 10px 15px;
-
-    @include breakpoint('small') {
-      width: 282px;
-      margin: 15px;
-    }
-  }
-
-  .grid-large {
-    max-width: 282px;
-    width: auto;
-    margin: 10px 15px;
-
-    @include breakpoint('small') {
-      max-width: none;
-      width: 480px;
-      margin: 15px;
-    }
-  }
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 2rem;
 }

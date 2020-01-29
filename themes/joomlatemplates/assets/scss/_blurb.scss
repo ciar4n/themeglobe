@@ -10,12 +10,12 @@
 
   &.blurb-mobile {
     display: block;
-    padding: 0;
+    padding: 10px 20px;
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 20px;
 
-    @include breakpoint('small') {
+    @include breakpoint('large') {
       display: none;
     }
   }
@@ -25,9 +25,9 @@
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 15px;
-    width: 75%;
+    margin-right: 360px;
 
-    @include breakpoint('small') {
+    @include breakpoint('large') {
       display: block;
     }
   }

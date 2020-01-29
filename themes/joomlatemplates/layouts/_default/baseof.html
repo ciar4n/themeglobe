@@ -39,15 +39,15 @@
 {{ if and (eq .Site.Params.banner true) (eq .Site.Params.banner_fixed true) }}{{ $bodyClasses = $bodyClasses | append "body-banner-fixed" }}{{ end }}
 
 <body id="{{ block "body_id" . }}{{ end }}" class='page {{ block "body_classes" . }}{{ end }} {{ delimit $bodyClasses " " }}'>
-  {{ if .Site.Params.banner }}
-    {{ partial "banner.html" . }}
-  {{ end }}
+
   {{ partial "header.html" . }}
 
   <div class="wrapper">
     <div class="site-title">
       <h1><a href="/" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
+      <span id="filter-toggle" class="filter-toggle"><span></span></span>
     </div>
+    
     {{ block "main" . }}
     {{ end }}
   </div>

@@ -17,71 +17,70 @@
 
   .wrapper {
     display: flex;
+    flex-direction: column;
     width: 100%;
+
+    @include breakpoint('small') {
+      flex-direction: row;
+    }
   }
 
   .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    display: none;
 
     @include breakpoint('small') {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
       padding-left: 310px;
     }
   }
 
   &.page-default-single {
     .header {
-      .sort-buttons {
-        display: none;
-      }
-
-      @include breakpoint('small') {
-        padding-left: 50px;
-      }
+      display: none;
     }
   }
 
   .sidebar {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+    display: none;
     color: white;
     background-color: $sidebar-bg;
     border-top: 4px solid $primary;
-    width: 110px;
     overflow: auto;
     padding: 0 0 20px 0;
-    height: 100vh;
-    display: flex;
     flex-direction: column;
     z-index: 10;
+    transition: all 1s ease;
 
     @include breakpoint('small') {
+      display: flex;
+      position: sticky;
+      top: 0;
       width: 320px;
+      height: 100vh;
       padding: 1px 0 40px 60px;
+    }
+
+    &.open {
+      display: flex;
     }
   }
 
   .site-title {
-    position: fixed;
+
     display: flex;
     z-index: 20;
-    border-right: 1px solid $primary-light;
-    height: 100vh;
-    width: 60px;
+
     background-color: #151739;
 
     h1 {
-      position: absolute;
       margin-bottom: 0;
-      transform: rotate(-90deg) translate(-100%, 0%);
-      transform-origin: 0 0;
       padding: 12px 20px;
       letter-spacing: 2.5px;
       text-transform: uppercase;
-      white-space: nowrap;
     }
 
     a {
@@ -90,22 +89,30 @@
       font-weight: 300;
       line-height: 12px;
     }
-  }
-
-  .filters {}
-
-  .main {
-    flex: 1;
-    padding: 15px 20px 15px 20px;
-    background-color: $grey;
 
     @include breakpoint('small') {
-      padding: 30px;
+      position: fixed;
+      border-right: 1px solid $primary-light;
+      height: 100vh;
+      width: 60px;
+
+      h1 {
+        position: absolute;
+        transform: rotate(-90deg) translate(-100%, 0%);
+        transform-origin: 0 0;
+        white-space: nowrap;
+      }
     }
   }
 
   .main {
-    padding: 90px 20px 15px 100px;
+    flex: 1;
+    padding: 15px;
+    background-color: $grey;
+
+    @include breakpoint('small') {
+      padding: 50px 20px 15px 100px;
+    }
   }
 
   .sidebar + .main {

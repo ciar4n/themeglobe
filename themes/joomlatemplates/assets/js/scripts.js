@@ -18,3 +18,14 @@ document.querySelectorAll(".toggle-icon").forEach((toggleIcon) => {
     }
   })
 })
+
+function classToggle() {
+  const toggle = document.getElementById('filter-toggle')
+  const navs = document.querySelectorAll('.sidebar')
+
+  navs.forEach(nav => nav.classList.toggle('open'));
+  toggle.classList.toggle('open');
+}
+
+document.querySelector('.filter-toggle')
+  .addEventListener('click', classToggle);
