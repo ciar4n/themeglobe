@@ -1,18 +1,12 @@
 #!/usr/bin/env node
 
-const Pageres = require('pageres');
 const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
-const {
-  exec
-} = require('child_process');
+const { exec } = require('child_process');
 
 const themesFolder = path.join(__dirname, '../content/theme');
-const hiresImagesFolder = path.join(__dirname, '../static/capture');
-
 const themeFiles = fs.readdirSync(themesFolder);
-
 let lightHouseData = {};
 
 if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
@@ -20,7 +14,7 @@ if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
   try {
     lightHouseData = JSON.parse(tmpLhData)
   } catch (er) {
-    console.log(er)
+    throw new Error(er)
   }
 }
 
@@ -41,7 +35,7 @@ const processTheme = (theme) => {
   })
 }
 
-const lh = (data) => {
+const lh = async (data) => {
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
@@ -52,35 +46,33 @@ const lh = (data) => {
     return;
   }
 
-  exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, {
+  await exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, {
     maxBuffer: 1024 * 1024 * 10
-  }, (error, stdout, stderr) => {
+  }, async (error, stdout, stderr) => {
     if (error) {
-      console.error(`exec error: ${error}`);
-      return;
+      throw new Error(error)
     }
-    // console.log(`stdout: ${stdout}`);
-    // console.error(`stderr: ${stderr}`);
+
     let out = {};
     try {
-      out = JSON.parse(stdout);
+      out = await JSON.parse(stdout);
     } catch (err) {
-      console.log(err);
-      return
+      throw new Error(err);
     }
 
     if (!lightHouseData.hasOwnProperty([`${themeKey}`])) {
+      carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
       lightHouseData[`${themeKey}`] = {
         performance: Math.ceil(out.categories.performance.score * 100),
         bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
         accessibility: Math.ceil(out.categories.accessibility.score * 100),
         seo: Math.ceil(out.categories.seo.score * 100),
         pwa: Math.ceil(out.categories.pwa.score * 100),
+        carbon: carbonVal.toFixed(3),
       };
     }
 
     fs.writeFileSync(`${path.join(__dirname, '../data')}/themes.json`, JSON.stringify(lightHouseData));
-
   });
 };
 

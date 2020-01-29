@@ -20,5 +20,9 @@
     "yaml-front-matter": "^4.0.0",
     "yargs": "^14.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "lighthouse": "^5.6.0",
+    "lighthouse-logger": "^1.2.0",
+    "mkdirp": "^0.5.1"
+  }
 }
