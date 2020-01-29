@@ -24,10 +24,6 @@ if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
   }
 }
 
-console.log("******************")
-console.log("Taking Screenshots")
-console.log("******************")
-
 const processTheme = (theme) => {
   return new Promise((resolve, reject) => {
     const dataTmp = fs.readFileSync(path.join(themesFolder, theme));
@@ -74,61 +70,10 @@ const screenshot = async (data) => {
   return data;
 };
 
-const lh = (data) => {
-  let templateName = data.frontmatter.title;
-  let provider = data.frontmatter.provider;
-  let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
-  const url = data.frontmatter.demo
-
-
-  return new Promise((resolve, reject) => {
-    if (lightHouseData[`${themeKey}`]) {
-      console.log(`${data.theme} Lighthouse skipped, already processed`)
-      resolve();
-      return;
-    }
-
-    exec(`npx lighthouse ${url} --chrome-flags="--headless" --output json`, {
-      maxBuffer: 1024 * 1024 * 10
-    }, (error, stdout, stderr) => {
-      if (error) {
-        console.error(`exec error: ${error}`);
-        reject(error)
-        return;
-      }
-      // console.log(`stdout: ${stdout}`);
-      // console.error(`stderr: ${stderr}`);
-      let out = {};
-      try {
-        out = JSON.parse(stdout);
-      } catch (err) {
-        console.log(err);
-        reject(err)
-        return
-      }
-
-      if (!lightHouseData.hasOwnProperty([`${themeKey}`])) {
-        lightHouseData[`${themeKey}`] = {
-          performance: Math.ceil(out.categories.performance.score * 100),
-          bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
-          accessibility: Math.ceil(out.categories.accessibility.score * 100),
-          seo: Math.ceil(out.categories.seo.score * 100),
-          pwa: Math.ceil(out.categories.pwa.score * 100),
-        };
-      }
-
-      fs.writeFileSync(`${path.join(__dirname, '../data')}/themes.json`, JSON.stringify(lightHouseData));
-
-      resolve()
-    });
-  });
-};
-
 (() => {
   for (const theme of themeFiles) {
     processTheme(theme)
       .then(screenshot)
-      .then(lh)
       .catch(err => {
         console.log(err);
       })
