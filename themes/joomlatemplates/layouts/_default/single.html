@@ -54,10 +54,9 @@
             
           </div>
         </div>
-        <p></p>
         
         <div class="lighthouse">
-          <h3 class="lighthouse-header">Demo LightHouse Results</h3>
+          <span class="lighthouse-header">Demo LightHouse Results:</span>
           <div class="lighthouse-items">
             {{ .Scratch.Set "color" "red" }}
             {{ if gt $lighthouse.performance 50 }}
@@ -139,6 +138,12 @@
             </div>
 
           </div>
+        </div>
+
+        <div class="carbon">
+          <h3>
+            <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits this website <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
+          </h3>
         </div>
 
       </div>

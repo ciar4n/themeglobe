@@ -1,14 +1,6 @@
 .content {
   font-size: 16px;
 
-  p {
-    font-size: 16px;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-  }
-
   h1 {
     font-size: 40px;
     line-height: 1.6;
@@ -19,31 +11,6 @@
     &:first-of-type {
       margin-top: 0;
     }
-  }
-
-  h2 {
-    font-size: 28px;
-    line-height: 1.4;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 20px;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-
-    @include breakpoint('small') {
-      font-size: 30px;
-      line-height: 1.4;
-    }
-  }
-
-  h3 {
-    font-size: 22px;
-    line-height: 1.4;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 20px;
   }
 
   ul,

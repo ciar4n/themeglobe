@@ -31,6 +31,7 @@ $breakpoints: ('small': 690px,
 
 @import 'breakpoints';
 @import 'reset';
+@import 'typo';
 @import 'utilities';
 @import 'grid';
 @import 'card';
@@ -44,6 +45,7 @@ $breakpoints: ('small': 690px,
 @import 'info';
 @import 'icon';
 @import 'lighthouse';
+@import 'carbon';
 @import 'footer';
 @import 'terms';
 @import 'not-found';
