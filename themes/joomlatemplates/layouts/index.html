@@ -4,8 +4,6 @@
 
 {{ define "meta_tags" }}
 {{ $themes := (where .Site.RegularPages "Type" "theme") }}
-{{ $themes := (where $themes ".Params.draft" "!=" true) }}
-{{ $themes := (where $themes ".Params.stale" "!=" true) }}
 {{ $themeCount := len $themes}}
 
 <meta name="description" content="A collection of the latest Joomla templates with over {{ $themeCount }} templates gathered from all the major Joomla template providers." />

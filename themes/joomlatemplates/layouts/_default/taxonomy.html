@@ -10,18 +10,11 @@
 {{ $themeCount := len .Pages }}
 
 <div class="main">
-  <div class="hero">
-    <div class="heading">
-      <div class="heading-icon"><img src="{{ .Params.icon | relURL }}" alt="{{.Title}} Logo" /></div>
-      <h1 class="heading-title">{{.Title}} Templates <span class="count">({{ $themeCount }})</span></h1>
-    </div>
-
-    {{ $url := urls.Parse .Params.official_url }}		
-    <div class="official-website"><strong>Website:</strong> <a href="{{ .Params.official_url }}">{{ $url.Host }}</a></div>
+  <div class="intro">
+    <h1 class="heading-title">{{.Title}} Templates <span class="count">{{ $themeCount }}</span></h1>
   </div>
-  {{ partial "breadcrumbs.html" . }}
 
-  <div id="grids-taxonomy" class="grids">
+  <div id="grids-taxonomy" class="grid">
     {{ $paginator := .Paginate .RegularPages.ByPublishDate.Reverse }}
     {{ range $paginator.Pages }}
     {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}

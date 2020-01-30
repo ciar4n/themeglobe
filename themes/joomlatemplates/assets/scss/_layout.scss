@@ -38,7 +38,8 @@
     }
   }
 
-  &.page-default-single {
+  &.page-default-single,
+  &.page-taxonomy {
     .header {
       display: none;
     }
@@ -123,24 +124,5 @@
 
   .footer {
     justify-items: flex-end;
-  }
-}
-
-// Banner
-.page.body-banner {
-  .sidebar {
-    top: 110px;
-
-    @include breakpoint('small') {
-      top: 100px;
-    }
-  }
-
-  .wrapper {
-    padding-top: 110px;
-
-    @include breakpoint('small') {
-      padding-top: 100px;
-    }
   }
 }
