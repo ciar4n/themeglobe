@@ -1,7 +1,7 @@
 ---
 title: "Chloe"
 details: https://joomla51.com/joomla-templates/j51-chloe
-demo: http://www.joomla51.com/demo/0158
+demo: https://www.joomla51.com/demo/0158
 date: 2018-11-15
 
 provider: 

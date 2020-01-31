@@ -1,7 +1,7 @@
 ---
 title: "Hayley"
 details: https://joomla51.com/joomla-templates/j51-hayley
-demo: http://www.joomla51.com/demo/0156
+demo: https://www.joomla51.com/demo/0156
 date: 2018-07-15
 
 provider: 

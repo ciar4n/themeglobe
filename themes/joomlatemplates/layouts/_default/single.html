@@ -7,156 +7,157 @@
 {{ $lighthouse := index .Site.Data.themes $template_key }}
 
 <div class="main">
-  <div class="theme-detail">
-    <div class="theme-detail-top">
-          <div class="theme-preview">
-        <div class="theme-image">
-          {{ $template_key := .File.BaseFileName | urlize }}
-          {{ $imagePath := print "images/theme/full/" $template_key ".jpg" }}
-          <img loading="lazy" src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+  <div class="main-wrapper">
+    <div class="theme-detail">
+      <div class="theme-detail-top">
+            <div class="theme-preview">
+          <div class="theme-image">
+            {{ $template_key := .File.BaseFileName | urlize }}
+            {{ $imagePath := print "images/theme/full/" $template_key ".jpg" }}
+            <img loading="lazy" src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+          </div>
         </div>
-      </div>
-      <div class="theme-info">
-      
-        <h1 class="theme-detail-heading">{{ .Title }}</h1>
-        <p class="theme-detail-summary">{{ .Summary }}</p>
+        <div class="theme-info">
         
-        <div class="theme-detail-buttons">
-          <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">Template Details</a>
-          <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
-        </div>
-
-        <div class="theme-detail-tags">
-
-          <div class="theme-detail-tag">
-            <span>Provider: 
-            {{ if .Params.provider }}
-              {{- range .Params.provider }}
-                {{- with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
-                  {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
-                {{ end }}
-              {{ end }}
-            {{ end }}
+          <h1 class="theme-detail-heading">{{ .Title }}</h1>
+          <p class="theme-detail-summary">{{ .Summary }}</p>
+          
+          <div class="theme-detail-buttons">
+            <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">Template Details</a>
+            <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
           </div>
 
-          <div class="theme-detail-tag">
-            <span>Archetypes: 
-            {{ if .Params.archetype }}
-              {{- range .Params.archetype }}
-                {{- with $.Site.GetPage "taxonomyTerm" (printf "archetype/%s" (urlize .)) }}
-                  {{ if eq .Page.Title "No archetype" }}
-                  {{ else }}
-                  {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
+          <div class="theme-detail-tags">
+
+            <div class="theme-detail-tag">
+              <span>Provider: 
+              {{ if .Params.provider }}
+                {{- range .Params.provider }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                    {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
                   {{ end }}
                 {{ end }}
               {{ end }}
-            {{ end }}
-            
+            </div>
+
+            <div class="theme-detail-tag">
+              <span>Archetypes: 
+              {{ if .Params.archetype }}
+                {{- range .Params.archetype }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "archetype/%s" (urlize .)) }}
+                    {{ if eq .Page.Title "No archetype" }}
+                    {{ else }}
+                    {{ partial "link-card.html" (dict "name" .Page.Title "icon" .Page.Params.icon "link" .Page.Permalink) }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              
+            </div>
           </div>
-        </div>
-        
-        <div class="lighthouse">
-          <span class="lighthouse-header">Demo LightHouse Results:</span>
-          <div class="lighthouse-items">
-            {{ .Scratch.Set "color" "red" }}
-            {{ if gt $lighthouse.performance 50 }}
-              {{ .Scratch.Set "color" "orange" }}
-            {{ end }}
-            {{ if gt $lighthouse.performance 85 }}
-              {{ .Scratch.Set "color" "green" }}
-            {{ end }}
+          
+          <div class="lighthouse">
+            <span class="lighthouse-header">Demo LightHouse Results:</span>
+            <div class="lighthouse-items">
+              {{ .Scratch.Set "color" "red" }}
+              {{ if gt $lighthouse.performance 50 }}
+                {{ .Scratch.Set "color" "orange" }}
+              {{ end }}
+              {{ if gt $lighthouse.performance 85 }}
+                {{ .Scratch.Set "color" "green" }}
+              {{ end }}
 
-            <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
-                <h4 class="lighthouse-item-title">Performance</h4>
-                <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                  <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
-                  <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.performance }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
-                  <g class="lighthouse-item-value" transition-delay="600">
-                    <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.performance }}</text>
-                  </g>
-                </svg>                  
+              <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
+                  <h4 class="lighthouse-item-title">Performance</h4>
+                  <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
+                    <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.performance }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
+                    <g class="lighthouse-item-value" transition-delay="600">
+                      <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.performance }}</text>
+                    </g>
+                  </svg>                  
+              </div>
+
+              {{ .Scratch.Set "color" "red" }}
+              {{ if gt $lighthouse.accessibility 50 }}
+                {{ .Scratch.Set "color" "orange" }}
+              {{ end }}
+              {{ if gt $lighthouse.accessibility 85 }}
+                {{ .Scratch.Set "color" "green" }}
+              {{ end }}
+
+              <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
+                  <h4 class="lighthouse-item-title">Accessibility</h4>
+                  <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
+                    <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.accessibility }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
+                    <g class="lighthouse-item-value" transition-delay="600">
+                      <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.accessibility }}</text>
+                    </g>
+                  </svg>
+
+              </div>
+              
+              {{ .Scratch.Set "color" "red" }}
+              {{ if gt $lighthouse.bestPractices 50 }}
+                {{ .Scratch.Set "color" "orange" }}
+              {{ end }}
+              {{ if gt $lighthouse.bestPractices 85 }}
+                {{ .Scratch.Set "color" "green" }}
+              {{ end }}
+
+              <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
+                  <h4 class="lighthouse-item-title">Best Practices</h4>
+                  <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
+                    <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.bestPractices }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
+                    <g class="lighthouse-item-value" transition-delay="600">
+                      <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.bestPractices }}</text>
+                    </g>
+                  </svg>
+
+              </div>
+
+              {{ .Scratch.Set "color" "red" }}
+              {{ if gt $lighthouse.seo 50 }}
+                {{ .Scratch.Set "color" "orange" }}
+              {{ end }}
+              {{ if gt $lighthouse.seo 85 }}
+                {{ .Scratch.Set "color" "green" }}
+              {{ end }}
+
+              <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
+                  <h4 class="lighthouse-item-title">SEO</h4>
+                  <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
+                    <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.seo }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
+                    <g class="lighthouse-item-value" transition-delay="600">
+                      <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.seo }}</text>
+                    </g>
+                  </svg>
+
+              </div>
+
             </div>
-
-            {{ .Scratch.Set "color" "red" }}
-            {{ if gt $lighthouse.accessibility 50 }}
-              {{ .Scratch.Set "color" "orange" }}
-            {{ end }}
-            {{ if gt $lighthouse.accessibility 85 }}
-              {{ .Scratch.Set "color" "green" }}
-            {{ end }}
-
-            <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
-                <h4 class="lighthouse-item-title">Accessibility</h4>
-                <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                  <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
-                  <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.accessibility }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
-                  <g class="lighthouse-item-value" transition-delay="600">
-                    <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.accessibility }}</text>
-                  </g>
-                </svg>
-
-            </div>
-            
-            {{ .Scratch.Set "color" "red" }}
-            {{ if gt $lighthouse.bestPractices 50 }}
-              {{ .Scratch.Set "color" "orange" }}
-            {{ end }}
-            {{ if gt $lighthouse.bestPractices 85 }}
-              {{ .Scratch.Set "color" "green" }}
-            {{ end }}
-
-            <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
-                <h4 class="lighthouse-item-title">Best Practices</h4>
-                <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                  <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
-                  <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.bestPractices }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
-                  <g class="lighthouse-item-value" transition-delay="600">
-                    <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.bestPractices }}</text>
-                  </g>
-                </svg>
-
-            </div>
-
-            {{ .Scratch.Set "color" "red" }}
-            {{ if gt $lighthouse.seo 50 }}
-              {{ .Scratch.Set "color" "orange" }}
-            {{ end }}
-            {{ if gt $lighthouse.seo 85 }}
-              {{ .Scratch.Set "color" "green" }}
-            {{ end }}
-
-            <div class="lighthouse-item lighthouse-{{ .Scratch.Get "color" }}">
-                <h4 class="lighthouse-item-title">SEO</h4>
-                <svg viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg">
-                  <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
-                  <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ $lighthouse.seo }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
-                  <g class="lighthouse-item-value" transition-delay="600">
-                    <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ $lighthouse.seo }}</text>
-                  </g>
-                </svg>
-
-            </div>
-
           </div>
-        </div>
 
-        <div class="carbon">
-          <h3>
-            <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits the landing page of this template <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
-          </h3>
-        </div>
+          <div class="carbon">
+            <h3>
+              <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits the landing page of this template <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
+            </h3>
+          </div>
 
+        </div>
+      </div>
+      <div class="theme-detail-bottom">
+        <div class="content">
+          {{ .Content }}
+        </div>
       </div>
     </div>
-    <div class="theme-detail-bottom">
-      <div class="content">
-        {{ .Content }}
-      </div>
-    </div>
+
+    {{ partial "footer.html" . }}
   </div>
-
-  {{ partial "footer.html" . }}
-
 </div>
 
 {{ end }}

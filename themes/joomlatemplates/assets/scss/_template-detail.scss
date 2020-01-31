@@ -6,7 +6,11 @@
 
   .theme-detail-top {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @include breakpoint('large') {
+      flex-direction: row;
+    }
   }
 
   .theme-detail-bottom {
@@ -17,12 +21,20 @@
   .theme-info {
     flex: 1;
     min-width: 400px;
-    padding-left: 40px;
-    padding-right: 40px;
+    order: -1;
+    padding-bottom: 40px;
+
+    @include breakpoint('large') {
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 0;
+      order: 0;
+    }
   }
 
   .theme-preview {
     max-width: 800px;
+    flex: 1;
   }
 
   .theme-image {

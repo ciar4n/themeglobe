@@ -1,7 +1,7 @@
 ---
 title: "Ariana"
 details: https://joomla51.com/joomla-templates/j51-ariana
-demo: http://www.joomla51.com/demo/0161
+demo: https://www.joomla51.com/demo/0161
 date: 2019-04-15
 
 provider: 

@@ -1,7 +1,7 @@
 ---
 title: "Jasmine"
 details: https://joomla51.com/joomla-templates/j51-jasmine
-demo: http://www.joomla51.com/demo/0164
+demo: https://www.joomla51.com/demo/0164
 date: 2019-10-15
 
 provider: 

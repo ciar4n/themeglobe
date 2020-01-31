@@ -21,33 +21,37 @@
 </div>
 
 <div class="main">
+  {{ partial "header.html" . }}
+  <div class="main-wrapper">
 
-  <div>
-    <div class="blurb blurb-desktop"><p>Welcome to the Joomla Template Directory. A collection of the latest <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers. This is an open project so feel free to contribute on our <a href="#" target="_blank" rel="noopener">Github</a> repo.</p></div>
-    <div class="blurb blurb-mobile"><p>Welcome to the Joomla Template Directory. A collection of <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers.</p></div>
+    <div>
+      <div class="blurb blurb-desktop"><p>Welcome to the Joomla Template Directory. A collection of the latest <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers. This is an open project so feel free to contribute on our <a href="#" target="_blank" rel="noopener">Github</a> repo.</p></div>
+      <div class="blurb blurb-mobile"><p>Welcome to the Joomla Template Directory. A collection of <a href="https://joomla.org/" target="_blank" rel="noopener">Joomla</a> templates gathered from all the major professional providers.</p></div>
+    </div>
+
+    <div class="intro">
+      <h1>Joomla Templates</h1>
+      <div class="count"><span class="count-number">{{ $themeCount }}</span></div>
+    </div>
+
+    <div id="grids-homepage" class="grid">
+      {{ range $themes.ByPublishDate.Reverse }}
+        {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
+        {{ $template_key := .File.BaseFileName | urlize }}
+        {{ $lighthouse := index .Site.Data.themes $template_key }}
+        {{ $repo := index .Site.Data.themes $repoName }}
+          {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+        {{ end }}
+    </div>
+
+    <div class="controls-pagination">
+      <div class="mixitup-page-list"></div>
+      <div class="mixitup-page-stats"></div>
+    </div>
+
+    {{ partial "footer.html" . }}
+    
   </div>
-
-  <div class="intro">
-    <h1>Joomla Templates</h1>
-    <div class="count"><span class="count-number">{{ $themeCount }}</span></div>
-  </div>
-
-  <div id="grids-homepage" class="grid">
-    {{ range $themes.ByPublishDate.Reverse }}
-      {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
-      {{ $template_key := .File.BaseFileName | urlize }}
-      {{ $lighthouse := index .Site.Data.themes $template_key }}
-      {{ $repo := index .Site.Data.themes $repoName }}
-        {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
-      {{ end }}
-  </div>
-
-  <div class="controls-pagination">
-    <div class="mixitup-page-list"></div>
-    <div class="mixitup-page-stats"></div>
-  </div>
-
-  {{ partial "footer.html" . }}
 
 </div>
 {{ end }}

@@ -40,11 +40,9 @@
 
 <body id="{{ block "body_id" . }}{{ end }}" class='page {{ block "body_classes" . }}{{ end }} {{ delimit $bodyClasses " " }}'>
 
-  {{ partial "header.html" . }}
-
   <div class="wrapper">
     <div class="site-title">
-      <h1><a href="/" title="{{ .Site.Title }}">{{ .Site.Title }}</a></h1>
+      <h1><a href="/" title="{{ .Site.Title }}">ThemeGlobe <strong>Joomla</strong></a></h1>
       <span id="filter-toggle" class="filter-toggle"><span></span></span>
     </div>
     

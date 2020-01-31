@@ -30,11 +30,9 @@
 
     @include breakpoint('small') {
       display: flex;
-      position: fixed;
+      position: sticky;
       top: 0;
-      left: 0;
       z-index: 10;
-      padding-left: 310px;
     }
   }
 
@@ -87,8 +85,13 @@
     a {
       color: white;
       text-decoration: none;
-      font-weight: 300;
+      font-weight: normal;
       line-height: 12px;
+
+      strong {
+        font-weight: bold;
+        color: $primary-lightest;
+      }
     }
 
     @include breakpoint('small') {
@@ -108,19 +111,23 @@
 
   .main {
     flex: 1;
-    padding: 15px;
     background-color: $grey;
-
-    @include breakpoint('small') {
-      padding: 50px 20px 15px 100px;
-    }
+    margin-left: 60px;
   }
 
   .sidebar + .main {
+    margin-left: 0;
+  }
+
+  .main-wrapper {
+    padding: 15px;
+
     @include breakpoint('small') {
-      padding: 90px 40px 20px 40px;
+      padding: 40px;
     }
   }
+
+
 
   .footer {
     justify-items: flex-end;

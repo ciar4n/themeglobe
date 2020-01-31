@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Joomla Template Directory"
+title = "ThemeGlobe - Joomla"
 theme = "joomlatemplates"
 paginate = 30
 summaryLength = 10

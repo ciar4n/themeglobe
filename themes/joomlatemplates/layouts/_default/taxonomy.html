@@ -10,21 +10,22 @@
 {{ $themeCount := len .Pages }}
 
 <div class="main">
-  <div class="intro">
-    <h1 class="heading-title">{{.Title}} Templates <span class="count">{{ $themeCount }}</span></h1>
-  </div>
+  <div class="main-wrapper">
+    <div class="intro">
+      <h1 class="heading-title">{{.Title}} Templates <span class="count">{{ $themeCount }}</span></h1>
+    </div>
 
-  <div id="grids-taxonomy" class="grid">
-    {{ $paginator := .Paginate .RegularPages.ByPublishDate.Reverse }}
-    {{ range $paginator.Pages }}
-    {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
-    {{ $repo := index .Site.Data.themes $repoName }}
-      {{ partial "template-card.html" (dict "theme" . "repo" $repo) }}
-    {{ end }}
+    <div id="grids-taxonomy" class="grid">
+      {{ $paginator := .Paginate .RegularPages.ByPublishDate.Reverse }}
+      {{ range $paginator.Pages }}
+      {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
+      {{ $repo := index .Site.Data.themes $repoName }}
+        {{ partial "template-card.html" (dict "theme" . "repo" $repo) }}
+      {{ end }}
+    </div>
+    {{ $paginator := .Paginator }}
+    {{ partial "pagination.html" . }}
   </div>
-  {{ $paginator := .Paginator }}
-  {{ partial "pagination.html" . }}
-
 </div>
 {{ end }}
 

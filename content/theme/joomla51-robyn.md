@@ -1,7 +1,7 @@
 ---
 title: "Robyn"
 details: https://joomla51.com/joomla-templates/j51-robyn
-demo: http://www.joomla51.com/demo/0157
+demo: https://www.joomla51.com/demo/0157
 date: 2018-09-15
 
 provider: 

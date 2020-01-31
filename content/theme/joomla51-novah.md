@@ -1,7 +1,7 @@
 ---
 title: "Novah"
 details: https://joomla51.com/joomla-templates/j51-novah
-demo: http://www.joomla51.com/demo/0165
+demo: https://www.joomla51.com/demo/0165
 date: 2019-11-15
 
 provider: 

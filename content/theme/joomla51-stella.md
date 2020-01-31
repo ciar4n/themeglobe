@@ -1,7 +1,7 @@
 ---
 title: "Stella"
 details: https://joomla51.com/joomla-templates/j51-stella
-demo: http://www.joomla51.com/demo/0163
+demo: https://www.joomla51.com/demo/0163
 date: 2019-09-15
 
 provider: 

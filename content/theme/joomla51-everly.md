@@ -1,7 +1,7 @@
 ---
 title: "Everly"
 details: https://joomla51.com/joomla-templates/j51-everly
-demo: http://www.joomla51.com/demo/0160
+demo: https://www.joomla51.com/demo/0160
 date: 2019-07-15
 
 provider: 

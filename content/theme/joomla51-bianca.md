@@ -1,7 +1,7 @@
 ---
 title: "Bianca"
 details: https://joomla51.com/joomla-templates/j51-bianca
-demo: http://www.joomla51.com/demo/0166
+demo: https://www.joomla51.com/demo/0166
 date: 2019-12-15
 
 provider: 

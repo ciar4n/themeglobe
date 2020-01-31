@@ -1,7 +1,7 @@
 ---
 title: "Ensley"
 details: https://joomla51.com/joomla-templates/j51-ensley
-demo: http://www.joomla51.com/demo/0167
+demo: https://www.joomla51.com/demo/0167
 date: 2020-01-15
 
 provider: 

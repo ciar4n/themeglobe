@@ -6,16 +6,18 @@
 {{ $themeCount := len .Pages }}
 
 <div class="main">
-  <div class="hero">
-    <div class="heading">
-      <h1 class="heading-title">{{.Title}} <span class="count">({{ $themeCount }})</span></h1>
+  <div class="main-wrapper">
+    <div class="hero">
+      <div class="heading">
+        <h1 class="heading-title">{{.Title}} <span class="count">({{ $themeCount }})</span></h1>
+      </div>
     </div>
-  </div>
-  {{ partial "breadcrumbs.html" . }}
-  <div class="terms">
-      {{ range .Pages }}
-      {{ partial "term-card.html" (dict "term" .) }}
-      {{ end }}
+    {{ partial "breadcrumbs.html" . }}
+    <div class="terms">
+        {{ range .Pages }}
+        {{ partial "term-card.html" (dict "term" .) }}
+        {{ end }}
+    </div>
   </div>
 </div>
 {{ end }}
