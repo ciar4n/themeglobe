@@ -112,12 +112,18 @@
   .main {
     flex: 1;
     background-color: $grey;
-    margin-left: 60px;
+
+    @include breakpoint('small') {
+      margin-left: 60px;
+    }
   }
 
   .sidebar + .main {
-    margin-left: 0;
+    @include breakpoint('small') {
+      margin-left: 0;
+    }
   }
+
 
   .main-wrapper {
     padding: 15px;

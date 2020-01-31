@@ -2,7 +2,7 @@
 title: "Balou"
 details: https://yootheme.com/joomla-templates/balou
 demo: https://demo.yootheme.com/themes/joomla/2019/balou
-date: 2019-08-10
+date: 2019-09-10
 
 provider:
   - YooTheme

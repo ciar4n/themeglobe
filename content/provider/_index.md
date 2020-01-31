@@ -1,4 +1,4 @@
 ---
-title: Static Site Generators
+title: Joomla Temnplate Providers
 weight: 1
 ---

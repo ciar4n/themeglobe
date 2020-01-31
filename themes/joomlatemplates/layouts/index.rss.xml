@@ -28,15 +28,15 @@
       {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) .Params.details_branch }}
       {{ $repo := index .Site.Data.themes $repoName }}
 
-      {{ $imageUrl := "https://jamstackthemes.dev/images/default.png" }}
+      {{ $imageUrl := "https://themeglobe.com/images/default.png" }}
       {{ if .Params.thumbnail }}
-        {{ $imageUrl = printf "%s/%s" "https://jamstackthemes.dev" .Params.thumbnail }}
+        {{ $imageUrl = printf "%s/%s" "https://themeglobe.com" .Params.thumbnail }}
       {{ else if $repo }}
         {{ $staticPath := (printf "%s/%s%s" "static/images/theme/thumbnail" $repo.theme_key ".jpg") }}
         {{ $filePath := (printf "%s/%s%s" "images/theme/thumbnail" $repo.theme_key ".jpg") }}
         {{ $filePathHiRes := (printf "%s/%s%s" "images/theme/thumbnail/2x" $repo.theme_key "-2x.jpg") }}
         {{ if (fileExists $staticPath) }}
-          {{ $imageUrl = printf "%s/%s" "https://jamstackthemes.dev" $filePath }}
+          {{ $imageUrl = printf "%s/%s" "https://themeglobe.com" $filePath }}
         {{ end }}
       {{ end }}
 
