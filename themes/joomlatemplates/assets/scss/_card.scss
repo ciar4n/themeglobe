@@ -24,86 +24,77 @@
     color: currentColor;
   }
 
-  .card-container {
-    position: relative;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-header {
+  border-bottom: 1px solid $grey;
+  max-height: 210px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-body {
+  flex: 1;
+  padding: 20px;
+  min-height: 140px;
+  background: white;
+
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: $font-family-heading;
+    margin: 0;
+    margin-bottom: 10px;
   }
 
-  .card-header {
-    border-bottom: 1px solid $grey;
-    max-height: 210px;
-    overflow: hidden;
+  p {
+    color: $steel;
+    font-size: 1em;
+    margin: 0 0 3px 0;
 
-    a {
-      display: block;
+    strong {
+      color: $carbon;
     }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      vertical-align: bottom;
-
-      @include breakpoint('small') {}
-    }
   }
 
-  .card-body {
-    flex: 1;
-    padding: 20px;
-    min-height: 140px;
-    background: white;
+  .card-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
 
     h2 {
-      font-size: 20px;
-      line-height: 26px;
-      font-weight: 400;
-      font-family: $font-family-heading;
-      margin: 0;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: $steel;
-      margin: 0 0 3px 0;
-
-      strong {
-        color: $carbon;
-      }
-
-      &.description {
-        margin-top: 5px;
-        margin-bottom: 0;
-      }
-    }
-
-    .card-title {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-
-      h2 {
-        margin: 0;
-      }
+      margin: 0 auto 0 0;
     }
   }
+}
 
-  .card-footer {
-    display: flex;
-  }
+.card-footer {
+  display: flex;
+}
 
-  .card-buttons {
-    margin-left: auto;
+.card-buttons {
+  min-width: 100px;
 
-    .card-button {
-      padding: 1px 5px;
-      border-radius: 2px;
-      margin-left: 2px;
-      margin-right: 0;
-      font-size: .8em;
-      line-height: 1em;
-      text-decoration: none;
+  .card-button {
+    padding: 1px 5px;
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 0;
+    font-size: .8em;
+    line-height: 1em;
+    text-decoration: none;
 
-      &:hover {}
-    }
+    &:hover {}
   }
 }
 
@@ -137,6 +128,4 @@
   &-green {
     background-color: $green;
   }
-
-
 }

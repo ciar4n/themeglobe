@@ -5,13 +5,13 @@
   min-height: 100vh;
 
   &:before {
-    position: absolute;
+    position: fixed;
     content: '';
     top: 0;
     left: 0;
     right: 0;
     height: 5px;
-    background-image: linear-gradient(90deg, $primary, $secondary);
+    background-color: $secondary;
     z-index: 100;
   }
 
@@ -38,7 +38,9 @@
 
   &.page-default-single,
   &.page-taxonomy {
-    .header {
+
+    .header,
+    .filter-toggle {
       display: none;
     }
   }
@@ -46,7 +48,7 @@
   .sidebar {
     display: none;
     color: white;
-    background-color: $sidebar-bg;
+    background-color: $bg-darkest;
     border-top: 4px solid $primary;
     overflow: auto;
     padding: 0 0 20px 0;
@@ -73,7 +75,7 @@
     display: flex;
     z-index: 20;
 
-    background-color: #151739;
+    background-color: $bg-darker;
 
     h1 {
       margin-bottom: 0;

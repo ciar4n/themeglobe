@@ -1,30 +1,28 @@
 .lighthouse {
   display: flex;
   flex-direction: column;
-  margin: 5px 0;
   padding: 0 0 10px;
-  max-width: 500px;
-  ;
+
 
   * {
     box-sizing: border-box;
   }
 }
 
-.lighthouse-header {}
-
 .lighthouse-items {
   display: flex;
   flex-direction: row;
-  padding: 5px 10px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin-bottom: 8px;
 }
 
 .lighthouse-item {
-
   flex-direction: column;
-  margin: 5px;
+  padding: 2px;
   display: inline-flex;
   width: 25%;
+  min-width: 100px;
 
   svg {
     position: relative;
@@ -135,6 +133,32 @@
     fill: $red;
   }
 }
+
+.lh-score__label {
+  margin: 2px 0 25px auto;
+}
+
+.lh-score-card__range::before {
+  content: '';
+  width: 14px;
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.lh-score-card__range.lh-score--fail::before {
+  background-color: $red;
+}
+
+.lh-score-card__range.lh-score--average::before {
+  background-color: $orange;
+}
+
+.lh-score-card__range.lh-score--pass::before {
+  background-color: $green;
+}
+
 
 [transition-delay="100"] {
   transition-delay: .1s;

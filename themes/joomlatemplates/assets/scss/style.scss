@@ -1,18 +1,27 @@
 $primary: #2d3058;
 $secondary: rgb(52, 146, 160);
-$primary-light: #2d3058;
-$primary-lighter: #6d6f8c;
+$primary-light: #262735;
+$primary-lighter: #303143;
 $primary-lightest: #9fa3dc;
-$sidebar-bg: #090821;
+$bg-dark: #242433;
+$bg-darker: #171825;
+$bg-darkest: #0b0b14;
 $grey: #f3f3f3;
 $bone: #f5f5f5;
 $steel: #666666;
 $yellow: #f6d603;
 $blue: #57b8ff;
 $carbon: #2a2a2a;
-$red: #b9314f;
+$red: #d42e52;
 $orange: #ffa400;
-$green: #315c2b;
+$green: #36832c;
+
+$box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06),
+0 2px 2px rgba(0, 0, 0, 0.06),
+0 4px 4px rgba(0, 0, 0, 0.06),
+0 8px 8px rgba(0, 0, 0, 0.06);
+;
+$border-radius: 4px;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
 
@@ -36,7 +45,7 @@ $breakpoints: ('small': 690px,
 @import 'utilities';
 @import 'grid';
 @import 'card';
-@import 'template-detail';
+@import 'layout-single';
 @import 'layout';
 @import 'header';
 @import 'button';

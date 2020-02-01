@@ -4,6 +4,7 @@ details: https://www.details.com
 demo: https://www.demo.com
 provider:
   - Joomla51
+
 archetype:
   - creative
   - explorer
