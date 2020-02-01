@@ -49,7 +49,6 @@
     display: none;
     color: white;
     background-color: $bg-darkest;
-    border-top: 4px solid $primary;
     overflow: auto;
     padding: 0 0 20px 0;
     flex-direction: column;
@@ -98,7 +97,7 @@
 
     @include breakpoint('small') {
       position: fixed;
-      border-right: 1px solid $primary-light;
+      border-right: 1px solid $bg-dark;
       height: 100vh;
       width: 60px;
 

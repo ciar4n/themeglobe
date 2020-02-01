@@ -1,11 +1,11 @@
-$primary: #2d3058;
-$secondary: rgb(52, 146, 160);
-$primary-light: #262735;
-$primary-lighter: #303143;
-$primary-lightest: #9fa3dc;
-$bg-dark: #242433;
-$bg-darker: #171825;
-$bg-darkest: #0b0b14;
+$primary: #2b6cb0;
+$secondary: #319795;
+$primary-light: lighten($primary, 5%);
+$primary-lighter: lighten($primary, 15%);
+$primary-lightest: lighten($primary, 25%);
+$bg-dark: #2D3748;
+$bg-darker: rgb(36, 46, 61);
+$bg-darkest: rgb(18, 24, 34);
 $grey: #f3f3f3;
 $bone: #f5f5f5;
 $steel: #666666;
@@ -23,16 +23,31 @@ $box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06),
 ;
 $border-radius: 4px;
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap');
 
-$font-family-base: 'Poppins',
-Helvetica,
+$font-family-base: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Roboto,
+Helvetica Neue,
 Arial,
-sans-serif;
-$font-family-heading: 'Poppins',
-Helvetica,
+Noto Sans,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+Segoe UI Symbol,
+Noto Color Emoji;
+$font-family-heading: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Roboto,
+Helvetica Neue,
 Arial,
-sans-serif;
+Noto Sans,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+Segoe UI Symbol,
+Noto Color Emoji;
 $font-family-mono: monospace;
 
 $breakpoints: ('small': 690px,
