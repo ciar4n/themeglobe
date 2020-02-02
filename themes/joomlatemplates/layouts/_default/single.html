@@ -37,15 +37,29 @@
                 {{ end }}
               </span>
             </div>
+            <p>
+            </p>
             <div class="single-buttons">
               <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">Template Details</a>
               <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
+              {{- range .Params.provider }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                  {{ partial "button.html" (dict "name" .Page.Title "link" .Page.Params.home_url "target" "_blank") }}
+                {{ end }}
+              {{ end }}
             </div>
             <p class="theme-detail-summary">{{ .Summary }}</p>
           </div>
           
 
           <div class="audits">
+            <div class="payment-options single-card">
+              <div class="payment-options-header single-card-header">Purchase Options</div>
+              <div class="payment-options-item">
+                
+              </div>
+            </div>
+
             <div class="lighthouse single-card">
               <div class="lighthouse-header single-card-header">Demo Lighthouse Audit</div>
 
@@ -140,7 +154,7 @@
               <div class="carbon-header single-card-header">Demo Carbon Audit</div>
               <div class="carbon-item">
                 <h3>
-                  <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits the landing page of this template <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
+                  According to <a href="https://www.websitecarbon.com/" target="_blank">websitecarbon.com</a>, <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits the landing page of this template <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
                 </h3>
               </div>
             </div>
