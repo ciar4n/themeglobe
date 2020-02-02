@@ -25,6 +25,8 @@
     top: 0;
     padding: 30px;
     color: white;
+    margin: 0 auto;
+    text-align: center;
 
     a {
       color: $primary-lightest;
@@ -43,6 +45,7 @@
     background-color: white;
     min-height: 100vh;
     max-width: 900px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
 
   .single-image {
@@ -56,14 +59,16 @@
   }
 
   .single-buttons {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    white-space: nowrap;
-
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15px;
 
     a {
+      white-space: nowrap;
       color: #fff;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+      margin: 5px;
     }
   }
 
@@ -121,9 +126,9 @@
   }
 }
 
-
 .audits {
   display: flex;
   flex-direction: column;
   max-width: 460px;
+  margin: auto;
 }
