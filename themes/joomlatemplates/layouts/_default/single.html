@@ -37,8 +37,6 @@
                 {{ end }}
               </span>
             </div>
-            <p>
-            </p>
             <div class="single-buttons">
               <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">Template Details</a>
               <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
@@ -50,14 +48,24 @@
             </div>
             <p class="theme-detail-summary">{{ .Summary }}</p>
           </div>
-          
 
           <div class="audits">
             <div class="payment-options single-card">
-              <div class="payment-options-header single-card-header">Purchase Options</div>
-              <div class="payment-options-item">
-                
-              </div>
+                {{- range .Params.provider }}
+                  {{ with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                    {{ if .Params.club_membership }}
+                      <div class="payment-options-item">
+                        Available as part of a membership plan <div class="payment-options-price">{{ .Params.club_membership }}</div>
+                      </div>
+                    {{ end }}
+                    {{ if .Params.template_single_payment }}
+                      <div class="payment-options-item">
+                        Available as a single purchase  <div class="payment-options-price">{{ .Params.template_single_payment }}</div>
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              
             </div>
 
             <div class="lighthouse single-card">

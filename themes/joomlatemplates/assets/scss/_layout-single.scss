@@ -35,7 +35,6 @@
     @include breakpoint('medium') {
       position: sticky;
       padding-left: 40px;
-      padding-bottom: 0;
       order: 0;
     }
   }
@@ -110,6 +109,7 @@
   box-shadow: $box-shadow;
   margin: 10px 0;
   overflow: hidden;
+  font-size: 16px;
 }
 
 .single-card-header {
@@ -124,6 +124,29 @@
   a {
     text-decoration: none;
   }
+}
+
+.payment-options-header {
+  margin-bottom: 0;
+}
+
+.payment-options-item {
+  padding: 7px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  + .payment-options-item {
+    border-top: 1px solid $bg-darker;
+  }
+}
+
+.payment-options-price {
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: $bg-darkest;
+  padding: 5px 10px;
+  border-radius: $border-radius;
 }
 
 .audits {
