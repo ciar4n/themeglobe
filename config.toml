@@ -10,7 +10,7 @@ pygmentsCodeFences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsUseClasses = true
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
+# disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [params]
   description = "An open directory of professional templates for the Joomla CMS"
