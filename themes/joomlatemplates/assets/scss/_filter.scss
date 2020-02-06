@@ -2,7 +2,7 @@
   .filter {
     border-bottom: 1px solid $bg-dark;
     border-bottom: 1px solid var(--bg-dark);
-    padding: 20px 20px;
+    padding: 16px 20px;
 
     @include breakpoint('small') {}
 
