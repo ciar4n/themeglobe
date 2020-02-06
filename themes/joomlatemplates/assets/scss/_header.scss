@@ -1,0 +1,88 @@
+.body-banner {
+  .header {
+    top: 60px;
+    border-top: 0;
+
+    @include breakpoint('small') {
+      top: 40px;
+    }
+  }
+}
+
+.header {
+  border-bottom: 1px solid rgba(100, 100, 100, .1);
+  padding: 0 15px;
+  background-color: white;
+  background-color: var(--header-bg);
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 10;
+
+  .page-home & {
+
+    @include breakpoint('small') {
+      padding-top: 4px;
+    }
+  }
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+  max-width: 38px;
+  width: 38px;
+  height: 40px;
+  margin: 12px 20px 10px auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  span {
+    position: relative;
+    display: block;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -12px;
+    }
+
+    &::after {
+      top: 12px;
+    }
+  }
+
+  span,
+  span:after,
+  span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+
+  &.open {
+    span {
+      background-color: transparent;
+
+      &::before {
+        transform: rotate(45deg) translate(9px, 9px);
+      }
+
+      &::after {
+        transform: rotate(-45deg) translate(8px, -8px);
+      }
+    }
+  }
+
+  @include breakpoint('small') {
+    display: none;
+  }
+}

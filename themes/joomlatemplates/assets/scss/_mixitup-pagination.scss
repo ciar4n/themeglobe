@@ -1,0 +1,229 @@
+/* Pagination Controls
+---------------------------------------------------------------------- */
+
+.controls-pagination {
+  padding: 1rem;
+  font-size: 0.1px;
+  text-align: justify;
+}
+
+.controls-pagination:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.mixitup-page-list,
+.mixitup-page-stats {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mixitup-page-list {
+  text-align: left;
+}
+
+.mixitup-page-stats {
+  font-size: .9rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'helvetica', arial, sans-serif;
+}
+
+.mixitup-control {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  background: #fff;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  margin-right: 1px;
+  cursor: pointer;
+  font-size: .9rem;
+  color: #333;
+  font-weight: bold;
+  font-family: 'helvetica', arial, sans-serif;
+  transition: color 150ms, border-color 150ms;
+  vertical-align: middle;
+}
+
+.mixitup-control:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
+.mixitup-control:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.mixitup-control:not(.mixitup-control-active):hover {
+  color: #91e6c7;
+}
+
+.mixitup-control-active {
+  border-bottom-color: #91e6c7;
+  cursor: default;
+}
+
+.mixitup-control:disabled {
+  background: #eaeaea;
+  color: #aaa;
+  cursor: default;
+}
+
+.mixitup-control-truncation-marker {
+  background: transparent;
+  pointer-events: none;
+  line-height: 2.2em;
+}
+
+/* Container
+---------------------------------------------------------------------- */
+
+.container {
+  padding: 1rem;
+  text-align: justify;
+  font-size: 0.1px;
+}
+
+.container:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+/* Target Elements
+---------------------------------------------------------------------- */
+
+.mix,
+.gap {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.mix {
+  background: #fff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.mix:before {
+  content: '';
+  display: inline-block;
+  padding-top: 100%;
+}
+
+.mix.green {
+  color: #91e6c7;
+}
+
+.mix.pink {
+  color: #d595aa;
+}
+
+.mix.blue {
+  color: #5ecdde;
+}
+
+.mix:after {
+  content: '';
+  position: absolute;
+}
+
+.mix.square:after,
+.mix.circle:after {
+  width: 40%;
+  height: 40%;
+  top: 30%;
+  left: 30%;
+  background: currentColor;
+  border-radius: 3px;
+}
+
+.mix.circle:after {
+  border-radius: 100%;
+}
+
+.mix.triangle:after {
+  font-size: 3vw;
+  border: 3em solid transparent;
+  border-bottom: 5em solid currentColor;
+  border-top: 0;
+  left: calc(50% - 3em);
+  top: calc(50% - 3em);
+}
+
+.mix.medium:after {
+  transform: scale(.75);
+}
+
+.mix.small:after {
+  transform: scale(.5);
+}
+
+/* Grid Breakpoints
+---------------------------------------------------------------------- */
+
+/* 2 Columns */
+
+.mix,
+.gap {
+  width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+}
+
+/* 3 Columns */
+
+@media screen and (min-width: 541px) {
+
+  .mix,
+  .gap {
+    width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+  }
+
+  .mix.triangle:after {
+    font-size: 2vw;
+  }
+}
+
+/* 4 Columns */
+
+@media screen and (min-width: 961px) {
+
+  .mix,
+  .gap {
+    width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+  }
+
+  .mix.triangle:after {
+    font-size: 1.5vw;
+  }
+}
+
+/* 5 Columns */
+
+@media screen and (min-width: 1281px) {
+
+  .mix,
+  .gap {
+    width: calc(100%/5 - (((5 - 1) * 1rem) / 5));
+  }
+
+  .mix.triangle:after {
+    font-size: 1.25vw;
+  }
+}
+
+/* 6 Columns */
+
+@media screen and (min-width: 1401px) {
+
+  .mix,
+  .gap {
+    width: calc(100%/6 - (((6 - 1) * 1rem) / 6));
+  }
+
+  .mix.triangle:after {
+    font-size: 1vw;
+  }
+}

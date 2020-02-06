@@ -1,0 +1,35 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "ThemeGlobe - Joomla"
+theme = "joomlatemplates"
+paginate = 30
+summaryLength = 10
+# enableGitInfo = true
+
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+  description = "An open directory of professional templates for the Joomla CMS"
+ 
+[taxonomies]
+  provider = "provider"
+  archetype = "archetype"
+
+[outputs]
+  home = ["HTML","RSS","JSON"]
+  section = ["HTML","RSS"]
+
+[frontmatter]
+  lastmod = [":git", "lastmod", ":fileModTime", ":default"]
+
+# Main Menu
+[[menu.main]]
+	name = "List All"
+	url = "/"
+    weight = 1
+
+

@@ -1,0 +1,6 @@
+{{ $themes := (where .Site.RegularPages "Type" "theme") }}
+{{ $themeCount := len $themes }}
+
+<div class="header">
+  {{ partial "sort-buttons.html" . }}
+</div>

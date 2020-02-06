@@ -1,0 +1,11 @@
+.grid {
+  display: grid;
+  flex-wrap: wrap;
+  padding: 0;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 2rem;
+}
+
+.grid-item {
+  margin: 0 auto;
+}

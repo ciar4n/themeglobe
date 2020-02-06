@@ -1,0 +1,107 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-default-single{{ end }}
+
+{{ define "main" }}
+
+{{ $template_key := .File.BaseFileName | urlize }}
+{{ $lighthouse := index .Site.Data.themes $template_key }}
+
+<div class="main">
+  
+    <div class="single">
+      <div class="single-top">
+         <div class="single-preview">
+          <div class="single-image">
+            {{ $template_key := .File.BaseFileName | urlize }}
+            {{ $imagePath := print "images/theme/full/" $template_key ".jpg" }}
+            <img loading="lazy" src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+          </div>
+          <div class="single-bottom">
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+        </div>
+        <div class="single-info">
+          <div class="single-heading">
+            <div>
+              <h1>{{ .Title }}</h1>
+              <span class="single-by-provider">
+                  by 
+                {{ if .Params.provider }}
+                  {{- range .Params.provider }}
+                    {{- with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                      {{ partial "link-provider.html" (dict "name" .Page.Title "link" .Page.Params.home_url) }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </span>
+            </div>
+            <div class="single-buttons">
+              <a class="button" href="{{ .Params.details }}" target="_blank" rel="nofollow noopener">More Info</a>
+              <a class="button" href="{{ .Params.demo }}" target="_blank" rel="nofollow noopener">Live Demo</a>
+            </div>
+            <p class="theme-detail-summary">{{ .Summary }}</p>
+          </div>
+
+          <div class="audits">
+            <div class="payment-options single-card">
+                {{- range .Params.provider }}
+                  {{ with $.Site.GetPage "taxonomyTerm" (printf "provider/%s" (urlize .)) }}
+                    {{ if .Params.club_membership }}
+                      <div class="payment-options-item">
+                        Available as part of a membership plan <div class="payment-options-price">{{ .Params.club_membership }}</div>
+                      </div>
+                    {{ end }}
+                    {{ if .Params.template_single_payment }}
+                      <div class="payment-options-item">
+                        Available as a single purchase  <div class="payment-options-price">{{ .Params.template_single_payment }}</div>
+                      </div>
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+            </div>
+
+            <div class="lighthouse single-card">
+              <div class="lighthouse-header single-card-header">Demo Lighthouse Audit</div>
+
+              <div class="lighthouse-items">
+    
+                {{ partial "lighthouse-item.html" (dict "label" "Performance" "value" $lighthouse.performance) }}
+                {{ partial "lighthouse-item.html" (dict "label" "Accessibility" "value" $lighthouse.accessibility) }}
+                {{ partial "lighthouse-item.html" (dict "label" "Best Practices" "value" $lighthouse.bestPractices) }}
+                {{ partial "lighthouse-item.html" (dict "label" "SEO" "value" $lighthouse.seo) }}
+
+              </div>
+            </div>
+
+            <div class=" lh-score__label">
+                <div class="lh-score-card__legend">
+                  <span>Score scale:</span>
+                  <span class="lh-score-card__range lh-score--fail" data-first="">
+                    0-49
+                  </span>
+                  <span class="lh-score-card__range lh-score--average">50-84</span>
+                  <span class="lh-score-card__range lh-score--pass">85-100</span>
+                </div>
+              </div>
+
+            <div class="carbon single-card">
+              <div class="carbon-header single-card-header">Demo Carbon Audit</div>
+              <div class="carbon-item">
+                <h3>
+                  According to <a href="https://www.websitecarbon.com/" target="_blank">websitecarbon.com</a>, <strong>{{ $lighthouse.carbon}}g</strong> of CO2 is produced every time someone visits the landing page of this template <a href="https://www.websitecarbon.com/how-does-it-work/">[Learn More]</a>
+                </h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+    </div>
+
+
+</div>
+
+{{ end }}

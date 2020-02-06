@@ -1,0 +1,128 @@
+.card {
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: white;
+  background-color: var(--card-bg);
+  box-shadow: $box-shadow;
+  transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  z-index: 1;
+  min-height: 320px;
+  max-width: 280px;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow:
+      0 1px 1px rgba(0, 0, 0, 0.10),
+      0 2px 2px rgba(0, 0, 0, 0.10),
+      0 4px 4px rgba(0, 0, 0, 0.10),
+      0 8px 8px rgba(0, 0, 0, 0.10),
+      0 16px 16px rgba(0, 0, 0, 0.10);
+    color: currentColor;
+  }
+
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-header {
+  border-bottom: 1px solid rgba(100, 100, 100, .1);
+  max-height: 210px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.card-body {
+  flex: 1;
+  padding: 20px;
+  min-height: 140px;
+  background: white;
+  background: var(--card-bg);
+
+  h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: $font-family-heading;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $steel;
+    font-size: 1em;
+    margin: 0 0 3px 0;
+
+  }
+
+  .card-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h2 {
+      margin: 0 auto 0 0;
+    }
+  }
+}
+
+.card-footer {
+  display: flex;
+}
+
+.card-buttons {
+  margin: 4px 0;
+
+  .card-button {
+    padding: 3px 5px;
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 0;
+    font-size: .8em;
+    line-height: 1.3em;
+    text-decoration: none;
+
+    &:hover {}
+  }
+}
+
+.card-provider {
+  font-size: .75rem;
+  padding: 4px 10px;
+}
+
+.card-lighthouse {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 4px 4px;
+  margin-left: auto;
+}
+
+.card-lighthouse-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+
+  &-red {
+    background-color: $red;
+  }
+
+  &-orange {
+    background-color: $orange;
+  }
+
+  &-green {
+    background-color: $green;
+  }
+}

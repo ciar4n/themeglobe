@@ -1,0 +1,46 @@
+.main-menu {
+  display: none;
+  padding: 10px 25px;
+  margin-right: auto;
+
+  @include breakpoint("medium") {
+    display: inline-block;
+  }
+
+  > ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      list-style: none;
+      font-size: 1rem;
+      text-align: center;
+
+      > a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      &.active {
+
+        > a {
+          text-decoration: none;
+          background-color: $secondary;
+          background-color: var(--secondary);
+
+          &:hover {
+            cursor: default;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

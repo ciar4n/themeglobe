@@ -1,0 +1,9 @@
+[{{ range $index, $theme := (where .Site.RegularPages "Type" "theme") }}{{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) .Params.details_branch }}{{ $repo := index .Site.Data.themes $repoName }}{{ if $index }},{{ end }}
+  {
+    "title": "{{ .Params.title }}",
+    "details": "{{ .Params.details }}",
+    "demo": "{{ .Params.demo }}",
+    "provider": [{{ range $index, $category := .Params.provider }}"{{.}}"{{ end }}],
+    "archetype": [{{ range $index, $category := .Params.archetype }}{{ if $index }},{{ end }}"{{.}}"{{ end }}]
+  }{{ end }}
+]

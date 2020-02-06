@@ -1,0 +1,152 @@
+.page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &:before {
+    position: fixed;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background-color: $primary;
+    background-color: var(--primary);
+    z-index: 100;
+  }
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include breakpoint('small') {
+      flex-direction: row;
+    }
+  }
+
+  .header {
+    display: flex;
+
+    @include breakpoint('small') {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+  }
+
+  &.page-default-single,
+  &.page-home {
+
+    .header,
+    .filter-toggle {
+      display: none;
+    }
+  }
+
+  .sidebar {
+    position: absolute;
+    display: flex;
+    color: white;
+    background-color: $bg-darkest;
+    background-color: var(--bg-darkest);
+    overflow: auto;
+    padding: 0 0 20px 0;
+    flex-direction: column;
+    z-index: 100;
+    transition: all .3s ease;
+    transform: translateX(-100%);
+    box-shadow: $box-shadow;
+    top: 0;
+    bottom: 0;
+
+    @include breakpoint('small') {
+      display: flex;
+      position: sticky;
+      top: 0;
+      width: 320px;
+      height: 100vh;
+      padding: 1px 0 40px 60px;
+      box-shadow: none;
+      transform: none;
+      z-index: 10;
+    }
+
+    &.open {
+      transform: translateX(0);
+    }
+  }
+
+  .site-title {
+    display: flex;
+    z-index: 20;
+    background-color: $bg-darker;
+    background-color: var(--bg-darker);
+
+    h1 {
+      margin-bottom: 0;
+      padding: 12px 20px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: normal;
+      line-height: 12px;
+
+      strong {
+        font-weight: bold;
+        color: $primary-lightest;
+        color: var(--primary-lightest);
+      }
+    }
+
+    @include breakpoint('small') {
+      position: fixed;
+      border-right: 1px solid $bg-dark;
+      border-right: 1px solid var(--bg-dark);
+      height: 100vh;
+      width: 60px;
+
+      h1 {
+        position: absolute;
+        transform: rotate(-90deg) translate(-100%, 0%);
+        transform-origin: 0 0;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .main {
+    flex: 1;
+    background-color: $grey;
+    background-color: var(--base-bg);
+
+    @include breakpoint('small') {
+      margin-left: 60px;
+    }
+  }
+
+  .sidebar + .main {
+    @include breakpoint('small') {
+      margin-left: 0;
+    }
+  }
+
+
+  .main-wrapper {
+    padding: 15px;
+
+    @include breakpoint('small') {
+      padding: 40px;
+    }
+  }
+
+  .footer {
+    justify-items: flex-end;
+  }
+}

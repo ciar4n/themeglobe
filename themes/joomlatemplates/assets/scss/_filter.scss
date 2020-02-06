@@ -1,0 +1,194 @@
+.filters {
+  .filter {
+    border-bottom: 1px solid $bg-dark;
+    border-bottom: 1px solid var(--bg-dark);
+    padding: 20px 20px;
+
+    @include breakpoint('small') {}
+
+    &.closed {
+      .filter-list {
+        display: none;
+      }
+
+      .filter-title {
+        margin: 0;
+      }
+    }
+
+    &:first-of-type {
+      @include breakpoint('small') {
+        padding-top: 20px;
+      }
+    }
+
+  }
+
+  .filter-title {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+
+    @include breakpoint('small') {
+      display: flex;
+      align-items: center;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 4px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+    .toggle-icon {
+      cursor: pointer;
+      display: none;
+      margin-left: 8px;
+
+      @include breakpoint('small') {
+        display: flex;
+      }
+
+      img {
+        width: 14px;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &.closed {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  .filter-list {
+    margin: 0;
+    padding: 0;
+
+    .filter-item {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .filter-button {
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 20px;
+        height: 20px;
+        background: $bg-dark;
+        background: var(--bg-dark);
+        border: 0px solid $primary;
+        border-radius: 3px;
+        padding: 2px;
+        cursor: pointer;
+
+        &:hover {
+          border: 2px solid $primary-lighter;
+          border: 2px solid (--primary-lighter);
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 5px $primary-light;
+          box-shadow: 0 0 5px var(--primary-light);
+        }
+
+        &:focus:not(:focus-visible) {
+          box-shadow: none;
+        }
+
+        &.mixitup-control-active {
+          background: $primary;
+          border: 2px solid $primary;
+          background-image: url("../images/ui/check-solid.svg");
+          background-size: 12px 12px;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      .filter-icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 7px;
+      }
+
+      .filter-name {
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+        @include breakpoint('small') {
+          display: block;
+        }
+      }
+
+      .filter-link {
+        display: none;
+        color: $primary;
+        text-decoration: none;
+        padding: 2px 5px;
+
+        @include breakpoint('small') {
+          display: block;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .filter-count {
+        color: white;
+        background-color: $primary-light;
+        background-color: var(--primary-light);
+        width: 18px;
+        line-height: 16px;
+        font-size: .65em;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 2px;
+        margin-right: 5px;
+        order: -1;
+
+      }
+    }
+  }
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 300ms;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

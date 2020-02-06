@@ -1,0 +1,43 @@
+.blurb {
+  display: none;
+  padding: 5px 20px;
+  background-color: white;
+  border-radius: 4px;
+
+  @include breakpoint('small') {
+    display: block;
+  }
+
+  &.blurb-mobile {
+    display: block;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+
+    @include breakpoint('large') {
+      display: none;
+    }
+  }
+
+  &.blurb-desktop {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-right: 360px;
+
+    @include breakpoint('large') {
+      display: block;
+    }
+  }
+
+  a {
+    color: $primary-lighter;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

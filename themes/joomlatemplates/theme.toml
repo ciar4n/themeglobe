@@ -1,0 +1,8 @@
+name = "A Joomla Template Directory"
+license = "MIT"
+description = "A list of templates for the Joomla CMS"
+min_version = 0.51
+
+[author]
+  name = "Ciaran Walsh"
+  homepage = "https://www.ciar4n.com"
