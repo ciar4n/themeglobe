@@ -7,20 +7,11 @@ const yamlFront = require('yaml-front-matter');
 
 const themesFolder = path.join(__dirname, '../content/joomla');
 const themeFiles = fs.readdirSync(themesFolder);
-let lightHouseData = {};
-
-if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
-  const tmpLhData = fs.readFileSync(`${path.join(__dirname, '../data')}/themes.json`);
-  try {
-    lightHouseData = JSON.parse(tmpLhData)
-  } catch (er) {
-    throw new Error(er)
-  }
-}
 
 const processTheme = (theme) => {
   const dataTmp = fs.readFileSync(path.join(themesFolder, theme));
   const frontmatter = yamlFront.loadFront(dataTmp);
+  const dataFile = `data/${theme.replace('.md', '')}.json`
   const data = {
     theme: theme,
     frontmatter: frontmatter
@@ -31,15 +22,26 @@ const processTheme = (theme) => {
     return;
   }
 
-  lh(data);
+  if (fs.existsSync(dataFile)) {
+    const tmpLhData = fs.readFileSync(dataFile);
+    try {
+      lightHouseData = JSON.parse(tmpLhData)
+    } catch (er) {
+      throw new Error(er)
+    }
+  }
+
+  lh(data, dataFile);
 };
 
-const lh = async (data) => {
+const lh = async (data, dataFile) => {
+  console.log(dataFile)
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
   const url = data.frontmatter.demo
 
+  if (!url) return;
   if (lightHouseData[`${themeKey}`]) {
     console.log(`${data.theme} Lighthouse skipped, already processed`)
     return;
@@ -58,34 +60,31 @@ const lh = async (data) => {
   };
 
   axios.post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', d, o)
-    .then(function(response) {
+    .then(function (response) {
       // handle success
       if (response.status === 200 || response.status === 201) {
         if (response.data && response.data.lhr) {
+          const lightHouseData = {}
           const out = response.data.lhr;
-
-          if (!lightHouseData.hasOwnProperty([`${themeKey}`])) {
-            carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
-            lightHouseData[`${themeKey}`] = {
-              performance: Math.ceil(out.categories.performance.score * 100),
-              bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
-              accessibility: Math.ceil(out.categories.accessibility.score * 100),
-              seo: Math.ceil(out.categories.seo.score * 100),
-              carbon: carbonVal.toFixed(3),
-            };
+          carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
+          lightHouseData[`${themeKey}`] = {
+            performance: Math.ceil(out.categories.performance.score * 100),
+            bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
+            accessibility: Math.ceil(out.categories.accessibility.score * 100),
+            seo: Math.ceil(out.categories.seo.score * 100),
+            carbon: carbonVal.toFixed(3),
           }
 
-          fs.writeFileSync(`${path.join(__dirname, '../data')}/themes.json`, JSON.stringify(lightHouseData));
-
+          fs.writeFileSync(dataFile, JSON.stringify(lightHouseData));
         }
       }
 
     })
-    .catch(function(error) {
+    .catch(function (error) {
       // handle error
       console.log(error);
     })
-    .then(function() {
+    .then(function () {
       // always executed
     });
 };
