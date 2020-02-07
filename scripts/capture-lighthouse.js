@@ -22,26 +22,27 @@ const processTheme = (theme) => {
     return;
   }
 
-  if (fs.existsSync(dataFile)) {
-    const tmpLhData = fs.readFileSync(dataFile);
-    try {
-      lightHouseData = JSON.parse(tmpLhData)
-    } catch (er) {
-      throw new Error(er)
-    }
-  }
-
   lh(data, dataFile);
 };
 
 const lh = async (data, dataFile) => {
   console.log(dataFile)
+  let lightHouseData = {};
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
   const url = data.frontmatter.demo
 
   if (!url) return;
+
+  if (fs.existsSync(dataFile)) {
+    try {
+      lightHouseData = JSON.parse(fs.readFileSync(dataFile))
+    } catch (er) {
+      throw new Error(er)
+    }
+  }
+
   if (lightHouseData[`${themeKey}`]) {
     console.log(`${data.theme} Lighthouse skipped, already processed`)
     return;
@@ -64,7 +65,7 @@ const lh = async (data, dataFile) => {
       // handle success
       if (response.status === 200 || response.status === 201) {
         if (response.data && response.data.lhr) {
-          const lightHouseData = {}
+          const lightHouseData = {};
           const out = response.data.lhr;
           carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
           lightHouseData[`${themeKey}`] = {
