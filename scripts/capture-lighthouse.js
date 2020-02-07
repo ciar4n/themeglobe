@@ -11,7 +11,7 @@ const themeFiles = fs.readdirSync(themesFolder);
 const processTheme = (theme) => {
   const dataTmp = fs.readFileSync(path.join(themesFolder, theme));
   const frontmatter = yamlFront.loadFront(dataTmp);
-  const dataFile = `data/${theme.replace('.md', '')}.json`
+  const dataFile = `data/${theme.replace('.md', '').replace(/\-/g, '_')}.json`
   const data = {
     theme: theme,
     frontmatter: frontmatter
@@ -26,7 +26,6 @@ const processTheme = (theme) => {
 };
 
 const lh = async (data, dataFile) => {
-  console.log(dataFile)
   let lightHouseData = {};
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
@@ -83,7 +82,7 @@ const lh = async (data, dataFile) => {
     })
     .catch(function (error) {
       // handle error
-      console.log(error);
+      console.log(d);
     })
     .then(function () {
       // always executed
