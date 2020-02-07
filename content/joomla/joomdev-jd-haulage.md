@@ -1,15 +1,15 @@
 ---
 title: "JD Haulage"
 details: https://www.joomdev.com/products/templates/jd-haulage-template
-demo: http://demo.joomdev.com/haulage
-date: 2020-04-01
+demo: https://demo.joomdev.com/haulage/toolbar/
+date: 2020-01-04
 
 provider: 
   - JoomDev
 
 archetype:
-  - Business
-  - Transport
+  - Advocate
+  - Explorer
 
 ---
 
