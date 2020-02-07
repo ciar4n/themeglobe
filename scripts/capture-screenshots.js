@@ -8,7 +8,7 @@ const {
   exec
 } = require('child_process');
 
-const themesFolder = path.join(__dirname, '../content/theme');
+const themesFolder = path.join(__dirname, '../content/joomla');
 const hiresImagesFolder = path.join(__dirname, '../static/capture');
 
 const themeFiles = fs.readdirSync(themesFolder);
@@ -56,9 +56,9 @@ const screenshot = async (data) => {
     } else {
       console.log(`${data.theme} capturing`);
       await new Pageres({
-        delay: 3,
-        filename: themeKey
-      })
+          delay: 3,
+          filename: themeKey
+        })
         .src(url, ['1500x1125'], {
           crop: true
         })

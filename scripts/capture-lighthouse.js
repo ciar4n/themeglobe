@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const yamlFront = require('yaml-front-matter');
 
-const themesFolder = path.join(__dirname, '../content/theme');
+const themesFolder = path.join(__dirname, '../content/joomla');
 const themeFiles = fs.readdirSync(themesFolder);
 let lightHouseData = {};
 
@@ -58,7 +58,7 @@ const lh = async (data) => {
   };
 
   axios.post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', d, o)
-    .then(function (response) {
+    .then(function(response) {
       // handle success
       if (response.status === 200 || response.status === 201) {
         if (response.data && response.data.lhr) {
@@ -81,11 +81,11 @@ const lh = async (data) => {
       }
 
     })
-    .catch(function (error) {
+    .catch(function(error) {
       // handle error
       console.log(error);
     })
-    .then(function () {
+    .then(function() {
       // always executed
     });
 };
