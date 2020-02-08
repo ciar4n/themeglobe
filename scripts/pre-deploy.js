@@ -18,7 +18,6 @@ fsExtra.copy(`${root}/data`, `${root}/o_data`)
     })
     .then((combinedData) => {
         fs.writeFileSync(`${root}/data/themes.json`, JSON.stringify(combinedData));
-        fsExtra.removeSync(`${root}/o_data`);
     })
     .catch(err => console.log(err));
 

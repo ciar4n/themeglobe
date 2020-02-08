@@ -1,7 +1,8 @@
 {
   "scripts": {
     "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js",
-    "deploy": "node ./scripts/pre-deploy.js && hugo",
+    "deploy": "node ./scripts/pre-deploy.js && hugo && node ./scripts/post-deploy-live.js",
+    "github": "node ./scripts/pre-deploy.js && hugo && node ./scripts/post-deploy-gh.js",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "capture-lighthouse": "node ./scripts/capture-lighthouse.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js"
