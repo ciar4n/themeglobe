@@ -1,8 +1,8 @@
 name: Action CI
 
-on: [pull_request]
-
 jobs:
+
+  on: [push]
 
   build:
  
