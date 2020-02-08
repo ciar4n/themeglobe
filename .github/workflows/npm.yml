@@ -1,8 +1,8 @@
 name: Action CI
 
-jobs:
+on: [push]
 
-  on: [push]
+jobs:
 
   build:
  
