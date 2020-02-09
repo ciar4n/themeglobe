@@ -1,7 +1,8 @@
-const fsExtra = require('fs-extra')
+const fsExtra = require('fs-extra');
+const fs = require('fs');
 const root = process.cwd();
 
 
-if (fs.esxistsSync(`${root}/o_data`)) {
+if (fs.existsSync(`${root}/o_data`)) {
     fsExtra.copySync(`${root}/o_data`, `${root}/data`);
 }
