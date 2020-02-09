@@ -7,6 +7,12 @@ const yamlFront = require('yaml-front-matter');
 
 const themesFolder = path.join(__dirname, '../content/joomla');
 const themeFiles = fs.readdirSync(themesFolder);
+const root = process.cwd();
+
+if (!fs.existsSync(`${root}/data`)) {
+  fs.mkdirSync(`${root}/data`);
+}
+
 
 const processTheme = (theme) => {
   const dataTmp = fs.readFileSync(path.join(themesFolder, theme));

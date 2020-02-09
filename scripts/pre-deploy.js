@@ -3,10 +3,9 @@ const fsExtra = require('fs-extra')
 const root = process.cwd();
 let combinedData = {};
 
-fsExtra.copy(`${root}/data`, `${root}/o_data`)
+fsExtra.move(`${root}/data`, `${root}/o_data`)
     .then(() => {
-        fsExtra.removeSync(`${root}/data`);
-        fsExtra.mkdirSync(`${root}/data`);
+        fs.mkdirSync(`${root}/data`);
         const originalData = fs.readdirSync(`${root}/o_data`);
 
         for (const theme of originalData) {
