@@ -1,0 +1,52 @@
+.card-lighthouse {
+  position: relative;
+}
+
+[data-tooltip] {
+  z-index: 2;
+
+  &:before {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s ease;
+    position: absolute;
+    bottom: 100%;
+    right: -20px;
+    margin-bottom: 5px;
+    padding: 3px 7px;
+    border-radius: $border-radius 0 0 $border-radius;
+    background-color: #000;
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: bold;
+  }
+
+  &.card-lighthouse-item-green::before {
+    background-color: $green;
+  }
+
+  &.card-lighthouse-item-orange::before {
+    background-color: $orange;
+  }
+
+  &.card-lighthouse-item-red::before {
+    background-color: $red;
+  }
+
+}
+
+[data-tooltip]:hover,
+[data-tooltip]:focus {
+
+  &::before,
+  &::after {
+    visibility: visible;
+    opacity: 1;
+    right: 0;
+  }
+}
