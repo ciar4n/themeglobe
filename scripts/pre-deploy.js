@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fsExtra = require('fs-extra')
+const fsExtra = require('fs-extra');
 const root = process.cwd();
 let combinedData = {};
 
