@@ -49,7 +49,7 @@
       {{ if gt .performance 85 }}
         {{ $scratchPerformance.Set "color" "green" }}
       {{ end }}
-      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchPerformance.Get "color" }}"></div>
+      <a href="{{ .theme.Permalink }}" class="card-lighthouse-item card-lighthouse-item-perf card-lighthouse-item-{{ $scratchPerformance.Get "color" }}" data-tooltip="Performance: {{ .performance }}"><span></span></a>
 
       {{ $scratchA11y := newScratch }}
       {{ $scratchA11y.Add "color" "red" }}
@@ -59,7 +59,7 @@
       {{ if gt .accessibility 85 }}
         {{ $scratchA11y.Set "color" "green" }}
       {{ end }}
-      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchA11y.Get "color" }}"></div>
+      <a href="{{ .theme.Permalink }}" class="card-lighthouse-item card-lighthouse-item-a11y card-lighthouse-item-{{ $scratchA11y.Get "color" }}" data-tooltip="Accessibility: {{ .accessibility }}"><span></span></a>
 
       {{ $scratchBest := newScratch }}
       {{ $scratchBest.Add "color" "red" }}
@@ -69,7 +69,7 @@
       {{ if gt .bestPractices 85 }}
         {{ $scratchBest.Set "color" "green" }}
       {{ end }}
-      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchBest.Get "color" }}"></div>
+      <a href="{{ .theme.Permalink }}" class="card-lighthouse-item card-lighthouse-item-bp card-lighthouse-item-{{ $scratchBest.Get "color" }}" data-tooltip="Best Practices: {{ .bestPractices }}"><span></span></a>
 
       {{ $scratchSEO := newScratch }}
       {{ $scratchSEO.Add "color" "red" }}
@@ -79,7 +79,7 @@
       {{ if gt .seo 85 }}
         {{ $scratchSEO.Set "color" "green" }}
       {{ end }}
-      <div class="card-lighthouse-item card-lighthouse-item-{{ $scratchSEO.Get "color" }}"></div>
+      <a href="{{ .theme.Permalink }}" class="card-lighthouse-item card-lighthouse-item-seo card-lighthouse-item-{{ $scratchSEO.Get "color" }}" data-tooltip="SEO: {{ .seo }}"><span></span></a>
 
     </div>
   </div>

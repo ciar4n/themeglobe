@@ -56,7 +56,7 @@ const screenshot = async (data) => {
     } else {
       console.log(`${data.theme} capturing`);
       await new Pageres({
-          delay: 3,
+          delay: 5,
           filename: themeKey
         })
         .src(url, ['1500x1125'], {
