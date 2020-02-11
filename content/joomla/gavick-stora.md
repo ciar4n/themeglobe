@@ -2,6 +2,7 @@
 title: "Stora"
 details: https://www.gavick.com/joomla-templates/stora
 demo: https://demo.gavick.com/joomla3/stora/
+audit: https://demo.gavick.com/joomla3/stora/index.php/news
 date: 2018-02-08
 
 provider:

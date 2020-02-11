@@ -2,6 +2,7 @@
 title: "Paradise"
 details: https://www.gavick.com/joomla-templates/paradise
 demo: https://demo.gavick.com/joomla3/paradise/
+audit: https://demo.gavick.com/joomla3/paradise/index.php/blog
 date: 2019-04-08
 
 provider:

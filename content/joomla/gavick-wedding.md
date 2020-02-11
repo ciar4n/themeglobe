@@ -2,6 +2,7 @@
 title: "Wedding"
 details: https://www.gavick.com/joomla-templates/wedding
 demo: https://demo.gavick.com/joomla3/wedding/
+audit: https://demo.gavick.com/joomla3/wedding/index.php/blog
 date: 2018-10-08
 
 provider:

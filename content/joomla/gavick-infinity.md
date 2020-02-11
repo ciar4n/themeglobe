@@ -2,6 +2,7 @@
 title: "Infinity"
 details: https://www.gavick.com/joomla-templates/infinity
 demo: https://demo.gavick.com/joomla3/infinity/
+audit: https://demo.gavick.com/joomla3/infinity/index.php/news-events
 date: 2018-07-08
 
 provider:

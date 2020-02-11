@@ -2,6 +2,7 @@
 title: "Box"
 details: https://www.gavick.com/joomla-templates/technboxews
 demo: https://demo.gavick.com/joomla3/box/
+audit: https://demo.gavick.com/joomla3/box/index.php/blog/categories
 date: 2018-01-08
 
 provider:

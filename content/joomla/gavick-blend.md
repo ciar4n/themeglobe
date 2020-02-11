@@ -2,6 +2,7 @@
 title: "Blend"
 details: https://www.gavick.com/joomla-templates/blend
 demo: https://demo.gavick.com/joomla3/blend/
+audit: https://demo.gavick.com/joomla3/blend/index.php/pages/j-pages/category-blog
 date: 2019-01-08
 
 provider:
