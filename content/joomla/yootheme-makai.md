@@ -2,6 +2,7 @@
 title: "Makai"
 details: https://yootheme.com/joomla-templates/makai
 demo: https://demo.yootheme.com/themes/joomla/2019/makai
+audit: https://demo.yootheme.com/themes/joomla/2019/makai/index.php/zoo-zoo/blog-zoo
 date: 2019-10-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Explorer
   - Athlete
-
 ---
 
 With its modern vintage look and outlined style, this YOOtheme Pro theme package is perfect for sports, health or other related websites. It's available for WordPress and Joomla.

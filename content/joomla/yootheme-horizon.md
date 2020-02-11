@@ -2,6 +2,7 @@
 title: "Horizon"
 details: https://yootheme.com/joomla-templates/horizon
 demo: https://demo.yootheme.com/themes/joomla/2016/horizon/
+audit: https://demo.yootheme.com/themes/joomla/2016/horizon/index.php/zoo-zoo/blog-zoo
 date: 2016-11-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Visionary
   - Creative
-
 ---
 
 With its elegant and clean style, this YOOtheme Pro theme package is perfect for product pages and web and advertising agencies. It's available for WordPress and Joomla.

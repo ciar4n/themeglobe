@@ -2,6 +2,7 @@
 title: "Florence"
 details: https://yootheme.com/joomla-templates/florence
 demo: https://demo.yootheme.com/themes/joomla/2017/florence/
+audit: https://demo.yootheme.com/themes/joomla/2017/florence/index.php/zoo-zoo/blog-zoo
 date: 2017-12-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Caregiver
   - Creative
-
 ---
 
 With its minimalistic and classical style, this YOOtheme Pro theme package is perfect for hair and beauty salons and fashion related websites. It's available for WordPress and Joomla.

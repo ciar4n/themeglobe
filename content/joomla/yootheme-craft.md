@@ -2,6 +2,7 @@
 title: "Craft"
 details: https://yootheme.com/joomla-templates/craft
 demo: https://demo.yootheme.com/themes/joomla/2019/craft
+audit: https://demo.yootheme.com/themes/joomla/2019/craft/index.php/zoo-zoo/blog-zoo
 date: 2019-06-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Creative
   - Visionary
-
 ---
 
 With its earthy colors and an interesting fresh design, this YOOtheme Pro theme package is perfect for handcraft, services or other related websites. It's available for WordPress and Joomla.

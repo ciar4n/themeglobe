@@ -2,6 +2,7 @@
 title: "Trek"
 details: https://yootheme.com/joomla-templates/trek
 demo: https://demo.yootheme.com/themes/joomla/2018/trek
+audit: https://demo.yootheme.com/themes/joomla/2018/trek/index.php/zoo-zoo/blog-zoo
 date: 2019-05-10
 
 provider:
@@ -11,7 +12,6 @@ archetype:
   - Rebel
   - Explorer
   - Creative
-
 ---
 
 With its bold and colorful style, grungy textures and hand-drawn illustrations, this YOOtheme Pro theme package is perfect for travel, sports or other related website. It's available for WordPress and Joomla.

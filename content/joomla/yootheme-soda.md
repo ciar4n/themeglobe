@@ -2,6 +2,7 @@
 title: "Soda"
 details: https://yootheme.com/joomla-templates/soda
 demo: https://demo.yootheme.com/themes/joomla/2019/soda
+audit: https://demo.yootheme.com/themes/joomla/2019/soda/index.php/zoo-zoo/blog-zoo
 date: 2019-12-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Creative
   - Visionary
-
 ---
 
 With its clean minimal style and bold colors this YOOtheme Pro theme package is perfect for VFX and animation studios as well as media agencies. It's available for WordPress and Joomla.

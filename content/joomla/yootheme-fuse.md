@@ -2,6 +2,7 @@
 title: "Fuse"
 details: https://yootheme.com/joomla-templates/fuse
 demo: https://demo.yootheme.com/themes/joomla/2016/fuse/
+audit: https://demo.yootheme.com/themes/joomla/2016/fuse/index.php/zoo-zoo/blog-zoo
 date: 2016-10-10
 
 provider:
@@ -9,7 +10,6 @@ provider:
 
 archetype:
   - Creative
-
 ---
 
 With its minimal and elegant style with typographical details, this YOOtheme Pro theme package is perfect for design, marketing and advertising agencies. It's available for WordPress and Joomla.

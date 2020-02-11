@@ -2,6 +2,7 @@
 title: "Juno"
 details: https://yootheme.com/joomla-templates/juno
 demo: https://demo.yootheme.com/themes/joomla/2017/juno/
+audit: https://demo.yootheme.com/themes/joomla/2017/juno/index.php/zoo-zoo/blog-zoo
 date: 2017-10-10
 
 provider:
@@ -9,7 +10,6 @@ provider:
 
 archetype:
   - Performer
-
 ---
 
 With its minimal black and white style, this YOOtheme Pro theme package is perfect for photography, product showcases and image galleries. It's available for WordPress and Joomla.
