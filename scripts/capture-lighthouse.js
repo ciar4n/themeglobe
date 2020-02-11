@@ -38,7 +38,7 @@ const lh = async (data) => {
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
-  const url = data.frontmatter.demo
+  const url = data.frontmatter.audit
 
   if (lightHouseData[`${themeKey}`]) {
     console.log(`${data.theme} Lighthouse skipped, already processed`)

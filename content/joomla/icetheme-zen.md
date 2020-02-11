@@ -2,16 +2,16 @@
 title: "Zen"
 details: https://www.icetheme.com/free-themes/it-zen
 demo: https://demo.icetheme.com/it-zen/
+audit: https://demo.icetheme.com/it-zen/index.php/en/joomla/blog
 date: 2019-09-11
 
-provider: 
+provider:
   - IceTheme
 
 archetype:
   - Creative
   - Intellectual
   - Visionary
-  
 ---
 
 Calming and tranquil with an emphasis on whitespace and open design. The perfect Joomla Template in case you want to finish your next website with ease, plus its FREE!

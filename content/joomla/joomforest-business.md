@@ -2,15 +2,15 @@
 title: "Business"
 details: https://www.joomforest.com/joomla/templates/jf-business
 demo: https://demo.joomforest.net/j3/jf_business/
+audit: https://demo.joomforest.net/j3/jf_business/features/joomla/joomla-article/category-blog
 date: 2019-05-09
 
-provider: 
+provider:
   - JoomForest
 
 archetype:
   - Advocate
   - Intellectual
-
 ---
 
 JF Business is Free Responsive Business Joomla! Template. It is well suited for business, corporate, portfolio or social websites.

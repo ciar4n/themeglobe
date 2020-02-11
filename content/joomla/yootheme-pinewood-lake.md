@@ -2,6 +2,7 @@
 title: "Pinewood Lake"
 details: https://yootheme.com/joomla-templates/pinewood-lake
 demo: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake
+audit: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake/index.php/zoo-zoo/blog-zoo
 date: 2018-09-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Spiritual
   - Explorer
-
 ---
 
 With its authentic style and grunge elements, this YOOtheme Pro theme package is perfect for recreation hotels, restaurants and wildlife parks. It's available for WordPress and Joomla.

@@ -2,6 +2,7 @@
 title: "Folio"
 details: https://www.gavick.com/joomla-templates/folio
 demo: https://demo.gavick.com/joomla3/folio/
+audit: https://demo.gavick.com/joomla3/folio/index.php/journal
 date: 2019-03-08
 
 provider:

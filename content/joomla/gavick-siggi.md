@@ -2,6 +2,7 @@
 title: "Siggi"
 details: https://www.gavick.com/joomla-templates/siggi
 demo: https://demo.gavick.com/joomla3/siggi/
+audit: https://demo.gavick.com/joomla3/siggi/index.php/projects
 date: 2019-02-08
 
 provider:

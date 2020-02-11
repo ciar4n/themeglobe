@@ -2,6 +2,7 @@
 title: "Flow"
 details: https://yootheme.com/joomla-templates/flow
 demo: https://demo.yootheme.com/themes/joomla/2018/flow
+audit: https://demo.yootheme.com/themes/joomla/2018/flow/index.php/zoo-zoo/blog-zoo
 date: 2019-03-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Creative
   - Visionary
-
 ---
 
 With its colorful and exciting design, this YOOtheme Pro theme package is perfect for software, app or other product-oriented websites. It's available for WordPress and Joomla.

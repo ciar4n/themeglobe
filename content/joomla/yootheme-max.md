@@ -2,6 +2,7 @@
 title: "Max"
 details: https://yootheme.com/joomla-templates/max
 demo: https://demo.yootheme.com/themes/joomla/2016/max/
+audit: https://demo.yootheme.com/themes/joomla/2016/max/index.php/zoo-zoo/blog-zoo
 date: 2016-12-10
 
 provider:
@@ -9,7 +10,6 @@ provider:
 
 archetype:
   - Visionary
-
 ---
 
 With its flat, colorful yet minimalistic style, this YOOtheme Pro theme package is perfect for personal or freelance portfolio websites. It's available for WordPress and Joomla.
