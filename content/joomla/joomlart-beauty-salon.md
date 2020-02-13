@@ -2,6 +2,7 @@
 title: "Beauty Salon"
 details: https://www.joomlart.com/joomla/templates/ja-beauty-salon
 demo: https://ja-beauty.demo.joomlart.com/index.php/homepage/home-1-light
+audit: https://ja-beauty.demo.joomlart.com/index.php/blog
 date: 2019-12-23
 
 provider:

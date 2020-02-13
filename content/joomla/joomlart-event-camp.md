@@ -2,6 +2,7 @@
 title: "Event Camp"
 details: https://www.joomlart.com/joomla/templates/ja-event-camp
 demo: https://ja-eventcamp.demo.joomlart.com/
+audit: https://ja-eventcamp.demo.joomlart.com/index.php/blog
 date: 2020-01-23
 
 provider:

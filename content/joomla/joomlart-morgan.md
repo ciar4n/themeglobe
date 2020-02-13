@@ -2,6 +2,7 @@
 title: "Morgan"
 details: https://www.joomlart.com/joomla/templates/ja-morgan
 demo: https://ja-morgan.demo.joomlart.com/index.php/home/home-style-1
+audit: https://ja-morgan.demo.joomlart.com/index.php/joomlart-content/category-blog
 date: 2019-07-23
 
 provider:

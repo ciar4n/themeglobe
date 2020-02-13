@@ -2,6 +2,7 @@
 title: "Naomi"
 details: https://joomla51.com/joomla-templates/j51-naomi
 demo: https://www.joomla51.com/demo/0159
+audit: https://www.joomla51.com/demo/0159/index.php/blog
 date: 2019-02-15
 
 provider: 

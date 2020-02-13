@@ -2,6 +2,7 @@
 title: "Novah"
 details: https://joomla51.com/joomla-templates/j51-novah
 demo: https://www.joomla51.com/demo/0165
+audit: https://www.joomla51.com/demo/0165/index.php/blog/blog-classic
 date: 2019-11-15
 
 provider: 

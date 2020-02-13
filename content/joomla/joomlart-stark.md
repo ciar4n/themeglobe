@@ -2,6 +2,7 @@
 title: "Stark"
 details: https://www.joomlart.com/joomla/templates/ja-stark
 demo: https://ja-stark.demo.joomlart.com/
+audit: https://ja-stark.demo.joomlart.com/index.php/en/blog
 date: 2019-06-23
 
 provider:

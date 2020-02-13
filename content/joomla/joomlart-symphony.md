@@ -2,6 +2,7 @@
 title: "Symphony"
 details: https://www.joomlart.com/joomla/templates/ja-symphony
 demo: https://ja-symphony.demo.joomlart.com/
+audit: https://ja-symphony.demo.joomlart.com/index.php/en/pages/joomla-content/category-blog
 date: 2019-08-23
 
 provider:
