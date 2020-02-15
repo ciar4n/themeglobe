@@ -7,6 +7,8 @@ date: 2018-07-18
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Creative
 

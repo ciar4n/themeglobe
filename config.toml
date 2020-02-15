@@ -18,6 +18,7 @@ pygmentsUseClasses = true
 [taxonomies]
   provider = "provider"
   archetype = "archetype"
+  theme_framework = "theme_framework"
 
 [outputs]
   home = ["HTML","RSS","JSON"]

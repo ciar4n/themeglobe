@@ -8,6 +8,8 @@ date: 2018-11-15
 provider: 
   - Joomla51
 
+theme_framework: Standalone
+
 archetype:
   - Explorer
   

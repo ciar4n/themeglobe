@@ -8,6 +8,8 @@ date: 2019-03-08
 provider:
   - Gavick
 
+theme_framework: Gavern
+
 archetype:
   - Creative
 ---

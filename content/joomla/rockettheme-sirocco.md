@@ -7,6 +7,8 @@ date: 2017-06-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Advocate
   - Intellectual

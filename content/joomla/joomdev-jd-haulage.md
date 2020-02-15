@@ -8,6 +8,8 @@ date: 2020-01-04
 provider:
   - JoomDev
 
+theme_framework: Standalone
+
 archetype:
   - Advocate
   - Explorer

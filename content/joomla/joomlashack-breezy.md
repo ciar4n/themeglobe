@@ -7,6 +7,8 @@ date: 2019-02-16
 provider:
   - JoomlaShack
 
+theme_framework: Wright
+
 archetype:
   - Advocate
 ---

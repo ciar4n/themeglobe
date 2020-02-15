@@ -7,6 +7,8 @@ date: 2019-01-22
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Rebel
   - Creative

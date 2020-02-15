@@ -7,6 +7,8 @@ date: 2019-02-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Creative
   

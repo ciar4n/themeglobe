@@ -7,6 +7,8 @@ date: 2019-06-15
 provider: 
   - JoomlaShine
 
+theme_framework: Sun
+
 archetype:
   - Advocate
   - Intellectual

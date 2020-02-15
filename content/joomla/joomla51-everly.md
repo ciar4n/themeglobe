@@ -8,6 +8,8 @@ date: 2019-07-15
 provider: 
   - Joomla51
 
+theme_framework: Standalone
+
 archetype:
   - Creative
   - Visionary

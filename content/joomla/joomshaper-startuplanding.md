@@ -7,6 +7,8 @@ date: 2020-01-22
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Creative
   - Visionary

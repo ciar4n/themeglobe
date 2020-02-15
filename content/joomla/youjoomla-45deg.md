@@ -2,6 +2,7 @@
 title: "45deg"
 details: https://www.youjoomla.com/joomla-templates/45deg-joomla-agency-template.html
 demo: http://joomlatemplates.youjoomla.info/45deg/
+audit: http://joomlatemplates.youjoomla.info/45deg/index.php/content-views/category-blog-view
 date: 2019-11-09
 
 provider:

@@ -7,6 +7,8 @@ date: 2019-05-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Visionary
   - Explorer

@@ -7,6 +7,8 @@ date: 2019-09-22
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Advocate
   - Intellectual

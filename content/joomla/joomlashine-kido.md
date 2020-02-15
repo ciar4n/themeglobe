@@ -7,6 +7,8 @@ date: 2018-03-15
 provider: 
   - JoomlaShine
 
+theme_framework: Sun
+
 archetype:
   - Caregiver
   

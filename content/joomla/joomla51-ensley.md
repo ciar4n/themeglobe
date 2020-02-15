@@ -8,6 +8,8 @@ date: 2020-01-15
 provider: 
   - Joomla51
 
+theme_framework: Standalone
+
 archetype:
   - Creative
   - Tastemaker

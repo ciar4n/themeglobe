@@ -7,6 +7,8 @@ date: 2018-11-18
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Advocate
 

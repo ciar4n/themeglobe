@@ -7,6 +7,8 @@ date: 2019-12-22
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Creative
   - Advocate

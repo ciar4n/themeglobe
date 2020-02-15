@@ -7,6 +7,8 @@ date: 2019-11-14
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Rebel
 

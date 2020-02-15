@@ -8,6 +8,8 @@ date: 2016-07-09
 provider: 
   - JoomlaBamboo
 
+theme_framework: Standalone
+
 archetype:
   - Advocate
   - Creative

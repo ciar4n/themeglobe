@@ -7,6 +7,8 @@ date: 2018-11-16
 provider:
   - JoomlaShack
 
+theme_framework: Wright
+
 archetype:
   - Visionary
 ---

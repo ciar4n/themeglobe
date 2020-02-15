@@ -7,6 +7,8 @@ date: 2017-07-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Creative
   - Visionary
