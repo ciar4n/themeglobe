@@ -61,19 +61,19 @@ const lh = async (data, dataFile) => {
     return;
   }
 
-  const d = JSON.stringify({
+  const themeData = JSON.stringify({
     url: url,
     replace: true,
     save: false
   });
 
-  const o = {
+  const opts = {
     headers: {
       'Content-Type': 'application/json',
     }
   };
 
-  post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', d, o)
+  post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', themeData, opts)
     .then(function (response) {
       // handle success
       if (response.status === 200 || response.status === 201) {
@@ -101,7 +101,7 @@ const lh = async (data, dataFile) => {
     })
     .catch(function (error) {
       // handle error
-      console.log(d);
+      console.log(themeData);
       console.dir(error);
     })
     .then(function () {
