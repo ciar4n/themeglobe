@@ -1,12 +1,11 @@
-const fs = require('fs');
-const fsExtra = require('fs-extra');
+const { existsSync, move, mkdirSync, readdirSync, writeFileSync } = require('fs-extra');
 const root = process.cwd();
 let combinedData = {};
 
-fsExtra.move(`${root}/data`, `${root}/o_data`)
+move(`${root}/data`, `${root}/o_data`)
     .then(() => {
-        fs.mkdirSync(`${root}/data`);
-        const originalData = fs.readdirSync(`${root}/o_data`);
+        mkdirSync(`${root}/data`);
+        const originalData = readdirSync(`${root}/o_data`);
 
         for (const theme of originalData) {
             console.log(`${root}/o_data/${theme}`)
@@ -16,15 +15,15 @@ fsExtra.move(`${root}/data`, `${root}/o_data`)
         return combinedData;
     })
     .then((combinedData) => {
-        fs.writeFileSync(`${root}/data/themes.json`, JSON.stringify(combinedData));
+        writeFileSync(`${root}/data/themes.json`, JSON.stringify(combinedData));
     })
     .catch(err => console.log(err));
 
 const processTheme = (jsonFile) => {
     let sData;
-    if (fs.existsSync(jsonFile)) {
+    if (existsSync(jsonFile)) {
         try {
-            sData = JSON.parse(fs.readFileSync(jsonFile))
+            sData = JSON.parse(readFileSync(jsonFile))
         } catch (er) {
             throw new Error(er)
         }

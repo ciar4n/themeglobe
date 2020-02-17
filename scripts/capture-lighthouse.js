@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
-const yamlFront = require('yaml-front-matter');
+const { post } = require('axios');
+const { existsSync, readFileSync, writeFileSync, mkdirSync } = require('fs');
+const { join } = require('path');
+const { loadFront } = require('yaml-front-matter');
 
-const themesFolder = path.join(__dirname, '../content/joomla');
-const themeFiles = fs.readdirSync(themesFolder);
+const themesFolder = join(__dirname, '../content/joomla');
+const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
 
-if (!fs.existsSync(`${root}/data`)) {
-  fs.mkdirSync(`${root}/data`);
+if (!existsSync(`${root}/data`)) {
+  mkdirSync(`${root}/data`);
 }
 
 const processTheme = (theme) => {
-  const dataTmp = fs.readFileSync(path.join(themesFolder, theme));
-  const frontmatter = yamlFront.loadFront(dataTmp);
+  const dataTmp = readFileSync(join(themesFolder, theme));
+  const frontmatter = loadFront(dataTmp);
   const dataFile = `data/${theme.replace('.md', '').replace(/\-/g, '_')}.json`
   const data = {
     theme: theme,
@@ -48,9 +48,9 @@ const lh = async (data, dataFile) => {
 
   url += '?nocache=true'
 
-  if (fs.existsSync(dataFile)) {
+  if (existsSync(dataFile)) {
     try {
-      lightHouseData = JSON.parse(fs.readFileSync(dataFile))
+      lightHouseData = JSON.parse(readFileSync(dataFile))
     } catch (er) {
       throw new Error(er)
     }
@@ -73,7 +73,7 @@ const lh = async (data, dataFile) => {
     }
   };
 
-  axios.post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', d, o)
+  post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', d, o)
     .then(function (response) {
       // handle success
       if (response.status === 200 || response.status === 201) {
@@ -94,7 +94,7 @@ const lh = async (data, dataFile) => {
             carbon: carbonVal.toFixed(3),
           }
 
-          fs.writeFileSync(dataFile, JSON.stringify(lightHouseData));
+          writeFileSync(dataFile, JSON.stringify(lightHouseData));
         }
       }
 
@@ -102,6 +102,7 @@ const lh = async (data, dataFile) => {
     .catch(function (error) {
       // handle error
       console.log(d);
+      console.dir(error);
     })
     .then(function () {
       // always executed
