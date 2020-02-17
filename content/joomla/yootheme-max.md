@@ -2,11 +2,11 @@
 title: "Max"
 details: https://yootheme.com/joomla-templates/max
 demo: https://demo.yootheme.com/themes/joomla/2016/max/
-audit: https://demo.yootheme.com/themes/joomla/2016/max/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2016/max/index.php/blog
 date: 2016-12-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Visionary

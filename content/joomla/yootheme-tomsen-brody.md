@@ -2,11 +2,11 @@
 title: "Tomsen Brody"
 details: https://yootheme.com/joomla-templates/tomsen-brody
 demo: https://demo.yootheme.com/themes/joomla/2019/tomsen-brody
-audit: https://demo.yootheme.com/themes/joomla/2019/tomsen-brody/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2019/tomsen-brody/index.php/news
 date: 2019-07-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Advocate

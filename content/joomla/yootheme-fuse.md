@@ -2,11 +2,11 @@
 title: "Fuse"
 details: https://yootheme.com/joomla-templates/fuse
 demo: https://demo.yootheme.com/themes/joomla/2016/fuse/
-audit: https://demo.yootheme.com/themes/joomla/2016/fuse/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2016/fuse/index.php/blog
 date: 2016-10-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative

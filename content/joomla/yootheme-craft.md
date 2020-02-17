@@ -2,11 +2,11 @@
 title: "Craft"
 details: https://yootheme.com/joomla-templates/craft
 demo: https://demo.yootheme.com/themes/joomla/2019/craft
-audit: https://demo.yootheme.com/themes/joomla/2019/craft/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2019/craft/index.php/about-us/news
 date: 2019-06-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative
