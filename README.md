@@ -65,4 +65,4 @@ hugo serve
 
 The lighthouse auditing is done through https://web.dev. In an effort to make lighthouse auditing a fair assessment of the template rather than server set up, `?nocache=true` is appended to all audited URLs, disabling server side caching.
 
-Note that the performance value does vary slightly with each audit. If you feel an audit is inaccurate, you can submit a PR with the data for the specific template removed from https://github.com/ciar4n/themeglobe/blob/master/data/themes.json. The template demo will be re-audited on merge of the PR. To ensure fair assem
+Note that the performance value does vary slightly with each audit. If you feel an audit is inaccurate, you can submit a PR deleting the file of the the specific template from the data folder. The template demo will be re-audited automatically upon the submission of the PR. The **whole process** of auditing is transparent (the code is [here](https://github.com/ciar4n/themeglobe/blob/master/scripts/capture-lighthouse.js)) and is possible thanks to Github actions.
