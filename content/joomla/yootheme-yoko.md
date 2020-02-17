@@ -2,11 +2,11 @@
 title: "Yoko"
 details: https://yootheme.com/joomla-templates/yoko
 demo: https://demo.yootheme.com/themes/joomla/2019/yoko
-audit: https://demo.yootheme.com/themes/joomla/2019/yoko/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2019/yoko/index.php/art
 date: 2019-08-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Performer

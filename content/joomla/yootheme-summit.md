@@ -2,11 +2,11 @@
 title: "Summit"
 details: https://yootheme.com/joomla-templates/summit
 demo: https://demo.yootheme.com/themes/joomla/2018/summit
-audit: https://demo.yootheme.com/themes/joomla/2018/summit/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/summit/index.php/news
 date: 2018-12-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative

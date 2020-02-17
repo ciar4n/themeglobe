@@ -2,11 +2,11 @@
 title: "Trek"
 details: https://yootheme.com/joomla-templates/trek
 demo: https://demo.yootheme.com/themes/joomla/2018/trek
-audit: https://demo.yootheme.com/themes/joomla/2018/trek/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/trek/index.php/journal
 date: 2019-05-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Rebel

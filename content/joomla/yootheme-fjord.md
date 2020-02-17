@@ -2,11 +2,11 @@
 title: "Fjord"
 details: https://yootheme.com/joomla-templates/fjord
 demo: https://demo.yootheme.com/themes/joomla/2017/fjord/
-audit: https://demo.yootheme.com/themes/joomla/2017/fjord/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2017/fjord/index.php/stories
 date: 2017-07-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Explorer

@@ -2,11 +2,11 @@
 title: "Pinewood Lake"
 details: https://yootheme.com/joomla-templates/pinewood-lake
 demo: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake
-audit: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake/index.php/news
 date: 2018-09-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Spiritual
