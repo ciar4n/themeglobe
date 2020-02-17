@@ -35,13 +35,16 @@ const lh = async (data, dataFile) => {
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
-  let url = `${data.frontmatter.demo}`;
+  let url = '';
 
-  if (!url) {
-    url = `${data.frontmatter.audit}`
+  if (data.frontmatter.demo) {
+    url = data.frontmatter.demo
+  }
+  if (data.frontmatter.audit) {
+    url = data.frontmatter.audit
   }
 
-  if (!url) return;
+  if (url === '') return;
 
   url += '?nocache=true'
 
