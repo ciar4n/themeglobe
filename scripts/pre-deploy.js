@@ -1,4 +1,4 @@
-const { existsSync, move, mkdirSync, readdirSync, writeFileSync } = require('fs-extra');
+const { existsSync, move, mkdirSync, readFileSync, readdirSync, writeFileSync } = require('fs-extra');
 const root = process.cwd();
 let combinedData = {};
 
