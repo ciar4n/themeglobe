@@ -46,7 +46,7 @@ const lh = async (data, dataFile) => {
 
   if (url === '') return;
 
-  url += '?nocache=1'
+  url += '?nocache=true'
 
   if (existsSync(dataFile)) {
     try {
