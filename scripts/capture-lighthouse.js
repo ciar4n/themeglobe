@@ -35,9 +35,15 @@ const lh = async (data, dataFile) => {
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
-  const url = `${data.frontmatter.audit}?nocache=true`;
+  let url = `${data.frontmatter.demo}`;
+
+  if (!url) {
+    url = `${data.frontmatter.audit}`
+  }
 
   if (!url) return;
+
+  url += '?nocache=true'
 
   if (fs.existsSync(dataFile)) {
     try {
