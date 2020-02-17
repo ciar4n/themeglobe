@@ -1,8 +1,10 @@
 name: Node.js CI
 
-on:  
+on:
+  push:
+
   pull_request:
-    types: [opened, edited, synchronize, reopened]
+    types: [opened, edited, synchronize, reopened, merge]
 
 jobs:
   build:
