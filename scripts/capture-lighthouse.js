@@ -13,7 +13,6 @@ if (!fs.existsSync(`${root}/data`)) {
   fs.mkdirSync(`${root}/data`);
 }
 
-
 const processTheme = (theme) => {
   const dataTmp = fs.readFileSync(path.join(themesFolder, theme));
   const frontmatter = yamlFront.loadFront(dataTmp);
