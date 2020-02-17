@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const { post } = require('axios');
-const { existsSync, readFileSync, writeFileSync, mkdirSync } = require('fs');
+const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync } = require('fs');
 const { join } = require('path');
 const { loadFront } = require('yaml-front-matter');
 
