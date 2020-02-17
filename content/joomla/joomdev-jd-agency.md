@@ -1,7 +1,7 @@
 ---
 title: "JD Agency"
 details: https://www.joomdev.com/products/templates/jd-agency-template
-demo: http://demo.joomdev.com/agency
+demo: http://demo.joomdev.com/agency/toolbar
 date: 2019-18-12
 provider: 
   - JoomDev

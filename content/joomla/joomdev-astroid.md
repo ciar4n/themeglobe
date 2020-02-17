@@ -1,7 +1,7 @@
 ---
 title: "Astroid Framework"
 details: https://astroidframework.com/
-demo: https://demo.joomdev.com/astroid-framework?utm_source=astroid_framework_home
+demo: https://demo.joomdev.com/astroid-framework/toolbar
 date: 2019-12-12
 
 provider: 
