@@ -2,6 +2,7 @@
 title: "Jasmine"
 details: https://joomla51.com/joomla-templates/j51-jasmine
 demo: https://www.joomla51.com/demo/0164
+audit: https://www.joomla51.com/demo/0164/index.php/blog
 date: 2019-10-15
 
 provider: 

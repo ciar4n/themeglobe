@@ -2,6 +2,7 @@
 title: "Copper Hill"
 details: https://yootheme.com/joomla-templates/copper-hill
 demo: https://demo.yootheme.com/themes/joomla/2017/copper-hill/
+audit: https://demo.yootheme.com/themes/joomla/2017/copper-hill/index.php/zoo-zoo/blog-zoo
 date: 2017-07-10
 
 provider:
@@ -9,7 +10,6 @@ provider:
 
 archetype:
   - Tastemaker
-
 ---
 
 With its minimal style and some handmade illustrations, this YOOtheme Pro theme package is perfect for restaurants, cafes, bars and gastronomy websites. It's available for WordPress and Joomla.

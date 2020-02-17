@@ -2,6 +2,7 @@
 title: "District"
 details: https://yootheme.com/joomla-templates/district
 demo: https://demo.yootheme.com/themes/joomla/2018/district
+audit: https://demo.yootheme.com/themes/joomla/2018/district/index.php/zoo-zoo/blog-zoo
 date: 2019-04-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Creative
   - Tastemaker
-
 ---
 
 With its clear, modern design, this YOOtheme Pro theme package is perfect for your bakery, cafe, restaurant or other gastronomy related websites. It's available for WordPress and Joomla.

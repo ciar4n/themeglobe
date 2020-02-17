@@ -2,6 +2,7 @@
 title: "Kids Corner"
 details: https://www.joomlart.com/joomla/templates/ja-kidscorner
 demo: https://ja-kidscorner.demo.joomlart.com/
+audit: https://ja-kidscorner.demo.joomlart.com/index.php/joomla-content/category-blog
 date: 2019-06-23
 
 provider:

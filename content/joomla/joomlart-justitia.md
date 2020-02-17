@@ -2,6 +2,7 @@
 title: "Justitia"
 details: https://www.joomlart.com/joomla/templates/ja-justitia
 demo: https://ja-justitia.demo.joomlart.com/
+audit: https://ja-justitia.demo.joomlart.com/index.php/joomla-content/category-blog
 date: 2019-10-23
 
 provider:

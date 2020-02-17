@@ -2,6 +2,7 @@
 title: "Vibe"
 details: https://yootheme.com/joomla-templates/vibe
 demo: https://demo.yootheme.com/themes/joomla/2017/vibe/
+audit: https://demo.yootheme.com/themes/joomla/2017/vibe/index.php/zoo-zoo/blog-zoo
 date: 2017-08-10
 
 provider:
@@ -11,7 +12,6 @@ archetype:
   - Performer
   - Creative
   - Rebel
-
 ---
 
 With its dark background, colorful gradients and subtle textures, this YOOtheme Pro theme package is perfect for music artists, bands and DJs. It's available for WordPress and Joomla.

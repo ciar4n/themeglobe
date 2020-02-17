@@ -2,6 +2,7 @@
 title: "Landscape"
 details: https://www.joomlart.com/joomla/templates/ja-landscape
 demo: https://ja-landscape.demo.joomlart.com/
+audit: https://ja-landscape.demo.joomlart.com/index.php/blog
 date: 2019-09-23
 
 provider:

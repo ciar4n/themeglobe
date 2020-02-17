@@ -8,7 +8,7 @@ provider:
   - Shape5
 
 archetype:
-  - Caretaker
+  - Caregiver
 ---
 
 Curb Appeal is the perfect template for your gardening, landscaping, or other small business. The eye-catching design of Curb Appeal is sure to wow your website viewers, showcase your products and services, and let them easily get in contact with you with very clear call contact methods.

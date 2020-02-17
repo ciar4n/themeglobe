@@ -36,7 +36,7 @@ const lh = async (data, dataFile) => {
   let templateName = data.frontmatter.title;
   let provider = data.frontmatter.provider;
   let themeKey = `${provider}-${templateName}`.replace(/\s+/g, '-').toLowerCase();
-  const url = data.frontmatter.demo
+  const url = `${data.frontmatter.audit}?nocache=true`;
 
   if (!url) return;
 
@@ -72,9 +72,14 @@ const lh = async (data, dataFile) => {
         if (response.data && response.data.lhr) {
           const lightHouseData = {};
           const out = response.data.lhr;
+
           carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
           lightHouseData[`${themeKey}`] = {
             performance: Math.ceil(out.categories.performance.score * 100),
+            firstContentfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstContentfulPaint / 100) / 10,
+            firstMeaningfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstMeaningfulPaint / 100) / 10,
+            firstCPUIdle: Math.ceil(out.audits.metrics.details.items[0].firstCPUIdle / 100) / 10,
+            interactive: Math.ceil(out.audits.metrics.details.items[0].interactive / 100) / 10,
             bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
             accessibility: Math.ceil(out.categories.accessibility.score * 100),
             seo: Math.ceil(out.categories.seo.score * 100),

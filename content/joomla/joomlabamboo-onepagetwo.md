@@ -2,6 +2,7 @@
 title: "OnePageTwo"
 details: https://www.joomlabamboo.com/joomla-templates/onepagetwo
 demo: https://demo.joomlabamboo.com/showcase/aug16/
+audit: https://demo.joomlabamboo.com/showcase/aug16/
 date: 2016-08-09
 
 provider: 

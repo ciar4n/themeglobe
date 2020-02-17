@@ -2,6 +2,7 @@
 title: "Vision"
 details: https://yootheme.com/joomla-templates/vision
 demo: https://demo.yootheme.com/themes/joomla/2018/vision
+audit: https://demo.yootheme.com/themes/joomla/2019/balou/index.php/zoo-zoo/blog-zoo
 date: 2018-07-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Creative
   - Visionary
-
 ---
 
 With its clear, straightforward style, this YOOtheme Pro theme package is perfect for modern design, marketing, media agencies and other related websites. It's available for WordPress and Joomla.

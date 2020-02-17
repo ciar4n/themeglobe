@@ -2,6 +2,7 @@
 title: "Fjord"
 details: https://yootheme.com/joomla-templates/fjord
 demo: https://demo.yootheme.com/themes/joomla/2017/fjord/
+audit: https://demo.yootheme.com/themes/joomla/2017/fjord/index.php/zoo-zoo/blog-zoo
 date: 2017-07-10
 
 provider:
@@ -10,7 +11,6 @@ provider:
 archetype:
   - Explorer
   - Creative
-
 ---
 
 With its fresh colors, smooth shadows and textures, this YOOtheme Pro theme package is perfect for magazine, travel and adventure themed websites. It's available for WordPress and Joomla.

@@ -2,6 +2,7 @@
 title: "Utafiti"
 details: https://www.joomlabamboo.com/joomla-templates/utafiti
 demo: https://demo.joomlabamboo.com/showcase/utafiti/
+audit: https://demo.joomlabamboo.com/showcase/utafiti/index.php/joomla/category-blog/category-blog-2
 date: 2016-09-09
 
 provider: 

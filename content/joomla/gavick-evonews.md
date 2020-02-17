@@ -2,6 +2,7 @@
 title: "Evonews"
 details: https://www.gavick.com/joomla-templates/evonews
 demo: https://demo.gavick.com/joomla3/evonews/
+audit: https://demo.gavick.com/joomla3/evonews/index.php/more/joomla-content/category-blog
 date: 2018-05-08
 
 provider:

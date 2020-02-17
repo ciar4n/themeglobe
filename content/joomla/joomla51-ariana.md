@@ -2,6 +2,7 @@
 title: "Ariana"
 details: https://joomla51.com/joomla-templates/j51-ariana
 demo: https://www.joomla51.com/demo/0161
+audit: https://www.joomla51.com/demo/0161/index.php/blog
 date: 2019-04-15
 
 provider: 

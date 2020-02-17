@@ -2,6 +2,7 @@
 title: "Carmen"
 details: https://joomla51.com/joomla-templates/j51-carmen
 demo: https://www.joomla51.com/demo/0162
+audit: https://www.joomla51.com/demo/0162/index.php/blog
 date: 2019-09-15
 
 provider: 

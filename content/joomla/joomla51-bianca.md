@@ -2,6 +2,7 @@
 title: "Bianca"
 details: https://joomla51.com/joomla-templates/j51-bianca
 demo: https://www.joomla51.com/demo/0166
+audit: https://www.joomla51.com/demo/0166/index.php/blog/blog-classic
 date: 2019-12-15
 
 provider: 
