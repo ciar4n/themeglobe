@@ -86,8 +86,8 @@ const lh = async (data, dataFile) => {
   const llh = spawnSync('npx', [
     'lighthouse', url,
     '--chrome-flags="--headless"',
-    '--preset=full',
-    '--throttling-method=simulate',
+    '--emulated-form-factor=mobile',
+    '--throttling-method=devtools',
     `--throttling.cpuSlowdownMultiplier=${throttling.mobile3G.cpuSlowdownMultiplier}`,
     `--throttling.rttMs=${throttling.mobile3G.rttMs}`,
     `--throttling.throughputKbps=${throttling.mobile3G.throughputKbps}`,
@@ -95,7 +95,8 @@ const lh = async (data, dataFile) => {
     `--throttling.downloadThroughputKbps=${throttling.mobile3G.downloadThroughputKbps}`,
     `--throttling.uploadThroughputKbps=${throttling.mobile3G.uploadThroughputKbps}`,
     '--quiet',
-    '--output', 'json']);
+    '--output=json']);
+
   let out = {};
   try {
     out = JSON.parse(llh.stdout);
