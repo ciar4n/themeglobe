@@ -86,14 +86,14 @@ const lh = async (data, dataFile) => {
   const llh = spawnSync('npx', [
     'lighthouse', url,
     '--chrome-flags="--headless"',
-    '--preset', 'full',
-    '--throttling-method', 'simulate',
-    '--throttling.cpuSlowdownMultiplier', throttling.mobile3G.cpuSlowdownMultiplier,
-    '--throttling.rttMs', throttling.mobile3G.rttMs,
-    '--throttling.throughputKbps', throttling.mobile3G.throughputKbps,
-    '--throttling.requestLatencyMs', throttling.mobile3G.requestLatencyMs,
-    '--throttling.downloadThroughputKbps', throttling.mobile3G.downloadThroughputKbps,
-    '--throttling.uploadThroughputKbps', throttling.mobile3G.uploadThroughputKbps,
+    '--preset=full',
+    '--throttling-method=simulate',
+    `--throttling.cpuSlowdownMultiplier=${throttling.mobile3G.cpuSlowdownMultiplier}`,
+    `--throttling.rttMs=${throttling.mobile3G.rttMs}`,
+    `--throttling.throughputKbps=${throttling.mobile3G.throughputKbps}`,
+    `--throttling.requestLatencyMs=${throttling.mobile3G.requestLatencyMs}`,
+    `--throttling.downloadThroughputKbps=${throttling.mobile3G.downloadThroughputKbps}`,
+    `--throttling.uploadThroughputKbps=${throttling.mobile3G.uploadThroughputKbps}`,
     '--quiet',
     '--output', 'json']);
   let out = {};
