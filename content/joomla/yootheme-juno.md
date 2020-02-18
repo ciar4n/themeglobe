@@ -2,11 +2,11 @@
 title: "Juno"
 details: https://yootheme.com/joomla-templates/juno
 demo: https://demo.yootheme.com/themes/joomla/2017/juno/
-audit: https://demo.yootheme.com/themes/joomla/2017/juno/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2017/juno/index.php/blog
 date: 2017-10-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Performer

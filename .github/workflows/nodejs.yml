@@ -1,8 +1,9 @@
 name: Node.js CI
 
 on:  
-  pull_request:
-    types: [opened, edited, synchronize, reopened]
+  push:
+#   pull_request:
+#     types: [opened, edited, synchronize, reopened]
 
 jobs:
   build:
@@ -15,6 +16,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:

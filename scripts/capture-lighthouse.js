@@ -17,6 +17,7 @@ const processTheme = (theme) => {
   const dataTmp = readFileSync(join(themesFolder, theme));
   const frontmatter = loadFront(dataTmp);
   const dataFile = `data/${theme.replace('.md', '').replace(/\-/g, '_')}.json`;
+
   const data = {
     theme: theme,
     frontmatter: frontmatter

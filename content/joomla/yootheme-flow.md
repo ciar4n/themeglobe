@@ -2,11 +2,11 @@
 title: "Flow"
 details: https://yootheme.com/joomla-templates/flow
 demo: https://demo.yootheme.com/themes/joomla/2018/flow
-audit: https://demo.yootheme.com/themes/joomla/2018/flow/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/flow/index.php/blog
 date: 2019-03-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative

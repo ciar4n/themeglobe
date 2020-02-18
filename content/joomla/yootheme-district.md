@@ -2,11 +2,11 @@
 title: "District"
 details: https://yootheme.com/joomla-templates/district
 demo: https://demo.yootheme.com/themes/joomla/2018/district
-audit: https://demo.yootheme.com/themes/joomla/2018/district/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/district/index.php/about/blog
 date: 2019-04-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative

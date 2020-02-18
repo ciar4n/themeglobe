@@ -2,11 +2,11 @@
 title: "Joline"
 details: https://yootheme.com/joomla-templates/joline
 demo: https://demo.yootheme.com/themes/joomla/2017/joline/
-audit: https://demo.yootheme.com/themes/joomla/2017/joline/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2017/joline/index.php
 date: 2017-06-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Creative

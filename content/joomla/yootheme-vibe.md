@@ -2,11 +2,11 @@
 title: "Vibe"
 details: https://yootheme.com/joomla-templates/vibe
 demo: https://demo.yootheme.com/themes/joomla/2017/vibe/
-audit: https://demo.yootheme.com/themes/joomla/2017/vibe/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2017/vibe/index.php/news
 date: 2017-08-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Performer

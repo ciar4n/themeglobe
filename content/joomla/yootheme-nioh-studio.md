@@ -2,11 +2,11 @@
 title: "Nioh Studio"
 details: https://yootheme.com/joomla-templates/nioh-studio
 demo: https://demo.yootheme.com/themes/joomla/2018/nioh-studio
-audit: https://demo.yootheme.com/themes/joomla/2018/nioh-studio/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/nioh-studio/index.php/about/news
 date: 2018-10-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Spiritual
