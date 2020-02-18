@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const { post } = require('axios');
-const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync } = require('fs');
+const { spawnSync } = require('child_process');
+const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } = require('fs');
 const { join } = require('path');
 const { loadFront } = require('yaml-front-matter');
 
@@ -16,7 +16,7 @@ if (!existsSync(`${root}/data`)) {
 const processTheme = (theme) => {
   const dataTmp = readFileSync(join(themesFolder, theme));
   const frontmatter = loadFront(dataTmp);
-  const dataFile = `data/${theme.replace('.md', '').replace(/\-/g, '_')}.json`
+  const dataFile = `data/${theme.replace('.md', '').replace(/\-/g, '_')}.json`;
   const data = {
     theme: theme,
     frontmatter: frontmatter
@@ -52,7 +52,8 @@ const lh = async (data, dataFile) => {
     try {
       lightHouseData = JSON.parse(readFileSync(dataFile))
     } catch (er) {
-      throw new Error(er)
+      // Invalid JSON
+      unlinkSync(dataFile);
     }
   }
 
@@ -61,52 +62,65 @@ const lh = async (data, dataFile) => {
     return;
   }
 
-  const themeData = JSON.stringify({
-    url: url,
-    replace: true,
-    save: false
-  });
+  console.log(`Processing: ${data.theme}`)
 
-  const opts = {
-    headers: {
-      'Content-Type': 'application/json',
-    }
+  const DEVTOOLS_RTT_ADJUSTMENT_FACTOR = 3.75;
+  const DEVTOOLS_THROUGHPUT_ADJUSTMENT_FACTOR = 0.9;
+
+  // https://github.com/GoogleChrome/lighthouse/blob/8f500e00243e07ef0a80b39334bedcc8ddc8d3d0/lighthouse-core/config/constants.js#L16-L27
+  const throttling = {
+    DEVTOOLS_RTT_ADJUSTMENT_FACTOR,
+    DEVTOOLS_THROUGHPUT_ADJUSTMENT_FACTOR,
+    mobile3G: {
+      rttMs: 150,
+      throughputKbps: 1.6 * 1024,
+      requestLatencyMs: 150 * DEVTOOLS_RTT_ADJUSTMENT_FACTOR,
+      downloadThroughputKbps: 1.6 * 1024 * DEVTOOLS_THROUGHPUT_ADJUSTMENT_FACTOR,
+      uploadThroughputKbps: 750 * DEVTOOLS_THROUGHPUT_ADJUSTMENT_FACTOR,
+      cpuSlowdownMultiplier: 4,
+    },
   };
 
-  post('https://lighthouse-dot-webdotdevsite.appspot.com//lh/newaudit', themeData, opts)
-    .then(function (response) {
-      // handle success
-      if (response.status === 200 || response.status === 201) {
-        if (response.data && response.data.lhr) {
-          const lightHouseData = {};
-          const out = response.data.lhr;
+  // The code is intentionally synchronous! Do not promisify!!!
+  const llh = spawnSync('npx', [
+    'lighthouse', url,
+    '--chrome-flags="--headless"',
+    '--preset', 'full',
+    '--throttling-method', 'simulate',
+    '--throttling.cpuSlowdownMultiplier', throttling.mobile3G.cpuSlowdownMultiplier,
+    '--throttling.rttMs', throttling.mobile3G.rttMs,
+    '--throttling.throughputKbps', throttling.mobile3G.throughputKbps,
+    '--throttling.requestLatencyMs', throttling.mobile3G.requestLatencyMs,
+    '--throttling.downloadThroughputKbps', throttling.mobile3G.downloadThroughputKbps,
+    '--throttling.uploadThroughputKbps', throttling.mobile3G.uploadThroughputKbps,
+    '--quiet',
+    '--output', 'json']);
+  let out = {};
+  try {
+    out = JSON.parse(llh.stdout);
+  } catch (err) {
+    console.log(err);
+    return
+  }
 
-          carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
-          lightHouseData[`${themeKey}`] = {
-            performance: Math.ceil(out.categories.performance.score * 100),
-            firstContentfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstContentfulPaint / 100) / 10,
-            firstMeaningfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstMeaningfulPaint / 100) / 10,
-            firstCPUIdle: Math.ceil(out.audits.metrics.details.items[0].firstCPUIdle / 100) / 10,
-            interactive: Math.ceil(out.audits.metrics.details.items[0].interactive / 100) / 10,
-            bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
-            accessibility: Math.ceil(out.categories.accessibility.score * 100),
-            seo: Math.ceil(out.categories.seo.score * 100),
-            carbon: carbonVal.toFixed(3),
-          }
+  if (!out.audits) {
+    return;
+  }
 
-          writeFileSync(dataFile, JSON.stringify(lightHouseData));
-        }
-      }
+  carbonVal = out.audits['resource-summary'].details.items[0].size / 1024 / 1024 / 1024 * 0.06 * 1000
+  lightHouseData[`${themeKey}`] = {
+    performance: Math.ceil(out.categories.performance.score * 100),
+    firstContentfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstContentfulPaint / 100) / 10,
+    firstMeaningfulPaint: Math.ceil(out.audits.metrics.details.items[0].firstMeaningfulPaint / 100) / 10,
+    firstCPUIdle: Math.ceil(out.audits.metrics.details.items[0].firstCPUIdle / 100) / 10,
+    interactive: Math.ceil(out.audits.metrics.details.items[0].interactive / 100) / 10,
+    bestPractices: Math.ceil(out.categories['best-practices'].score * 100),
+    accessibility: Math.ceil(out.categories.accessibility.score * 100),
+    seo: Math.ceil(out.categories.seo.score * 100),
+    carbon: carbonVal.toFixed(3),
+  }
 
-    })
-    .catch(function (error) {
-      // handle error
-      console.log(themeData);
-      console.dir(error);
-    })
-    .then(function () {
-      // always executed
-    });
+  writeFileSync(dataFile, JSON.stringify(lightHouseData));
 };
 
 (() => {
