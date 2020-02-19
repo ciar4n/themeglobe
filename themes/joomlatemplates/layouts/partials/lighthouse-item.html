@@ -3,7 +3,7 @@
 {{ if gt .value 50 }}
 {{ $scratchValue.Set "color" "orange" }}
 {{ end }}
-{{ if gt .value 85 }}
+{{ if gt .value 90 }}
 {{ $scratchValue.Set "color" "green" }}
 {{ end }}
 <div class="lighthouse-item lighthouse-{{ $scratchValue.Get "color" }}">
