@@ -1,21 +1,25 @@
 const { existsSync, move, mkdirSync, readFileSync, readdirSync, writeFileSync } = require('fs-extra');
+const { resolve } = require('path');
 const root = process.cwd();
+
+const data = resolve(root, 'data');
+const tmpData = resolve(root, 'o_data');
 let combinedData = {};
 
-move(`${root}/data`, `${root}/o_data`)
+move(data, tmpData)
     .then(() => {
-        mkdirSync(`${root}/data`);
-        const originalData = readdirSync(`${root}/o_data`);
+        mkdirSync(data);
+        const originalData = readdirSync(tmpData);
 
         for (const theme of originalData) {
-            console.log(`${root}/o_data/${theme}`)
-            processTheme(`${root}/o_data/${theme}`);
+            console.log(`${tmpData}/${theme}`)
+            processTheme(`${tmpData}/${theme}`);
         }
 
         return combinedData;
     })
     .then((combinedData) => {
-        writeFileSync(`${root}/data/themes.json`, JSON.stringify(combinedData));
+        writeFileSync(`${data}/themes.json`, JSON.stringify(combinedData));
     })
     .catch(err => console.log(err));
 
