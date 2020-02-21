@@ -2,7 +2,7 @@
 title: "Impacto"
 details: https://www.joomlashack.com/joomla-templates/impacto-landing-page
 demo: https://impacto.joomlatemplate.joomlashack.com/
-date: 2018-4-16
+date: 2018-04-16
 
 provider:
   - JoomlaShack

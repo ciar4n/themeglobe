@@ -2,7 +2,7 @@
 title: "Keenly"
 details: https://www.joomlashack.com/joomla-templates/keenly-intense-distinctive
 demo: https://keenly.joomlatemplate.joomlashack.com/
-date: 2018-6-16
+date: 2018-06-16
 
 provider:
   - JoomlaShack
