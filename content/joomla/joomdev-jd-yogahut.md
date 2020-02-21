@@ -3,7 +3,7 @@ title: "JD YogaHut"
 details: https://www.joomdev.com/products/templates/jd-yogahut-template
 demo: http://demo.joomdev.com/yogahut/toolbar
 auditr: https://demo.joomdev.com/yogahut/toolbar/index.php/blog
-date: 2020-03-01
+date: 2020-02-01
 
 provider:
   - JoomDev
