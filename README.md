@@ -25,6 +25,7 @@ The markdown file should contain the following front-matter.
 title: "Template Name"
 details: https://www.provider.com/template/details
 demo: https://www.provider.com/template/demo
+audit: https://www.provider.com/template/demo/category-blog
 date: 2020-01-28 # The date the template was released YYYY-MM-DD
 
 provider:
