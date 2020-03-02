@@ -1,9 +1,15 @@
-const { existsSync, removeSync, copySync } = require('fs-extra')
+const { existsSync, removeSync, copySync, emptyDirSync } = require('fs-extra');
+const { resolve } = require('path');
 const root = process.cwd();
 
-removeSync(`${root}/data`);
+const data = resolve(root, 'data');
+const tmpData = resolve(root, 'o_data');
 
-if (existsSync(`${root}/o_data`)) {
-  copySync(`${root}/o_data`, `${root}/data`);
-  removeSync(`${root}/o_data`);
+emptyDirSync(data);
+removeSync(data);
+
+if (existsSync(tmpData)) {
+  copySync(tmpData, data);
+  emptyDirSync(tmpData);
+  removeSync(tmpData);
 }
