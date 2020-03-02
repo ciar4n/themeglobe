@@ -2,23 +2,23 @@
 title: "JD Coax"
 details: https://www.joomdev.com/products/templates/jd-coax-template
 demo: http://demo.joomdev.com/coax/toolbar
+audit: https://demo.joomdev.com/coax/toolbar/index.php/news-media
 date: 2019-01-03
+
 provider:
   - JoomDev
 
 archetype:
-  - Industrial
-  - Business
-  - eCommerce
-
+  - Advocate
 ---
-##  JD Coax - Industrial Joomla Template With Catalog Shop Integration 
-JD Coax is a highly Responsive Joomla Template which comes with catalog shop integration which enables you to showcase your product catalog easily. 
+
+## JD Coax - Industrial Joomla Template With Catalog Shop Integration
+
+JD Coax is a highly Responsive Joomla Template which comes with catalog shop integration which enables you to showcase your product catalog easily.
 
 ### Powered With Astroid Framework
 
 JD Coax Joomla template is powered with trending Astroid Framework for Joomla. Astroid makes this industrial Joomla template too flexible by offering easy to customize and manage features.
-
 
 ### Showcase Product Catalog with Sellacious
 
@@ -32,10 +32,6 @@ JD Profiler allows you to showcase your staff members on your websites with diff
 
 JD Simple Contact Form allows you to integrate a fully functional and lightweight contact form to get the leads from your potential customers.
 
-
 ### Works Perfectly With TZ Portfolio+
 
 JD Coax is works perfectly with TZ Portfolio+. We have used this open source Joomla component to create your portfolio. Don’t hesitate to try all of its amazing features, like a stable core system, free downloadable layout templates crafted by web design professionals or its ACL manager and many others.
-
-
-

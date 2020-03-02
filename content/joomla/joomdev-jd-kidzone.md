@@ -2,18 +2,18 @@
 title: "JD KidZone"
 details: https://www.joomdev.com/products/templates/jd-kidzone-template
 demo: http://demo.joomdev.com/kidzone/toolbar
+audit: https://demo.joomdev.com/kidzone/toolbar/index.php/blog/grid-view
 date: 2019-03-02
+
 provider:
   - JoomDev
 
 archetype:
-  - School
-  - Play School
-  - Education
-
+  - Caregiver
 ---
 
 ## JD KidZone - Kindergarten & Pre-school Joomla Template
+
 JD KidZone is a premium kindergarten Joomla template, designed to offer you the best user experience with a super friendly approach and complete features for great performance.
 
 ### Astroid + JD Builder = Design School Website Effortlessly
@@ -21,7 +21,6 @@ JD KidZone is a premium kindergarten Joomla template, designed to offer you the 
 JD KidZone is powered with a powerful Astroid Framework and fully blended with JD Builder. So now designing a website for your school will no longer be the same.
 
 Download the kindergarten Joomla template and design your school website effortlessly with the help of drag and drop Joomla page builder.
-
 
 ### Grid & List View for Blog Page
 
@@ -44,5 +43,3 @@ The pre-school Joomla template comes with a dedicated about us page that has all
 JD KidZone Joomla template comes with a create header layout that has logo placement in the center and has a top topbar where you can showcase your contact information along with a CTA Button.
 
 Apart from this header layout, it has 8 header layout variations. You can switch between these headers at any time you want to give a fresh look to your audience.
-
-
