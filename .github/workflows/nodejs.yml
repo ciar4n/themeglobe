@@ -23,10 +23,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run process && npm run process github
+    - run: npm run process && npm run github
     - uses: stefanzweifel/git-auto-commit-action@v3.0.0
       with:
-        commit_message: Apply php-cs-fixer changes
+        commit_message: Adding automatic Image/Lighthouse data collection changes...
         branch: ${{ github.head_ref }}
       env:
         CI: true
