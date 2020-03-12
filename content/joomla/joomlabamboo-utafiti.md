@@ -8,6 +8,8 @@ date: 2016-09-09
 provider: 
   - JoomlaBamboo
 
+theme_framework: Standalone
+
 archetype:
   - Advocate
   - Intellectual

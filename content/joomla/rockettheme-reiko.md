@@ -6,6 +6,8 @@ date: 2019-08-20
 
 provider:
   - RocketTheme
+
+theme_framework: Gantry
 archetype:
   - Athlete
 

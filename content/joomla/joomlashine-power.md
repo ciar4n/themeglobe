@@ -7,6 +7,8 @@ date: 2018-09-15
 provider: 
   - JoomlaShine
 
+theme_framework: Sun
+
 archetype:
   - Athlete
   

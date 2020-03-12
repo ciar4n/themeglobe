@@ -8,6 +8,8 @@ date: 2019-09-11
 provider:
   - IceTheme
 
+theme_framework: Standalone
+
 archetype:
   - Creative
   - Intellectual

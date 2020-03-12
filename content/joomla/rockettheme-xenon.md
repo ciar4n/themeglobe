@@ -7,6 +7,8 @@ date: 2017-12-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Explorer
   

@@ -7,6 +7,8 @@ date: 2018-08-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Creative
   - Performer

@@ -7,6 +7,8 @@ date: 2020-01-14
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Performer
 

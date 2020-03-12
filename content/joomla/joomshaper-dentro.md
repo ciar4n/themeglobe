@@ -7,6 +7,8 @@ date: 2019-07-22
 provider:
   - JoomShaper
 
+theme_framework: Helix
+
 archetype:
   - Caregiver
 

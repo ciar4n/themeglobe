@@ -8,6 +8,8 @@ date: 2019-01-08
 provider:
   - Gavick
 
+theme_framework: Gavern
+
 archetype:
   - Tastemaker
 ---

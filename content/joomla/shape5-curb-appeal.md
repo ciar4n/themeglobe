@@ -7,6 +7,8 @@ date: 2018-01-10
 provider:
   - Shape5
 
+theme_framework: Vertex
+
 archetype:
   - Caregiver
 ---

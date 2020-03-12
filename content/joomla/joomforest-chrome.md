@@ -8,6 +8,8 @@ date: 2019-07-09
 provider:
   - JoomForest
 
+theme_framework: Gantry
+
 archetype:
   - Advocate
   - Intellectual

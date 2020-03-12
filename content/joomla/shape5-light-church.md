@@ -7,6 +7,8 @@ date: 2018-05-10
 provider:
   - Shape5
 
+theme_framework: Vertex
+
 archetype:
   - Spiritual
 ---

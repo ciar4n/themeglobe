@@ -7,6 +7,8 @@ date: 2019-12-14
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Advocate
 

@@ -7,6 +7,8 @@ date: 2018-03-15
 provider: 
   - RocketTheme
 
+theme_framework: Gantry
+
 archetype:
   - Intellectual
   - Visionary

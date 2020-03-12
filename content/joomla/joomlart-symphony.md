@@ -8,6 +8,8 @@ date: 2019-08-23
 provider:
   - Joomlart
 
+theme_framework: T4
+
 archetype:
   - Performer
 
