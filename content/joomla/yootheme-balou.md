@@ -2,11 +2,11 @@
 title: "Balou"
 details: https://yootheme.com/joomla-templates/balou
 demo: https://demo.yootheme.com/themes/joomla/2019/balou
-audit: https://demo.yootheme.com/themes/joomla/2019/balou/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2019/balou/index.php/journal
 date: 2019-09-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Caregiver

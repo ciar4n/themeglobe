@@ -13,17 +13,6 @@ const hiresImagesFolder = path.join(__dirname, '../static/capture');
 
 const themeFiles = fs.readdirSync(themesFolder);
 
-let lightHouseData = {};
-
-if (fs.existsSync(`${path.join(__dirname, '../data')}/themes.json`)) {
-  const tmpLhData = fs.readFileSync(`${path.join(__dirname, '../data')}/themes.json`);
-  try {
-    lightHouseData = JSON.parse(tmpLhData)
-  } catch (er) {
-    console.log(er)
-  }
-}
-
 const processTheme = (theme) => {
   return new Promise((resolve, reject) => {
     const dataTmp = fs.readFileSync(path.join(themesFolder, theme));

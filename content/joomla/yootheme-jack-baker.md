@@ -2,11 +2,11 @@
 title: "Jack Baker"
 details: https://yootheme.com/joomla-templates/jack-baker
 demo: https://demo.yootheme.com/themes/joomla/2017/jack-baker/
-audit: https://demo.yootheme.com/themes/joomla/2017/jack-baker/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2017/jack-baker/index.php/journal
 date: 2017-10-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Performer

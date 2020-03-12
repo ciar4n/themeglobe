@@ -2,11 +2,11 @@
 title: "Makai"
 details: https://yootheme.com/joomla-templates/makai
 demo: https://demo.yootheme.com/themes/joomla/2019/makai
-audit: https://demo.yootheme.com/themes/joomla/2019/makai/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2019/makai/index.php/about-us/blog
 date: 2019-10-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Explorer

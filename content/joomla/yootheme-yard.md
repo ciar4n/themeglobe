@@ -2,11 +2,11 @@
 title: "Yard"
 details: https://yootheme.com/joomla-templates/yard
 demo: https://demo.yootheme.com/themes/joomla/2018/yard
-audit: https://demo.yootheme.com/themes/joomla/2018/yard/index.php/zoo-zoo/blog-zoo
+audit: https://demo.yootheme.com/themes/joomla/2018/yard/index.php/about/news
 date: 2018-11-10
 
 provider:
-  - YooTheme
+  - YOOtheme
 
 archetype:
   - Spiritual
