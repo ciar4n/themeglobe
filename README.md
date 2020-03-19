@@ -30,9 +30,12 @@ date: 2020-01-28 # The date the template was released YYYY-MM-DD
 
 provider:
   - Provider Name
+
 archetype:
   - Creative
   - Visionary # Available archetypes: Advocate, Athlete, Caregiver, Creative, Explorer, Intellectual, Performer, Rebel, Spiritual, Tastemaker, Visionary
+
+theme_framework: Standalone
 
 description: A brief decription of the template displayed on the list page. 
 ---
@@ -59,7 +62,7 @@ Template screenshots, Lighthouse and carbon details will be added upon merge.
 This site is built on [Hugo](https://gohugo.io/)
 
 ```
-hugo serve
+npm run serve
 ```
 
 ## Lighthouse Auditing
