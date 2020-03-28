@@ -1,9 +1,7 @@
 name: Node.js CI
-
-on:  
-  push:
-#   pull_request:
-#     types: [opened, edited, synchronize, reopened]
+on: [push, pull_request]
+env:
+  CI: true
 
 jobs:
   build:
@@ -12,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [13]
 
     steps:
     - uses: actions/checkout@v2
@@ -22,11 +20,16 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run process && npm run github
+        
+    - name: Install NPM dependencies
+      run: npm ci
+      
+    - name: Process
+      run: node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js
+
+    - name: Github
+      run: node ./scripts/pre-deploy.js && node ./scripts/post-deploy-gh.js
     - uses: stefanzweifel/git-auto-commit-action@v3.0.0
       with:
         commit_message: Adding automatic Image/Lighthouse data collection changes...
         branch: ${{ github.head_ref }}
-      env:
-        CI: true
