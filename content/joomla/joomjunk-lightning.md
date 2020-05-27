@@ -1,8 +1,8 @@
 ---
 title: "Lightning"
 details: https://github.com/C-Lodder/lightning
-demo: https://demo.joomjunk.co.uk
-audit: https://demo.joomjunk.co.uk
+demo: https://j4.joomjunk.co.uk
+audit: https://j4.joomjunk.co.uk
 date: 2020-03-19
 
 provider:
