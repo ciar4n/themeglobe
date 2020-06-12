@@ -1,5 +1,5 @@
 ---
-title: "Voyage "
+title: "Voyage"
 details: https://www.joomlashine.com/joomla-templates/jsn-voyage.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_voyage/pro/voyage/
 date: 2020-02-15
