@@ -16,7 +16,7 @@ archetype:
 description: Elixir is abeautiful responsive themebuilt using anext-generation framework. It ispacked with features and particlesthat are a perfect fit forcafés, coffee shops, pubs, pizzerias, burger joints,and more!Your customers will love it!
 ---
 
-Typographyis an important instrument in not only the site design, but how your content is portrayed and utilized by your visitors. Therefore, Elixir offers arichselection of elegant typography to providefocusto varying content types.
+Typographyis an important instrument in not only the site design, but how your content is portrayed and utilized by your visitors. Therefore, Elixir offers arichselection of elegant typography to providefocusto varying content types. 
 
 Elixir is aresponsive templatewhich means it adapts to the viewing device's width, such asmobile, tablet or desktop. Mobile modes have aunique menuto aid usability. Support classes can also be used todisplay or hidevarious types of content for each device.
 
@@ -32,4 +32,3 @@ Elixir takes full advantage of Gantry’s newinheritance system, making it easie
 * Social Icons
 * Mobile Menu
 * Coming Soon Page
-* Font Awesome Icons	
