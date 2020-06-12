@@ -1,5 +1,5 @@
 ---
-title: "Elixer"
+title: "Elixir"
 details: https://rockettheme.com/joomla/templates/elixir
 demo: https://demo.rockettheme.com/live/joomla/elixir
 date: 2020-02-15
