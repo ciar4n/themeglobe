@@ -2,7 +2,7 @@
 title: "Elixir"
 details: https://rockettheme.com/joomla/templates/elixir
 demo: https://demo.rockettheme.com/live/joomla/elixir
-date: 2020-06-10
+date: 2020-05-10
 
 provider: 
   - RocketTheme
