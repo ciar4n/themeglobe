@@ -3,7 +3,7 @@ title: "Natalie"
 details: https://joomla51.com/joomla-templates/j51-natalie
 demo: https://www.joomla51.com/demo/0169/
 audit: https://www.joomla51.com/demo/0169/index.php/features/responsive-design
-date: 2020-01-06
+date: 2020-06-02
 
 provider:
   - Joomla51
