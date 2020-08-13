@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/makai
 audit: https://demo.yootheme.com/themes/joomla/2019/makai/index.php/about-us/blog
 date: 2019-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

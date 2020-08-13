@@ -5,6 +5,9 @@ demo: https://ja-resort.demo.joomlart.com/
 audit: https://ja-resort.demo.joomlart.com/
 date: 2020-02-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

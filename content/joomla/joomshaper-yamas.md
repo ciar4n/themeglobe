@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/yamas
 demo: http://demo2.joomshaper.com/2019/yamas/
 date: 2019-03-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

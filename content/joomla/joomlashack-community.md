@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/community-social-easy
 demo: https://community4.joomlatemplate.joomlashack.com/
 date: 2019-03-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/tomsen-brody
 audit: https://demo.yootheme.com/themes/joomla/2019/tomsen-brody/index.php/news
 date: 2019-07-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

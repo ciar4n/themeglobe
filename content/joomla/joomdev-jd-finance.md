@@ -4,6 +4,9 @@ details: https://www.joomdev.com/products/templates/jd-finance-template
 demo: http://demo.joomdev.com/finance/toolbar
 audit: http://demo.joomdev.com/finance/toolbar/index.php/news
 date: 2019-01-10
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

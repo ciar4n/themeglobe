@@ -5,6 +5,9 @@ demo: https://www.joomla51.com/demo/0167
 aduit: https://www.joomla51.com/demo/0167/index.php/blog/blog-classic
 date: 2020-01-15
 
+cms: 
+  - Joomla
+
 provider: 
   - Joomla51
 

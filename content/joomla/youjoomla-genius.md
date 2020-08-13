@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/genius-joomla-multipurpose-t
 demo: https://joomlatemplates.youjoomla.info/genius/
 date: 2019-09-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

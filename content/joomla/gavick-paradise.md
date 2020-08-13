@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/paradise/
 audit: https://demo.gavick.com/joomla3/paradise/index.php/blog
 date: 2019-04-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

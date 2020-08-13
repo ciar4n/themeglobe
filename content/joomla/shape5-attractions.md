@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/attractions_-_clu
 demo: http://www.shape5.com/demo/attractions/
 date: 2017-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

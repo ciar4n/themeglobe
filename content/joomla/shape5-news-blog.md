@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/news_blog_-_club_
 demo: http://www.shape5.com/demo/news_blog/
 date: 2018-02-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

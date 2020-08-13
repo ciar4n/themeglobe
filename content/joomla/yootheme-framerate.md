@@ -4,6 +4,9 @@ details: https://yootheme.com/joomla-templates/framerate
 demo: https://demo.yootheme.com/themes/joomla/2020/framerate
 date: 2020-04-13
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

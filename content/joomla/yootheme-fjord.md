@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/fjord/
 audit: https://demo.yootheme.com/themes/joomla/2017/fjord/index.php/stories
 date: 2017-07-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

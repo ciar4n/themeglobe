@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/soundbeat-joomla-music-ecomm
 demo: http://joomlatemplates.youjoomla.info/soundbeat/
 date: 2019-06-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

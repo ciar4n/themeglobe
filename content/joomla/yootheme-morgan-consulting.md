@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/morgan-consulting
 audit: https://demo.yootheme.com/themes/joomla/2017/morgan-consulting/index.php/journal
 date: 2017-09-01
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

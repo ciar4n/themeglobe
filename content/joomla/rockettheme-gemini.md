@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/gemini
 demo: https://demo.rockettheme.com/live/joomla/gemini
 date: 2018-11-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

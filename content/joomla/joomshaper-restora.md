@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/restora
 demo: http://demo.joomshaper.com/2019/restora/
 date: 2019-01-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

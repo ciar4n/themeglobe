@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/galatea
 demo: https://demo.rockettheme.com/live/joomla/galatea
 date: 2018-02-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

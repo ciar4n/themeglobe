@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/bruno-joomla-shop-template.h
 demo: http://joomlatemplates.youjoomla.info/bruno/
 date: 2019-01-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

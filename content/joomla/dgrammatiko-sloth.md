@@ -5,6 +5,9 @@ demo: https://sloth-theme.site
 audit: https://sloth-theme.site
 date: 2020-05-24
 
+cms: 
+  - Joomla
+
 provider:
   - dGrammatiko
 

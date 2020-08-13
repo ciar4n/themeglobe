@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/salient
 demo: https://demo.rockettheme.com/live/joomla/salient
 date: 2017-09-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

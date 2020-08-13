@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/akuatik
 demo: https://demo.rockettheme.com/live/joomla/akuatik
 date: 2019-12-14
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

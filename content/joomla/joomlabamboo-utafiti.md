@@ -5,6 +5,9 @@ demo: https://demo.joomlabamboo.com/showcase/utafiti/
 audit: https://demo.joomlabamboo.com/showcase/utafiti/index.php/joomla/category-blog/category-blog-2
 date: 2016-09-09
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaBamboo
 

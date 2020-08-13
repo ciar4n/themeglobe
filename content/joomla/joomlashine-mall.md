@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-mall.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_mall/pro/mall/
 date: 2019-04-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

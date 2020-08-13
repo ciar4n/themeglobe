@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/calla
 demo: https://demo.rockettheme.com/live/joomla/calla
 date: 2019-06-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

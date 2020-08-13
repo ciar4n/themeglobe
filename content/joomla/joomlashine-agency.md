@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-agency.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_agency/pro/agency/
 date: 2019-02-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

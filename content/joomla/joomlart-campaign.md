@@ -5,6 +5,9 @@ demo: https://ja-campaign.demo.joomlart.com/
 audit: https://ja-campaign.demo.joomlart.com/
 date: 2020-04-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

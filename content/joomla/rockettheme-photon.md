@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/photon
 demo: https://demo.rockettheme.com/live/joomla/photon
 date: 2018-03-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

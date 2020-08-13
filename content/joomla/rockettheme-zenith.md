@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/zenith
 demo: https://demo.rockettheme.com/live/joomla/zenith
 date: 2019-09-14
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

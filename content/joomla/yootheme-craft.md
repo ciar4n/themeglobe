@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/craft
 audit: https://demo.yootheme.com/themes/joomla/2019/craft/index.php/about-us/news
 date: 2019-06-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

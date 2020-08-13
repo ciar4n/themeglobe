@@ -5,6 +5,9 @@ demo: https://ja-symphony.demo.joomlart.com/
 audit: https://ja-symphony.demo.joomlart.com/index.php/en/pages/joomla-content/category-blog
 date: 2019-08-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

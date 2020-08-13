@@ -5,6 +5,9 @@ demo: https://ja-justitia.demo.joomlart.com/
 audit: https://ja-justitia.demo.joomlart.com/index.php/joomla-content/category-blog
 date: 2019-10-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

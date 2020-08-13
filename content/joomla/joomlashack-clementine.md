@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/clementine
 demo: https://clementine.joomlatemplate.joomlashack.com/
 date: 2018-08-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

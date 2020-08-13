@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/jack-baker/
 audit: https://demo.yootheme.com/themes/joomla/2017/jack-baker/index.php/journal
 date: 2017-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

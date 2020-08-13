@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/cinematico-joomla-movies-tem
 demo: http://joomlatemplates.youjoomla.info/cinematico/
 date: 2019-02-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

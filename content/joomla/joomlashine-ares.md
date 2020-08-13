@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-ares.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_ares_2/pro/
 date: 2018-02-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

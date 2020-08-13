@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/advito-corporate-business-jo
 demo: https://joomlatemplates.youjoomla.info/advito/
 date: 2020-01-10
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

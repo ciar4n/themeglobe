@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/newsberg
 demo: http://demo2.joomshaper.com/2019/newsberg/
 date: 2019-11-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/district
 audit: https://demo.yootheme.com/themes/joomla/2018/district/index.php/about/blog
 date: 2019-04-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

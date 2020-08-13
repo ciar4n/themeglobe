@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/remnant
 demo: https://demo.rockettheme.com/live/joomla/remnant
 date: 2018-08-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

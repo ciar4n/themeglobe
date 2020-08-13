@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/opus
 demo: http://demo.joomshaper.com/2018/opus/
 date: 2018-09-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

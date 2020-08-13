@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/vision
 audit: https://demo.yootheme.com/themes/joomla/2018/vision/index.php/blog
 date: 2018-07-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

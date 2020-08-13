@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/cygnet
 demo: https://demo.rockettheme.com/live/joomla/cygnet
 date: 2017-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

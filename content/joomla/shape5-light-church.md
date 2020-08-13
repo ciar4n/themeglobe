@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/light_church_-_cl
 demo: http://www.shape5.com/demo/light_church/
 date: 2018-05-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

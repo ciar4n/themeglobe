@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/infinity-joomla-mobile-appli
 demo: https://joomlatemplates.youjoomla.info/infinity/
 date: 2019-06-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

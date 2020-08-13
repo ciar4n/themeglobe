@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/finatic
 demo: http://demo2.joomshaper.com/2019/finatic/
 date: 2019-08-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

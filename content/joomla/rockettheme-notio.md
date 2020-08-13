@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/notio
 demo: https://demo.rockettheme.com/live/joomla/notio
 date: 2019-03-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

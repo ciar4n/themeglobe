@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/sirocco
 demo: https://demo.rockettheme.com/live/joomla/sirocco
 date: 2017-06-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

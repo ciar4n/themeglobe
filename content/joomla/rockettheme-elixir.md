@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/elixir
 demo: https://demo.rockettheme.com/live/joomla/elixir
 date: 2020-05-10
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

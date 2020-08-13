@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/salon/toolbar
 audit: https://demo.joomdev.com/salon/toolbar/index.php/blog
 date: 2019-02-09
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

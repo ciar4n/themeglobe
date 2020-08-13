@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/flow
 audit: https://demo.yootheme.com/themes/joomla/2018/flow/index.php/blog
 date: 2019-03-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

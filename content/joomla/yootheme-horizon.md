@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2016/horizon/
 audit: https://demo.yootheme.com/themes/joomla/2016/horizon/index.php/news
 date: 2016-11-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

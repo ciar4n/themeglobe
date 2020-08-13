@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/travertine-simple
 demo: https://travertine2.joomlatemplate.joomlashack.com/
 date: 2018-04-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

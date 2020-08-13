@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/salon
 demo: http://demo.joomshaper.com/2018/salon/
 date: 2018-07-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

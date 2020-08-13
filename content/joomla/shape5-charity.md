@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/charity_-_club_te
 demo: http://www.shape5.com/demo/charity/
 date: 2017-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

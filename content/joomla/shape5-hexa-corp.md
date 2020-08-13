@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/hexa_corp_-_club_
 demo: http://www.shape5.com/demo/hexa_corp/
 date: 2018-03-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

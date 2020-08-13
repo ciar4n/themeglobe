@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/callisto
 demo: https://demo.rockettheme.com/live/joomla/callisto
 date: 2017-08-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

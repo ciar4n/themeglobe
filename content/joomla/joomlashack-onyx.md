@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/onyx-corporate-business
 demo: https://onyx3.joomlatemplate.joomlashack.com/
 date: 2019-01-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/languageschool
 demo: http://demo.joomshaper.com/2019/languageschool/
 date: 2019-01-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

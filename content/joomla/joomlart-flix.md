@@ -5,6 +5,9 @@ demo: https://ja-flix.demo.joomlart.com/
 audit: https://ja-flix.demo.joomlart.com/index.php/joomla-content/featured-articles
 date: 2019-11-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

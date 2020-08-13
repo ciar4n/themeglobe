@@ -4,6 +4,9 @@ details: https://yootheme.com/joomla-templates/tech-space
 demo: https://demo.yootheme.com/themes/joomla/2020/tech-space
 date: 2020-05-13
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

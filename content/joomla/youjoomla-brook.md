@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/brook-lifestyle-blog-joomla-
 demo: https://joomlatemplates.youjoomla.info/brook/
 date: 2019-05-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

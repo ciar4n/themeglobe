@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/sonic
 audit: https://demo.yootheme.com/themes/joomla/2017/sonic/index.php/blog
 date: 2017-03-01
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/metros-joomla-business-templ
 demo: https://joomlatemplates.youjoomla.info/metros/
 date: 2019-08-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

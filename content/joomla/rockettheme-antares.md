@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/antares
 demo: https://demo.rockettheme.com/live/joomla/antares
 date: 2018-01-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

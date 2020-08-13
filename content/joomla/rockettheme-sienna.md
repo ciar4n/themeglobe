@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/sienna
 demo: https://demo.rockettheme.com/live/joomla/sienna
 date: 2018-06-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/acronym
 demo: https://demo.rockettheme.com/live/joomla/acronym
 date: 2018-12-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

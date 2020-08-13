@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/interstellar
 demo: https://demo.rockettheme.com/live/joomla/interstellar
 date: 2018-05-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

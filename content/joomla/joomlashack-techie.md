@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/techie-trendy-business
 demo: https://techie.joomlatemplate.joomlashack.com/
 date: 2018-11-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

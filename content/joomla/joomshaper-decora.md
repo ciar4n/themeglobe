@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/decora
 demo: http://demo2.joomshaper.com/2019/decora/
 date: 2019-04-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

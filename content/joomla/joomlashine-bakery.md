@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-bakery.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_bakery/pro/bakery/
 date: 2018-09-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2016/max/
 audit: https://demo.yootheme.com/themes/joomla/2016/max/index.php/blog
 date: 2016-12-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

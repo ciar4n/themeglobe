@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/manticore
 demo: https://demo.rockettheme.com/live/joomla/manticore
 date: 2019-11-14
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

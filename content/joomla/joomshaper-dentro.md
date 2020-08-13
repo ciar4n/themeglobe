@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/dentro
 demo: http://demo2.joomshaper.com/2019/dentro/
 date: 2019-07-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

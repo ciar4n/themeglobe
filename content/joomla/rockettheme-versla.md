@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/versla
 demo: https://demo.rockettheme.com/live/joomla/versla
 date: 2018-10-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

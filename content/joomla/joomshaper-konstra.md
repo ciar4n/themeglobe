@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/konstra
 demo: http://demo.joomshaper.com/2019/konstra/
 date: 2019-01-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

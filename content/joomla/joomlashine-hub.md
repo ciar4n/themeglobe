@@ -5,6 +5,9 @@ demo: https://demo.joomlashine.com/joomla-templates/jsn_hub/pro/hub/
 audit: https://demo.joomlashine.com/joomla-templates/jsn_hub/pro/hub/
 date: 2020-01-29
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlashine
 

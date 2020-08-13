@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/coax/toolbar
 audit: https://demo.joomdev.com/coax/toolbar/index.php/news-media
 date: 2019-01-03
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

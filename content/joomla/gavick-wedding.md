@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/wedding/
 audit: https://demo.gavick.com/joomla3/wedding/index.php/blog
 date: 2018-10-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

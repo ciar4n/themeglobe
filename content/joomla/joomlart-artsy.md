@@ -5,6 +5,9 @@ demo: https://ja-artsy.demo.joomlart.com/
 audit: https://ja-artsy.demo.joomlart.com/
 date: 2020-03-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

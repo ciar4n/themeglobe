@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-meetup.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_meetup/pro/meetup/
 date: 2018-12-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

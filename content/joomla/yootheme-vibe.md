@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/vibe/
 audit: https://demo.yootheme.com/themes/joomla/2017/vibe/index.php/news
 date: 2017-08-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

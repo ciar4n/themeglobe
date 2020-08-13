@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/estate
 demo: http://demo.joomshaper.com/2018/estate/
 date: 2018-11-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

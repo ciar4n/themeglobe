@@ -5,6 +5,9 @@ demo: https://demo.joomforest.net/j3/jf_social/
 audit: https://demo.joomforest.net/j3/jf_social/k2-blog/k2-category/latest-news
 date: 2019-09-09
 
+cms: 
+  - Joomla
+
 provider:
   - JoomForest
 

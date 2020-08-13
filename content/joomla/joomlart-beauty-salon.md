@@ -5,6 +5,9 @@ demo: https://ja-beauty.demo.joomlart.com/index.php/homepage/home-1-light
 audit: https://ja-beauty.demo.joomlart.com/index.php/blog
 date: 2019-12-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

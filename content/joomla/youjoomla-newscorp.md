@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/newscorp-news-magazine-porta
 demo: http://joomlatemplates.youjoomla.info/newscorp/
 date: 2019-03-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

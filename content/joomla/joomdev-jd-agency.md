@@ -4,6 +4,9 @@ details: https://www.joomdev.com/products/templates/jd-agency-template
 demo: http://demo.joomdev.com/agency/toolbar
 audit: https://demo.joomdev.com/agency/toolbar/index.php/news
 date: 2019-18-12
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

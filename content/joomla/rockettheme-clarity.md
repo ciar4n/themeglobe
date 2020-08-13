@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/clarity
 demo: https://demo.rockettheme.com/live/joomla/clarity
 date: 2020-01-14
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

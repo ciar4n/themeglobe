@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-cardealer.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_cardealer/pro/cardealer/
 date: 2019-01-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

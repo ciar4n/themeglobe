@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/ambrosia
 demo: https://demo.rockettheme.com/live/joomla/ambrosia
 date: 2017-10-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

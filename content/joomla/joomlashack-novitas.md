@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/novitas
 demo: https://novitas.joomlatemplate.joomlashack.com/
 date: 2019-08-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

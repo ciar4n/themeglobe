@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/recruiter/toolbar
 audit: http://demo.joomdev.com/recruiter/toolbar/blog
 date: 2019-02-08
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

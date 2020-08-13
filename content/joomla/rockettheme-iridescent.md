@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/iridescent
 demo: https://demo.rockettheme.com/live/joomla/iridescent
 date: 2017-06-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

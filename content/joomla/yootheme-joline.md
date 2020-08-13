@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/joline/
 audit: https://demo.yootheme.com/themes/joomla/2017/joline/index.php
 date: 2017-06-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

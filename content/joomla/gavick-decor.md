@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/decor/
 audit: https://demo.gavick.com/joomla3/decor/index.php/blogs
 date: 2018-03-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

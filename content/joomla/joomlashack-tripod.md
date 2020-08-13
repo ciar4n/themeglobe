@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/tripod-art-photo-portfolio
 demo: https://tripod.joomlatemplate.joomlashack.com/
 date: 2019-09-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

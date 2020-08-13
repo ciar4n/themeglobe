@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/aurora
 demo: https://demo.rockettheme.com/live/joomla/aurora
 date: 2019-04-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

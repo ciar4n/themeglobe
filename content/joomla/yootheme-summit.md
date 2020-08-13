@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/summit
 audit: https://demo.yootheme.com/themes/joomla/2018/summit/index.php/news
 date: 2018-12-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/fluent
 demo: https://demo.rockettheme.com/live/joomla/fluent
 date: 2019-04-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

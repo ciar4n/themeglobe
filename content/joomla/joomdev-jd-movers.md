@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/movers/toolbar
 audit: https://demo.joomdev.com/movers/toolbar/index.php/news
 date: 2019-01-07
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

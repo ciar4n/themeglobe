@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/box/
 audit: https://demo.gavick.com/joomla3/box/index.php/blog/categories
 date: 2018-01-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

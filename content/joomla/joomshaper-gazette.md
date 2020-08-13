@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/gazette
 demo: http://demo.joomshaper.com/2018/gazette/
 date: 2018-10-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

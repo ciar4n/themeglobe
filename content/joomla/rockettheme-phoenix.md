@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/phoenix
 demo: https://demo.rockettheme.com/live/joomla/phoenix
 date: 2020-06-02
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/curb_appeal_-_clu
 demo: http://www.shape5.com/demo/curb_appeal/
 date: 2018-01-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

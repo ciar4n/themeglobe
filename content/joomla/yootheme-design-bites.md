@@ -4,6 +4,9 @@ details: https://yootheme.com/joomla-templates/design-bites
 demo: https://demo.yootheme.com/themes/joomla/2020/design-bites
 date: 2020-03-13
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

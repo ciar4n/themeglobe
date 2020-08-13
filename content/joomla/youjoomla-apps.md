@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/apps-mobile-applications-joo
 demo: http://joomlatemplates.youjoomla.info/apps/
 date: 2018-12-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

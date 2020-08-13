@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/xenon
 demo: https://demo.rockettheme.com/live/joomla/xenon
 date: 2017-12-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

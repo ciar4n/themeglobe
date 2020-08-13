@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/issues/
 audit: https://demo.gavick.com/joomla3/issues/
 date: 2020-03-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

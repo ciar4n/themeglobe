@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/outdoor_life_-_cl
 demo: http://www.shape5.com/demo/outdoor_life/
 date: 2017-07-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

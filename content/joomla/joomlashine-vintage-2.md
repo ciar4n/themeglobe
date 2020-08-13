@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-vintage.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_vintage_2/pro/vintage/
 date: 2019-05-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

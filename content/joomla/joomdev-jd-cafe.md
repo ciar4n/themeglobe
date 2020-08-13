@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/cafe/toolbar
 audit: https://demo.joomdev.com/cafe/toolbar/index.php/sweet-blogs/
 date: 2019-07-05
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

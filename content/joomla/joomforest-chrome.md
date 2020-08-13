@@ -5,6 +5,9 @@ demo: https://demo.joomforest.net/j3/jf_chrome/
 audit: https://demo.joomforest.net/j3/jf_chrome/k2-blog/k2-category/latest-news
 date: 2019-07-09
 
+cms: 
+  - Joomla
+
 provider:
   - JoomForest
 

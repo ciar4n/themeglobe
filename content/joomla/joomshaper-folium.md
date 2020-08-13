@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/folium
 demo: http://demo2.joomshaper.com/2019/folium/
 date: 2019-12-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

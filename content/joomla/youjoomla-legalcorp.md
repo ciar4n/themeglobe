@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/legalcorp-joomla-attorney-te
 demo: http://joomlatemplates.youjoomla.info/legalcorp/
 date: 2019-08-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

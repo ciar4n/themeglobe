@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-realtor.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_realtor/pro/realtor/
 date: 2020-03-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

@@ -5,6 +5,9 @@ demo: https://demo.joomlabamboo.com/showcase/jun16/
 audit: https://demo.joomlabamboo.com/showcase/jun16/
 date: 2016-07-09
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaBamboo
 

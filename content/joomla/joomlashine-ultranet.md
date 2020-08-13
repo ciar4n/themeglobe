@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-ultranet.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_ultranet/pro/
 date: 2018-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

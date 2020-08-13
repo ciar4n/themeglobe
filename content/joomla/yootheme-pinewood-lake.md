@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake
 audit: https://demo.yootheme.com/themes/joomla/2018/pinewood-lake/index.php/news
 date: 2018-09-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/flux
 demo: https://demo.rockettheme.com/live/joomla/flux
 date: 2019-02-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

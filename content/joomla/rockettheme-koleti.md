@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/koleti
 demo: https://demo.rockettheme.com/live/joomla/koleti/
 date: 2019-07-20
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/balou
 audit: https://demo.yootheme.com/themes/joomla/2019/balou/index.php/journal
 date: 2019-09-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

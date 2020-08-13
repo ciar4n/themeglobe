@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/buster-joomla-movie-template
 demo: https://joomlatemplates.youjoomla.info/buster/
 date: 2019-10-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

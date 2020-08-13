@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/kidzone/toolbar
 audit: https://demo.joomdev.com/kidzone/toolbar/index.php/blog/grid-view
 date: 2019-03-02
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

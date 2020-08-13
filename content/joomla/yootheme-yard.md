@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/yard
 audit: https://demo.yootheme.com/themes/joomla/2018/yard/index.php/about/news
 date: 2018-11-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

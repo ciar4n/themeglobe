@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/mondrian-corporate-colorfu
 demo: https://mondrian.joomlatemplate.joomlashack.com/
 date: 2019-07-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/abc
 demo: https://abc.joomlatemplate.joomlashack.com/
 date: 2019-07-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

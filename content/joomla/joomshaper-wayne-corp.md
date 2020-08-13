@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/waynecorp
 demo: http://demo.joomshaper.com/2018/waynecorp/
 date: 2018-12-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

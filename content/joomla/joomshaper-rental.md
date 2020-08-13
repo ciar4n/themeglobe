@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/rental
 demo: http://demo.joomshaper.com/2018/rental/
 date: 2018-06-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

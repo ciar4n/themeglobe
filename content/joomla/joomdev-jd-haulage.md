@@ -5,6 +5,9 @@ demo: https://demo.joomdev.com/haulage/toolbar/
 audit: https://demo.joomdev.com/haulage/toolbar/index.php/en/menu/pages/blog
 date: 2020-01-04
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

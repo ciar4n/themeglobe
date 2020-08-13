@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/siggi/
 audit: https://demo.gavick.com/joomla3/siggi/index.php/projects
 date: 2019-02-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

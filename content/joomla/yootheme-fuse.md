@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2016/fuse/
 audit: https://demo.yootheme.com/themes/joomla/2016/fuse/index.php/blog
 date: 2016-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

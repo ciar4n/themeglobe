@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/civic-full-screen-video
 demo: https://civic.joomlatemplate.joomlashack.com/
 date: 2019-11-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

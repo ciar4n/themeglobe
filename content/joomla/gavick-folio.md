@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/folio/
 audit: https://demo.gavick.com/joomla3/folio/index.php/journal
 date: 2019-03-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

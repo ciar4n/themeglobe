@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/alasse
 demo: https://alasse.joomlatemplate.joomlashack.com/
 date: 2019-01-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

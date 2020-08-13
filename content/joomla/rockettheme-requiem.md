@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/requiem
 demo: https://demo.rockettheme.com/live/joomla/requiem
 date: 2017-10-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

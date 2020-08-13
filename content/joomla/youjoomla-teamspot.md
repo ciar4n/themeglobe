@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/teamspot-creative-agency-joo
 demo: http://joomlatemplates.youjoomla.info/teamspot/
 date: 2019-09-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

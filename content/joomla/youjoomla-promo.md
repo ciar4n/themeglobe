@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/promo-photography-joomla-tem
 demo: https://joomlatemplates.youjoomla.info/promo/
 date: 2019-07-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

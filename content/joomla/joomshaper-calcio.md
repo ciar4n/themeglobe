@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/calcio
 demo: http://demo.joomshaper.com/2018/calcio/
 date: 2018-04-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

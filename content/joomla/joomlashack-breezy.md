@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/breezy
 demo: https://breezy.joomlatemplate.joomlashack.com/
 date: 2019-02-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

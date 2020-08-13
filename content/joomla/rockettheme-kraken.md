@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/kraken
 demo: https://demo.rockettheme.com/live/joomla/kraken
 date: 2017-11-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

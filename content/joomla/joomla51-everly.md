@@ -5,6 +5,9 @@ demo: https://www.joomla51.com/demo/0160
 audit: https://www.joomla51.com/demo/0160/index.php/layout-options/content-sidecol
 date: 2019-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - Joomla51
 

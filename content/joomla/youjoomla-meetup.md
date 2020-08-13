@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/meetup-events-joomla-templat
 demo: http://joomlatemplates.youjoomla.info/meetup/
 date: 2019-02-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

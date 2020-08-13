@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-fidem.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_fidem_2/pro/fidem/
 date: 2018-05-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

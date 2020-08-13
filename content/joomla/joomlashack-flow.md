@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/flow-landing-page
 demo: https://flow.joomlatemplate.joomlashack.com/
 date: 2020-01-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

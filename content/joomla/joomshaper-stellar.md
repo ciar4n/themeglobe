@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/stellar
 demo: http://demo.joomshaper.com/2018/stellar/
 date: 2018-06-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

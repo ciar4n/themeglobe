@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/blogsider-joomla-blog-magazi
 demo: https://joomlatemplates.youjoomla.info/blogsider/
 date: 2019-12-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

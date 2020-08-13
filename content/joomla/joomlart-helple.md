@@ -5,6 +5,9 @@ demo: https://ja-helple.demo.joomlart.com/
 audit: https://ja-helple.demo.joomlart.com/
 date: 2020-05-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

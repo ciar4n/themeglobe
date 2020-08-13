@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/denali
 demo: https://demo.rockettheme.com/live/joomla/denali
 date: 2019-05-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

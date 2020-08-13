@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/audacity
 demo: https://demo.rockettheme.com/live/joomla/audacity
 date: 2017-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

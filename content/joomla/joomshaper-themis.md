@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/themis
 demo: http://demo2.joomshaper.com/2019/themis/
 date: 2019-09-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

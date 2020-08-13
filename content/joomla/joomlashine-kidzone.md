@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-kidzone.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_kidzone/pro/
 date: 2020-01-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

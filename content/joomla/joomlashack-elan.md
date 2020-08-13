@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/elan-minimal-elegant
 demo: https://elan.joomlatemplate.joomlashack.com/
 date: 2019-06-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

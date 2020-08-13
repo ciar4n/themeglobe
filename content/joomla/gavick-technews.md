@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/technews/
 audit: https://demo.gavick.com/joomla3/technews/index.php/theme-features/2014-08-05-11-51-4
 date: 2018-01-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

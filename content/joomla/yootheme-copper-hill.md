@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/copper-hill/
 audit: https://demo.yootheme.com/themes/joomla/2017/copper-hill/index.php/news
 date: 2017-07-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

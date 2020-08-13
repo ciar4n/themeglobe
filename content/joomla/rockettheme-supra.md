@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/supra
 demo: https://demo.rockettheme.com/live/joomla/supra
 date: 2018-12-22
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/megainc
 demo: http://demo2.joomshaper.com/2019/megainc/
 date: 2019-05-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

@@ -5,6 +5,9 @@ demo: http://demo.joomdev.com/yogahut/toolbar
 auditr: https://demo.joomdev.com/yogahut/toolbar/index.php/blog
 date: 2020-02-01
 
+cms: 
+  - Joomla
+
 provider:
   - JoomDev
 

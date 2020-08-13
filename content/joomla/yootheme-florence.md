@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/florence/
 audit: https://demo.yootheme.com/themes/joomla/2017/florence/index.php/blog
 date: 2017-12-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/matthew-taylor
 audit: https://demo.yootheme.com/themes/joomla/2019/matthew-taylor/index.php/blog
 date: 2019-09-02
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

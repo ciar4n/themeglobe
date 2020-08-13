@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-power.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_power/pro/power/
 date: 2018-09-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

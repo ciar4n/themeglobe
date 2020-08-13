@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/barber
 demo: http://demo2.joomshaper.com/2019/barber/
 date: 2019-11-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/vintage-classic-moderate
 demo: https://vintage4.joomlatemplate.joomlashack.com
 date: 2018-10-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

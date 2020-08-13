@@ -5,6 +5,9 @@ demo: https://ja-landscape.demo.joomlart.com/
 audit: https://ja-landscape.demo.joomlart.com/index.php/blog
 date: 2019-09-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

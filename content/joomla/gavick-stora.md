@@ -5,6 +5,9 @@ demo: https://demo.gavick.com/joomla3/stora/
 audit: https://demo.gavick.com/joomla3/stora/index.php/news
 date: 2018-02-08
 
+cms: 
+  - Joomla
+
 provider:
   - Gavick
 

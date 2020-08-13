@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2018/nioh-studio
 audit: https://demo.yootheme.com/themes/joomla/2018/nioh-studio/index.php/about/news
 date: 2018-10-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

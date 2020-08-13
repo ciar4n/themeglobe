@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-miro.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_miro/pro/miro/
 date: 2018-10-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

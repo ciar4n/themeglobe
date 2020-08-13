@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/protean
 demo: https://demo.rockettheme.com/live/joomla/protean
 date: 2018-09-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

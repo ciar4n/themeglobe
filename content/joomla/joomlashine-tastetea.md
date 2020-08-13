@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-tastetea.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_tastetea/pro/tastetea/
 date: 2019-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

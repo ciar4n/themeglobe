@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-finance.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_finance/pro/consulting/
 date: 2019-06-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

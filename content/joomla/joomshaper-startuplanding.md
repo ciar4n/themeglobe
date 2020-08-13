@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/startuplanding
 demo: http://demo2.joomshaper.com/2020/startuplanding/
 date: 2020-01-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

@@ -4,6 +4,9 @@ details: https://www.joomlashack.com/joomla-templates/unlimited-clean-minimalist
 demo: https://unlimited.joomlatemplate.joomlashack.com/
 date: 2019-10-16
 
+cms: 
+  - Joomla
+
 provider:
   - JoomlaShack
 

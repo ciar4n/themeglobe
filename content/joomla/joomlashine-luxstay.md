@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-luxstay.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_luxstay/pro/luxstay/en/
 date: 2020-06-03
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

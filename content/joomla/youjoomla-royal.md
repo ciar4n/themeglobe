@@ -4,6 +4,9 @@ details: https://www.youjoomla.com/joomla-templates/royal-joomla-sports-club-tem
 demo: https://joomlatemplates.youjoomla.info/royal/
 date: 2019-07-09
 
+cms: 
+  - Joomla
+
 provider:
   - YouJoomla
 

@@ -5,6 +5,9 @@ demo: https://demo.icetheme.com/it-zen/
 audit: https://demo.icetheme.com/it-zen/index.php/en/joomla/blog
 date: 2019-09-11
 
+cms: 
+  - Joomla
+
 provider:
   - IceTheme
 

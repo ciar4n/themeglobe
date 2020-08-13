@@ -5,6 +5,9 @@ demo: https://ja-eventcamp.demo.joomlart.com/
 audit: https://ja-eventcamp.demo.joomlart.com/index.php/blog
 date: 2020-01-23
 
+cms: 
+  - Joomla
+
 provider:
   - Joomlart
 

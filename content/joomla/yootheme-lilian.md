@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2017/lilian/
 audit: https://demo.yootheme.com/themes/joomla/2017/lilian/index.php/blog
 date: 2017-11-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 

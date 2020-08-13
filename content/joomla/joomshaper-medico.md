@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/medico
 demo: http://demo.joomshaper.com/2018/medico/
 date: 2018-05-18
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

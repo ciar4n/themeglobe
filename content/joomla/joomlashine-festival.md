@@ -4,6 +4,9 @@ details: https://www.joomlashine.com/joomla-templates/jsn-festival.html
 demo: https://demo.joomlashine.com/joomla-templates/jsn_festival/pro/festival/
 date: 2019-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - JoomlaShine
 

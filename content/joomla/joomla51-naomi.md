@@ -5,6 +5,9 @@ demo: https://www.joomla51.com/demo/0159
 audit: https://www.joomla51.com/demo/0159/index.php/blog
 date: 2019-02-15
 
+cms: 
+  - Joomla
+
 provider: 
   - Joomla51
 

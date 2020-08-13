@@ -4,6 +4,9 @@ details: https://www.joomshaper.com/joomla-templates/indigo
 demo: http://demo2.joomshaper.com/2019/indigo/
 date: 2019-06-22
 
+cms: 
+  - Joomla
+
 provider:
   - JoomShaper
 

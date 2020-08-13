@@ -4,6 +4,9 @@ details: https://www.shape5.com/product_details/club_templates/m_creative_agency
 demo: http://www.shape5.com/demo/m_creative_agency/
 date: 2017-11-10
 
+cms: 
+  - Joomla
+
 provider:
   - Shape5
 

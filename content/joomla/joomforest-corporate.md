@@ -5,6 +5,9 @@ demo: https://demo.joomforest.net/j3/jf_corporate/
 audit: https://demo.joomforest.net/j3/jf_corporate/features/joomla/joomla-article/category-blog
 date: 2019-08-09
 
+cms: 
+  - Joomla
+
 provider:
   - JoomForest
 

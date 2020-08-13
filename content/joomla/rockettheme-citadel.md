@@ -4,6 +4,9 @@ details: https://rockettheme.com/joomla/templates/citadel
 demo: https://demo.rockettheme.com/live/joomla/citadel
 date: 2018-07-15
 
+cms: 
+  - Joomla
+
 provider: 
   - RocketTheme
 

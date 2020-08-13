@@ -5,6 +5,9 @@ demo: https://demo.yootheme.com/themes/joomla/2019/yoko
 audit: https://demo.yootheme.com/themes/joomla/2019/yoko/index.php/art
 date: 2019-08-10
 
+cms: 
+  - Joomla
+
 provider:
   - YOOtheme
 
