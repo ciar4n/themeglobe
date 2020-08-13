@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "ThemeGlobe - Joomla"
-theme = "joomlatemplates"
+theme = "themeglobe"
 paginate = 30
 summaryLength = 10
 # enableGitInfo = true
