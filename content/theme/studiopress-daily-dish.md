@@ -13,6 +13,7 @@ provider:
 archetype:
   - Spiritual
   - Creative
+  - Tastemaker
   
 ---
 
