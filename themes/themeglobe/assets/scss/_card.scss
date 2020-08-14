@@ -35,6 +35,11 @@
   max-height: 210px;
   border-radius: $border-radius $border-radius 0 0;
   overflow: hidden;
+  display: flex;
+
+  a {
+    display: flex;
+  }
 
   img {
     max-width: 100%;
@@ -78,6 +83,9 @@
 
 .card-footer {
   display: flex;
+  align-items: center;
+  padding: 5px 6px 3px;
+  background: #eee;
 }
 
 .card-buttons {
@@ -98,13 +106,35 @@
 
 .card-provider {
   font-size: .75rem;
-  padding: 4px 10px;
+  padding: 4px 1px;
+}
+
+.card-cms {
+  display: flex;
+  border-bottom-left-radius: 6px;
+  padding: 0 3px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    width: 22px;
+    font-size: 16px;
+    color: #666666;
+
+    &:hover svg {
+      color: var(--primary);
+    }
+  }
+
+  svg {
+    color: #555
+  }
 }
 
 .card-lighthouse {
   display: flex;
   justify-content: flex-end;
-  padding: 0 2px 2px;
+  padding: 2px;
   margin-left: auto;
 }
 

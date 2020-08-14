@@ -5,6 +5,7 @@ demo: https://demo.yootheme.com/themes/joomla/2020/creative-hub
 date: 2020-06-03
 
 cms: 
+  - Joomla
   - Wordpress
 
 provider:
