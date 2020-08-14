@@ -25,3 +25,4 @@ Extra is more than a theme. No longer are you limited to a single static design,
 
 Through the combination of different column structures and modules a wide range of category and homepage designs can be created. Whether you are running a personal blog or a huge online media giant, Extra can be tailored to suite your needs.
 
+
