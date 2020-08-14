@@ -10,8 +10,6 @@ cms:
 provider: 
   - TeslaThemes
 
-theme_framework: Gantry
-
 archetype:
   - Creative
   - Visionary
