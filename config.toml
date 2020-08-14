@@ -16,6 +16,7 @@ pygmentsUseClasses = true
   description = "An open directory of professional templates for the Joomla CMS"
  
 [taxonomies]
+  cms = "cms"
   provider = "provider"
   archetype = "archetype"
   theme_framework = "theme_framework"

@@ -3,7 +3,7 @@
 {{ define "body_classes" }}page-home{{ end }}
 
 {{ define "meta_tags" }}
-{{ $themes := (where .Site.RegularPages "Type" "joomla") }}
+{{ $themes := (where .Site.RegularPages "Type" "theme") }}
 {{ $themeCount := len $themes}}
 
 <meta name="description" content="A collection of the latest Joomla templates with over {{ $themeCount }} templates gathered from all the major Joomla template providers." />
@@ -11,8 +11,11 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $themes := (where .Site.RegularPages "Type" "joomla") }}
-{{ $themeCount := len $themes}}
+{{ $themes := (where .Site.RegularPages "Type" "theme") }}
+{{ $joomlathemes := (where (where .Site.RegularPages "Type" "theme") ".Params.cms" "intersect" (slice "Joomla")) }}
+{{ $wordpressthemes := (where (where .Site.RegularPages "Type" "theme") ".Params.cms" "intersect" (slice "Wordpress")) }}
+{{ $joomlathemeCount := len $joomlathemes}}
+{{ $wordpressthemeCount := len $wordpressthemes}}
 
 <div class="main">
   <div class="main-wrapper">
@@ -23,8 +26,9 @@
     </div>
 
     <div class="intro">
-      <h1>Latest Joomla Templates</h1>
-      <a href="/joomla/" class="button">List All <span class="btn-count">{{ $themeCount }}</span></a>
+      <h1>Latest Themes and Templates</h1>
+      <a href="/cms/joomla/" class="button">List All Joomla<span class="btn-count">{{ $joomlathemeCount }}</span></a>
+      <a href="/cms/wordpress/" class="button">List All Wordpress<span class="btn-count">{{ $wordpressthemeCount }}</span></a>
     </div>
 
     <div id="grids-homepage" class="grid">

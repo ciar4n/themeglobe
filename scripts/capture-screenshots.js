@@ -8,7 +8,7 @@ const {
   exec
 } = require('child_process');
 
-const themesFolder = path.join(__dirname, '../content/joomla');
+const themesFolder = path.join(__dirname, '../content/theme');
 const hiresImagesFolder = path.join(__dirname, '../static/capture');
 
 const themeFiles = fs.readdirSync(themesFolder);

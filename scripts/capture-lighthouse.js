@@ -5,7 +5,7 @@ const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkS
 const { join } = require('path');
 const { loadFront } = require('yaml-front-matter');
 
-const themesFolder = join(__dirname, '../content/joomla');
+const themesFolder = join(__dirname, '../content/theme');
 const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
 
@@ -47,7 +47,7 @@ const processTheme = (theme) => {
 
   if (lightHouseData[`${themeKey}`]
     // The following url is breaking the script
-    || theme === 'joomlashine-ares.md'
+    || theme === 'themeshine-ares.md'
   ) {
     // console.log(`${theme} Lighthouse skipped, already processed`)
     return;
