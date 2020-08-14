@@ -24,3 +24,4 @@ Locales is the perfect combination of a beautiful and modern design with tonnes 
 Locales is a Powerful, Responsive & Multi-Purpose WordPress theme. It can be a great choice for your stunning City guide, Food guide, Touristic guide and much more.
 
 Thanks for considering Locales! Feel free to contact us with any questions or comments you may have – you’re the reason we’re here! We like any and all constructive feedback. Head over to our dedicated support site.
+
