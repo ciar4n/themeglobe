@@ -2,7 +2,7 @@
 title: "Essence"
 details: https://my.studiopress.com/themes/essence/
 demo: https://demo.studiopress.com/essence/
-date: 2020-05-11
+date: 2020-03-11
 
 cms: 
   - Wordpress

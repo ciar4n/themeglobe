@@ -2,7 +2,7 @@
 title: "Breakthrough"
 details: https://my.studiopress.com/themes/breakthrough/
 demo: https://demo.studiopress.com/breakthrough/
-date: 2020-04-11
+date: 2020-02-11
 
 cms: 
   - Wordpress

@@ -2,7 +2,7 @@
 title: "Authority"
 details: https://my.studiopress.com/themes/authority/
 demo: https://demo.studiopress.com/authority/
-date: 2020-06-11
+date: 2020-01-11
 
 cms: 
   - Wordpress

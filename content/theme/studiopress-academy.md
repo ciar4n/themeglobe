@@ -2,7 +2,7 @@
 title: "Academy"
 details: https://my.studiopress.com/themes/academy/
 demo: https://demo.studiopress.com/academy/
-date: 2020-0-11
+date: 2019-12-11
 
 cms: 
   - Wordpress

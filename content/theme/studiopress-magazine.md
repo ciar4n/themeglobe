@@ -2,7 +2,7 @@
 title: "Magazine"
 details: https://my.studiopress.com/themes/magazine/
 demo: https://demo.studiopress.com/magazine/
-date: 2020-06-11
+date: 2020-04-11
 
 cms: 
   - Wordpress
