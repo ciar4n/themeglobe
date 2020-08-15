@@ -1,5 +1,5 @@
 ---
-title: "Daiuly Dish"
+title: "Daily Dish"
 details: https://my.studiopress.com/themes/daily-dish/
 demo: https://demo.studiopress.com/daily-dish/
 date: 2019-08-11
