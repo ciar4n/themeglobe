@@ -5,35 +5,30 @@
   border-radius: $border-radius;
   background-color: white;
   background-color: var(--card-bg);
-  border: 3px solid white;
+  // border: 3px solid white;
   transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
   position: relative;
   z-index: 1;
-  min-height: 320px;
   max-width: 280px;
   overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow:
-      0 1px 1px rgba(0, 0, 0, 0.035),
-      0 2px 2px rgba(0, 0, 0, 0.035),
-      0 4px 4px rgba(0, 0, 0, 0.035),
-      0 8px 8px rgba(0, 0, 0, 0.035);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.035), 0 2px 2px rgba(0, 0, 0, 0.035),
+      0 4px 4px rgba(0, 0, 0, 0.035), 0 8px 8px rgba(0, 0, 0, 0.035);
     color: currentColor;
   }
-
 }
 
-.card-container {
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+.card-image {
   position: relative;
-}
-
-.card-header {
-  border-bottom: 1px solid rgba(100, 100, 100, .1);
-  max-height: 210px;
-  border-radius: $border-radius $border-radius 0 0;
-  overflow: hidden;
   display: flex;
 
   a {
@@ -45,49 +40,24 @@
   }
 }
 
-.card-body {
-  flex: 1;
-  padding: 20px;
-  min-height: 145px;
-  background: white;
-  background: var(--card-bg);
-
+.card-title {
   h2 {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
     font-weight: 400;
     font-family: $font-family-heading;
     margin: 0;
-    margin-bottom: 10px;
-  }
-
-  p {
-    color: $steel;
-    font-size: 1em;
-    margin: 0 0 3px 0;
-
-  }
-
-  .card-title {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 10px;
-
-    h2 {
-      margin: 0 auto 0 0;
-    }
   }
 }
 
 .card-footer {
   display: flex;
   align-items: center;
-  padding: 5px 6px 3px;
-  background: #eee;
+  padding: 5px 10px;
 }
 
 .card-buttons {
+  display: flex;
   margin: 4px 0;
 
   .card-button {
@@ -95,7 +65,7 @@
     border-radius: 2px;
     margin-left: 2px;
     margin-right: 0;
-    font-size: .8em;
+    font-size: 0.8em;
     line-height: 1.3em;
     text-decoration: none;
 
@@ -104,15 +74,19 @@
 }
 
 .card-provider {
-  font-size: .75rem;
+  font-size: 0.75rem;
   padding: 4px 1px;
-  line-height: .75rem;
+  line-height: 0.75rem;
 }
 
 .card-cms {
+  position: absolute;
   display: flex;
-  border-bottom-left-radius: 6px;
-  padding: 0 3px;
+  border-top-right-radius: 6px;
+  padding: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
 
   a {
     display: flex;
@@ -127,14 +101,14 @@
   }
 
   svg {
-    color: #555
+    color: #555;
   }
 }
 
 .card-lighthouse {
   display: flex;
   justify-content: flex-end;
-  padding: 2px;
+  padding: 2px 0;
   margin-left: auto;
 }
 
