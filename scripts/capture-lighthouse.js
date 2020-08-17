@@ -84,6 +84,11 @@ const lh = async (data) => {
 
   const outputData = await PerfLeaderboard([data.themeUrl]);
 
+  // If there was an error, bail out
+  if (!outputData) {
+    return;
+  }
+
   out = outputData[0];
 
   carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
