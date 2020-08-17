@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-const { spawnSync } = require("child_process");
 const PerfLeaderboard = require("performance-leaderboard");
 const {
   existsSync,
@@ -10,10 +9,11 @@ const {
   readdirSync,
   unlinkSync,
 } = require("fs");
-const { join } = require("path");
-const { loadFront } = require("yaml-front-matter");
+const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } = require('fs');
+const { join } = require('path');
+const { loadFront } = require('yaml-front-matter');
 
-const themesFolder = join(__dirname, "../content/joomla");
+const themesFolder = join(__dirname, '../content/theme');
 const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
 
