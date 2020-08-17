@@ -88,14 +88,14 @@ const lh = async (data) => {
 
   carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
   lightHouseData[`${data.themeKey}`] = {
-    performance: out.lighthouse.performance,
+    performance: out.lighthouse.performance * 100,
     firstContentfulPaint: Math.ceil(out.firstContentfulPaint / 100) / 10,
     firstMeaningfulPaint: Math.ceil(out.largestContentfulPaint / 100) / 10,
     firstCPUIdle: Math.ceil(out.totalBlockingTime / 100) / 10,
     interactive: Math.ceil(out.timeToInteractive / 100) / 10,
-    bestPractices: out.lighthouse.bestPractices,
-    accessibility: out.lighthouse.accessibility,
-    seo: out.lighthouse.seo,
+    bestPractices: out.lighthouse.bestPractices * 100,
+    accessibility: out.lighthouse.accessibility * 100,
+    seo: out.lighthouse.seo * 100,
     carbon: carbonVal.toFixed(3),
   };
 
