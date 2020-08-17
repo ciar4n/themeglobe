@@ -9,7 +9,6 @@ const {
   readdirSync,
   unlinkSync,
 } = require("fs");
-const { existsSync, readFileSync, writeFileSync, mkdirSync, readdirSync, unlinkSync } = require('fs');
 const { join } = require('path');
 const { loadFront } = require('yaml-front-matter');
 
