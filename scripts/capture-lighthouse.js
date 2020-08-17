@@ -9,10 +9,10 @@ const {
   readdirSync,
   unlinkSync,
 } = require("fs");
-const { join } = require('path');
-const { loadFront } = require('yaml-front-matter');
+const { join } = require("path");
+const { loadFront } = require("yaml-front-matter");
 
-const themesFolder = join(__dirname, '../content/theme');
+const themesFolder = join(__dirname, "../content/theme");
 const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
 
@@ -88,14 +88,14 @@ const lh = async (data) => {
 
   carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
   lightHouseData[`${data.themeKey}`] = {
-    performance: Math.ceil(out.ranks.performance * 100),
+    performance: out.ranks.performance * 100,
     firstContentfulPaint: Math.ceil(out.firstContentfulPaint / 100) / 10,
     firstMeaningfulPaint: Math.ceil(out.largestContentfulPaint / 100) / 10,
     firstCPUIdle: Math.ceil(out.totalBlockingTime / 100) / 10,
     interactive: Math.ceil(out.timeToInteractive / 100) / 10,
-    bestPractices: Math.ceil(out.lighthouse.bestPractices * 100),
-    accessibility: Math.ceil(out.lighthouse.accessibility * 100),
-    seo: Math.ceil(out.lighthouse.seo * 100),
+    bestPractices: out.lighthouse.bestPractices,
+    accessibility: out.lighthouse.accessibility,
+    seo: out.lighthouse.seo,
     carbon: carbonVal.toFixed(3),
   };
 
