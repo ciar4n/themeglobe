@@ -25,20 +25,40 @@
       <div class="blurb blurb-mobile"><p>Welcome to ThemeGlobe. A unbiased collection of themes and templates for Joomla and Wordpress. Gathered from all the major professional providers and tested through Google Lighthouse via <a href="https://web.dev/" target="_blank" rel="noopener">web.dev</a>.</p></div>
     </div>
 
-    <div class="intro">
-      <h1>Latest Themes and Templates</h1>
-      <a href="/cms/joomla/" class="button">List All Joomla<span class="btn-count">{{ $joomlathemeCount }}</span></a>
-      <a href="/cms/wordpress/" class="button">List All Wordpress<span class="btn-count">{{ $wordpressthemeCount }}</span></a>
-    </div>
+   
 
-    <div id="grids-homepage" class="grid">
-      {{ range first 12 $themes.ByPublishDate.Reverse }}
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Latest Joomla Templates</h2>
+        <a href="/cms/joomla/" class="button">List All Joomla<span class="btn-count">{{ $joomlathemeCount }}</span></a>
+      </div>
+
+      <div class="grid">
+      {{ range first 12 $joomlathemes.ByPublishDate.Reverse }}
         {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
         {{ $template_key := .File.BaseFileName | urlize }}
         {{ $lighthouse := index .Site.Data.themes $template_key }}
         {{ $repo := index .Site.Data.themes $repoName }}
           {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
         {{ end }}
+      </div>
+    </div>
+
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Latest Wordpress Themes</h2>
+        <a href="/cms/wordpress/" class="button">List All Wordpress<span class="btn-count">{{ $wordpressthemeCount }}</span></a>
+      </div>
+
+      <div class="grid">
+        {{ range first 12 $wordpressthemes.ByPublishDate.Reverse }}
+          {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
+          {{ $template_key := .File.BaseFileName | urlize }}
+          {{ $lighthouse := index .Site.Data.themes $template_key }}
+          {{ $repo := index .Site.Data.themes $repoName }}
+            {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+          {{ end }}
+      </div>
     </div>
 
     <div class="controls-pagination">

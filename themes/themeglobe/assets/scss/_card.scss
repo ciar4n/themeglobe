@@ -1,3 +1,28 @@
+.card-block {
+  margin-bottom: 3rem
+}
+
+.card-block-header {
+  display: flex;
+  justify-content: space-between;
+  padding: .75rem 0 1.5rem;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .button {
+    margin-right: 0;
+    background-color: var(--secondary);
+
+    .btn-count {
+      background-color: rgba(0, 0, 0, .2);
+    }
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -5,7 +30,6 @@
   border-radius: $border-radius;
   background-color: white;
   background-color: var(--card-bg);
-  // border: 3px solid white;
   transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
   position: relative;
   z-index: 1;
@@ -62,8 +86,7 @@
 
   .card-button {
     padding: 3px 5px;
-    border-radius: 2px;
-    margin-left: 2px;
+    margin-left: 3px;
     margin-right: 0;
     font-size: 0.8em;
     line-height: 1.3em;
