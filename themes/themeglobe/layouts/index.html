@@ -32,7 +32,7 @@
     </div>
 
     <div id="grids-homepage" class="grid">
-      {{ range first 21 $themes.ByPublishDate.Reverse }}
+      {{ range first 12 $themes.ByPublishDate.Reverse }}
         {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
         {{ $template_key := .File.BaseFileName | urlize }}
         {{ $lighthouse := index .Site.Data.themes $template_key }}
