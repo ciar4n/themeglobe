@@ -88,7 +88,7 @@ const lh = async (data) => {
 
   carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
   lightHouseData[`${data.themeKey}`] = {
-    performance: out.lighthouse.performance * 100,
+    performance: out.lighthouse.performance,
     firstContentfulPaint: Math.ceil(out.firstContentfulPaint / 100) / 10,
     firstMeaningfulPaint: Math.ceil(out.largestContentfulPaint / 100) / 10,
     firstCPUIdle: Math.ceil(out.totalBlockingTime / 100) / 10,
