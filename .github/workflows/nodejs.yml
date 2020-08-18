@@ -25,7 +25,7 @@ jobs:
       run: npm ci
       
     - name: Process
-      run: node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js
+      run: node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js  && node ./scripts/sort.js
 
     - name: Github
       run: node ./scripts/pre-deploy.js && node ./scripts/post-deploy-gh.js
