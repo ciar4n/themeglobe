@@ -66,7 +66,7 @@
         {{ $topPerformance := .Site.Data.performance }}
         {{ range $template_key, $value := $topPerformance }}
           {{ $lighthouse := index $topPerformance $template_key }}
-            {{ $path := print "/theme/" $template_key ".md" }}
+            {{ $path := print "theme/" $template_key ".md" }}
             {{ with $.Site.GetPage $path }}
               {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
             {{ end }}
