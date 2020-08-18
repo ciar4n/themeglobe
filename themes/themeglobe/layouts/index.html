@@ -35,11 +35,9 @@
 
       <div class="grid">
       {{ range first 12 $joomlathemes.ByPublishDate.Reverse }}
-        {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
         {{ $template_key := .File.BaseFileName | urlize }}
         {{ $lighthouse := index .Site.Data.themes $template_key }}
-        {{ $repo := index .Site.Data.themes $repoName }}
-          {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+          {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
         {{ end }}
       </div>
     </div>
@@ -52,13 +50,29 @@
 
       <div class="grid">
         {{ range first 12 $wordpressthemes.ByPublishDate.Reverse }}
-          {{ $repoName := printf "%s-%s" (substr (replace .Params.details "/" "-") 19 | urlize) }}
           {{ $template_key := .File.BaseFileName | urlize }}
           {{ $lighthouse := index .Site.Data.themes $template_key }}
-          {{ $repo := index .Site.Data.themes $repoName }}
-            {{ partial "template-card.html" (dict "theme" . "repo" $repo "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
-          {{ end }}
+          {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+        {{ end }}
       </div>
+    </div>
+
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Top Performance Leaderboard</h2>
+      </div>
+
+      <div class="grid">
+        {{ $topPerformance := .Site.Data.performance }}
+        {{ range $template_key, $value := $topPerformance }}
+          {{ $lighthouse := index $topPerformance $template_key }}
+            {{ $path := print "/theme/" $template_key ".md" }}
+            {{ with $.Site.GetPage $path }}
+              {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+            {{ end }}
+        {{ end }}
+      </div>
+
     </div>
 
     <div class="controls-pagination">
