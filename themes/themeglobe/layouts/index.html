@@ -63,7 +63,7 @@
       </div>
 
       <div class="grid">
-        {{ $topPerformance := $.Site.Data.performance }}
+        {{ $topPerformance := .Site.Data.performance }}
         {{ range $template_key, $value := $topPerformance }}
           {{ $lighthouse := index $topPerformance $template_key }}
             {{ $path := print "/theme/" $template_key ".md" }}
