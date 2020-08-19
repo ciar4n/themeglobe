@@ -21,34 +21,36 @@ const sortElements = ({ items, sortBy, direction, maxItems, fileName }) => {
     writeFileSync(join(__dirname, `../data/${fileName}.json`), JSON.stringify(PerformanceFinal), { encoding: 'utf8' });
 };
 
-sortElements({
-    items: fileData,
-    sortBy: 'performance',
-    direction: 'desc',
-    maxItems: 13,
-    fileName: 'performance',
-});
+if (fileData) {
+    sortElements({
+        items: fileData,
+        sortBy: 'performance',
+        direction: 'desc',
+        maxItems: 13,
+        fileName: 'performance',
+    });
 
-sortElements({
-    items: fileData,
-    sortBy: 'accessibility',
-    direction: 'desc',
-    maxItems: 13,
-    fileName: 'accessibility',
-});
+    sortElements({
+        items: fileData,
+        sortBy: 'accessibility',
+        direction: 'desc',
+        maxItems: 13,
+        fileName: 'accessibility',
+    });
 
-sortElements({
-    items: fileData,
-    sortBy: 'seo',
-    direction: 'desc',
-    maxItems: 13,
-    fileName: 'seo',
-});
+    sortElements({
+        items: fileData,
+        sortBy: 'seo',
+        direction: 'desc',
+        maxItems: 13,
+        fileName: 'seo',
+    });
 
-sortElements({
-    items: fileData,
-    sortBy: 'best-practices',
-    direction: 'desc',
-    maxItems: 13,
-    fileName: 'best-practices',
-});
+    sortElements({
+        items: fileData,
+        sortBy: 'best-practices',
+        direction: 'desc',
+        maxItems: 13,
+        fileName: 'best-practices',
+    });
+}
