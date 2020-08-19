@@ -74,6 +74,18 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
       // }
       // writeFileSync(themeJsonFilename, JSON.stringify({ [`${themeKey}`]: newNums }));
 
+      const newNums = {
+        performance: lightHouseDataTmp[`${themeKey}`].performance,
+        bestPractices: lightHouseDataTmp[`${themeKey}`].bestPractices,
+        accessibility: lightHouseDataTmp[`${themeKey}`].accessibility,
+        seo: lightHouseDataTmp[`${themeKey}`].seo,
+        carbon: lightHouseDataTmp[`${themeKey}`].carbon,
+        firstContentfulPaint: lightHouseDataTmp[`${themeKey}`].firstContentfulPaint,
+        firstMeaningfulPaint: lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint,
+        firstCPUIdle: lightHouseDataTmp[`${themeKey}`].firstCPUIdle,
+        interactive: lightHouseDataTmp[`${themeKey}`].interactive,
+      }
+
       lightHouseData[`${themeKey}`] = newNums;
       continue;
     }
