@@ -25,7 +25,7 @@ sortElements({
     items: fileData,
     sortBy: 'performance',
     direction: 'desc',
-    maxItems: 12,
+    maxItems: 13,
     fileName: 'performance',
 });
 
@@ -33,7 +33,7 @@ sortElements({
     items: fileData,
     sortBy: 'accessibility',
     direction: 'desc',
-    maxItems: 12,
+    maxItems: 13,
     fileName: 'accessibility',
 });
 
@@ -41,7 +41,7 @@ sortElements({
     items: fileData,
     sortBy: 'seo',
     direction: 'desc',
-    maxItems: 12,
+    maxItems: 13,
     fileName: 'seo',
 });
 
@@ -49,6 +49,6 @@ sortElements({
     items: fileData,
     sortBy: 'best-practices',
     direction: 'desc',
-    maxItems: 12,
+    maxItems: 13,
     fileName: 'best-practices',
 });
