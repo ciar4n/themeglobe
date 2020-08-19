@@ -1,4 +1,4 @@
-const { readFileSync, writeFileSync, existsSynnc } = require("fs");
+const { readFileSync, writeFileSync, existsSync } = require("fs");
 const { join } = require("path");
 const fileThemes = join(__dirname, "../data/themes.json");
 let fileData = false;
