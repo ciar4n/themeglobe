@@ -16,7 +16,6 @@ const themesFolder = join(__dirname, "../content/theme");
 const root = process.cwd();
 const urlsForAudit = [];
 const dataForAudit = [];
-let lightHouseData = {};
 
 if (!existsSync(`${root}/data`)) {
   mkdirSync(`${root}/data`);
@@ -50,31 +49,19 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     url = frontmatter.audit;
   }
 
+  let lightHouseDataTmp = false;
+
   if (existsSync(themeJsonFilename)) {
-    let lightHouseDataTmp;
     try {
       lightHouseDataTmp = JSON.parse(readFileSync(themeJsonFilename));
     } catch (er) {
       // Invalid JSON
       unlinkSync(themeJsonFilename);
     }
+  }
 
-    if (lightHouseDataTmp) {
-      const newNums = {
-        performance: lightHouseDataTmp[`${themeKey}`].performance,
-        bestPractices: lightHouseDataTmp[`${themeKey}`].bestPractices,
-        accessibility: lightHouseDataTmp[`${themeKey}`].accessibility,
-        seo: lightHouseDataTmp[`${themeKey}`].seo,
-        carbon: lightHouseDataTmp[`${themeKey}`].carbon,
-        firstContentfulPaint: lightHouseDataTmp[`${themeKey}`].firstContentfulPaint,
-        firstMeaningfulPaint: lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint,
-        firstCPUIdle: lightHouseDataTmp[`${themeKey}`].firstCPUIdle,
-        interactive: lightHouseDataTmp[`${themeKey}`].interactive,
-      }
-
-      lightHouseData[`${themeKey}`] = newNums;
-      continue;
-    }
+  if (lightHouseDataTmp) {
+    continue;
   }
 
   urlsForAudit.push(url);
