@@ -77,16 +77,14 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     }
   }
 
-  if (10 < idx < 21) {
-    urlsForAudit.push(url);
-    dataForAudit.push({
-      themeName: theme,
-      themeKey: themeKey,
-      themeUrl: url,
-      themeJsonFilename: themeJsonFilename,
-      lightHouseData: {},
-    });
-  }
+  urlsForAudit.push(url);
+  dataForAudit.push({
+    themeName: theme,
+    themeKey: themeKey,
+    themeUrl: url,
+    themeJsonFilename: themeJsonFilename,
+    lightHouseData: {},
+  });
 }
 
 (async () => {
