@@ -11,7 +11,6 @@ const {
 } = require("fs");
 const { join } = require("path");
 const { loadFront } = require("yaml-front-matter");
-const reachableUrls = require('reachable-urls');
 
 const themesFolder = join(__dirname, "../content/theme");
 const root = process.cwd();
