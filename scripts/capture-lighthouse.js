@@ -97,10 +97,10 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
       if (fd.requestedUrl.includes(data.themeUrl)) {
         carbonVal = (fd.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
         const tempCur = {
-          performance: (Math.round((fd.lighthouse.performance + Number.EPSILON) * 100) / 100),
-          bestPractices: (Math.round((fd.lighthouse.bestPractices + Number.EPSILON) * 100) / 100),
-          accessibility: (Math.round((fd.lighthouse.accessibility + Number.EPSILON) * 100) / 100),
-          seo: (Math.round((fd.lighthouse.seo + Number.EPSILON) * 100) / 100),
+          performance: (Math.round((fd.lighthouse.performance + Number.EPSILON) * 100) / 100) * 100,
+          bestPractices: (Math.round((fd.lighthouse.bestPractices + Number.EPSILON) * 100) / 100) * 100,
+          accessibility: (Math.round((fd.lighthouse.accessibility + Number.EPSILON) * 100) / 100) * 100,
+          seo: (Math.round((fd.lighthouse.seo + Number.EPSILON) * 100) / 100) * 100,
           carbon: carbonVal.toFixed(3),
           firstContentfulPaint: (Math.round((fd.firstContentfulPaint + Number.EPSILON) * 100) / 100),
           firstMeaningfulPaint: (Math.round((fd.largestContentfulPaint + Number.EPSILON) * 100) / 100),
