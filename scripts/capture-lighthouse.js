@@ -60,7 +60,21 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     }
 
     if (lightHouseDataTmp) {
-      lightHouseData[`${themeKey}`] = lightHouseDataTmp[`${themeKey}`];
+      // Fix the floating nums
+      // const newNums = {
+      //   performance: (Math.round((lightHouseDataTmp[`${themeKey}`].performance + Number.EPSILON) * 100) / 100),
+      //   bestPractices: (Math.round((lightHouseDataTmp[`${themeKey}`].bestPractices + Number.EPSILON) * 100) / 100),
+      //   accessibility: (Math.round((lightHouseDataTmp[`${themeKey}`].accessibility + Number.EPSILON) * 100) / 100),
+      //   seo: (Math.round((lightHouseDataTmp[`${themeKey}`].seo + Number.EPSILON) * 100) / 100),
+      //   carbon: lightHouseDataTmp[`${themeKey}`].carbon,
+      //   firstContentfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstContentfulPaint + Number.EPSILON) * 100) / 100),
+      //   firstMeaningfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint + Number.EPSILON) * 100) / 100),
+      //   firstCPUIdle: (Math.round((lightHouseDataTmp[`${themeKey}`].firstCPUIdle + Number.EPSILON) * 100) / 100),
+      //   interactive: (Math.round((lightHouseDataTmp[`${themeKey}`].interactive + Number.EPSILON) * 100) / 100),
+      // }
+      // writeFileSync(themeJsonFilename, JSON.stringify({ [`${themeKey}`]: newNums }));
+
+      lightHouseData[`${themeKey}`] = newNums;
       continue;
     }
   }
@@ -91,15 +105,15 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
         const tempVal = {};
         carbonVal = (fd.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
         const tempCur = {
-          performance: fd.lighthouse.performance * 100,
-          bestPractices: fd.lighthouse.bestPractices * 100,
-          accessibility: fd.lighthouse.accessibility * 100,
-          seo: fd.lighthouse.seo * 100,
+          performance: (Math.round((fd.lighthouse.performance + Number.EPSILON) * 100) / 100),
+          bestPractices: (Math.round((fd.lighthouse.bestPractices + Number.EPSILON) * 100) / 100),
+          accessibility: (Math.round((fd.lighthouse.accessibility + Number.EPSILON) * 100) / 100),
+          seo: (Math.round((fd.lighthouse.seo + Number.EPSILON) * 100) / 100),
           carbon: carbonVal.toFixed(3),
-          firstContentfulPaint: Math.ceil(fd.firstContentfulPaint / 100) / 10,
-          firstMeaningfulPaint: Math.ceil(fd.largestContentfulPaint / 100) / 10,
-          firstCPUIdle: Math.ceil(fd.totalBlockingTime / 100) / 10,
-          interactive: Math.ceil(fd.timeToInteractive / 100) / 10,
+          firstContentfulPaint: (Math.round((fd.firstContentfulPaint + Number.EPSILON) * 100) / 100),
+          firstMeaningfulPaint: (Math.round((fd.largestContentfulPaint + Number.EPSILON) * 100) / 100),
+          firstCPUIdle: (Math.round((fd.totalBlockingTime + Number.EPSILON) * 100) / 100),
+          interactive: (Math.round((fd.timeToInteractive + Number.EPSILON) * 100) / 100),
         };
         tempVal[`${data.themeKey}`] = tempCur;
         lightHouseData[`${data.themeKey}`] = tempCur;
