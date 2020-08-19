@@ -69,3 +69,6 @@ typings/
 
 # Test Content
 content/test
+
+.log
+.vscode

@@ -13,14 +13,21 @@ const { join } = require("path");
 const { loadFront } = require("yaml-front-matter");
 
 const themesFolder = join(__dirname, "../content/theme");
-const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
+const urlsForAudit = [];
+const dataForAudit = [];
+let lightHouseData = {};
 
 if (!existsSync(`${root}/data`)) {
   mkdirSync(`${root}/data`);
 }
 
-const processTheme = (theme) => {
+for (const [idx, theme] of readdirSync(themesFolder).entries()) {
+  if (theme.startsWith("_")) {
+    continue;
+  }
+  if (['icetheme-zen.md', 'joomlashine-ares.md'].includes(theme)) { continue; }
+
   const frontmatter = loadFront(readFileSync(join(themesFolder, theme)));
   const themeJsonFilename = `data/${theme
     .replace(".md", "")
@@ -43,67 +50,90 @@ const processTheme = (theme) => {
     url = frontmatter.audit;
   }
 
-  let lightHouseData = {};
-
   if (existsSync(themeJsonFilename)) {
+    let lightHouseDataTmp;
     try {
-      lightHouseData = JSON.parse(readFileSync(themeJsonFilename));
+      lightHouseDataTmp = JSON.parse(readFileSync(themeJsonFilename));
     } catch (er) {
       // Invalid JSON
       unlinkSync(themeJsonFilename);
-      lightHouseData = {};
+    }
+
+    if (lightHouseDataTmp) {
+      // Fix the floating nums
+      // const newNums = {
+      //   performance: (Math.round((lightHouseDataTmp[`${themeKey}`].performance + Number.EPSILON) * 100) / 100),
+      //   bestPractices: (Math.round((lightHouseDataTmp[`${themeKey}`].bestPractices + Number.EPSILON) * 100) / 100),
+      //   accessibility: (Math.round((lightHouseDataTmp[`${themeKey}`].accessibility + Number.EPSILON) * 100) / 100),
+      //   seo: (Math.round((lightHouseDataTmp[`${themeKey}`].seo + Number.EPSILON) * 100) / 100),
+      //   carbon: lightHouseDataTmp[`${themeKey}`].carbon,
+      //   firstContentfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstContentfulPaint + Number.EPSILON) * 100) / 100),
+      //   firstMeaningfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint + Number.EPSILON) * 100) / 100),
+      //   firstCPUIdle: (Math.round((lightHouseDataTmp[`${themeKey}`].firstCPUIdle + Number.EPSILON) * 100) / 100),
+      //   interactive: (Math.round((lightHouseDataTmp[`${themeKey}`].interactive + Number.EPSILON) * 100) / 100),
+      // }
+      // writeFileSync(themeJsonFilename, JSON.stringify({ [`${themeKey}`]: newNums }));
+
+      const newNums = {
+        performance: lightHouseDataTmp[`${themeKey}`].performance,
+        bestPractices: lightHouseDataTmp[`${themeKey}`].bestPractices,
+        accessibility: lightHouseDataTmp[`${themeKey}`].accessibility,
+        seo: lightHouseDataTmp[`${themeKey}`].seo,
+        carbon: lightHouseDataTmp[`${themeKey}`].carbon,
+        firstContentfulPaint: lightHouseDataTmp[`${themeKey}`].firstContentfulPaint,
+        firstMeaningfulPaint: lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint,
+        firstCPUIdle: lightHouseDataTmp[`${themeKey}`].firstCPUIdle,
+        interactive: lightHouseDataTmp[`${themeKey}`].interactive,
+      }
+
+      lightHouseData[`${themeKey}`] = newNums;
+      continue;
     }
   }
 
-  if (
-    lightHouseData[`${themeKey}`] ||
-    // The following url is breaking the script
-    theme === "joomlashine-ares.md"
-  ) {
-    // console.log(`${theme} Lighthouse skipped, already processed`)
-    return;
+  if (10 < idx < 21) {
+    urlsForAudit.push(url);
+    dataForAudit.push({
+      themeName: theme,
+      themeKey: themeKey,
+      themeUrl: url,
+      themeJsonFilename: themeJsonFilename,
+      lightHouseData: {},
+    });
   }
+}
 
-  lh({
-    themeName: theme,
-    themeKey: themeKey,
-    themeUrl: url,
-    themeJsonFilename: themeJsonFilename,
-    lightHouseData: {},
-  });
-};
+(async () => {
+  // const existingUrls = await reachableUrls(urlsForAudit.join(' '));
 
-const lh = async (data) => {
-  if (data.themeUrl === "") return;
+  // console.dir(existingUrls)
+  // return;
 
-  const lightHouseData = {};
+  const fData = await PerfLeaderboard(urlsForAudit, 3, { launchOptions: {} });
 
-  data.themeUrl += "?nocache=true";
+  fData.forEach(fd => {
+    dataForAudit.forEach(data => {
+      if (fd.requestedUrl.includes(data.themeUrl)) {
+        const tempVal = {};
+        carbonVal = (fd.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
+        const tempCur = {
+          performance: (Math.round((fd.lighthouse.performance + Number.EPSILON) * 100) / 100),
+          bestPractices: (Math.round((fd.lighthouse.bestPractices + Number.EPSILON) * 100) / 100),
+          accessibility: (Math.round((fd.lighthouse.accessibility + Number.EPSILON) * 100) / 100),
+          seo: (Math.round((fd.lighthouse.seo + Number.EPSILON) * 100) / 100),
+          carbon: carbonVal.toFixed(3),
+          firstContentfulPaint: (Math.round((fd.firstContentfulPaint + Number.EPSILON) * 100) / 100),
+          firstMeaningfulPaint: (Math.round((fd.largestContentfulPaint + Number.EPSILON) * 100) / 100),
+          firstCPUIdle: (Math.round((fd.totalBlockingTime + Number.EPSILON) * 100) / 100),
+          interactive: (Math.round((fd.timeToInteractive + Number.EPSILON) * 100) / 100),
+        };
+        tempVal[`${data.themeKey}`] = tempCur;
+        lightHouseData[`${data.themeKey}`] = tempCur;
+        writeFileSync(data.themeJsonFilename, JSON.stringify(tempVal));
+      }
+    })
+  })
 
-  console.log(`Processing: ${data.themeName}`);
-
-  const outputData = await PerfLeaderboard([data.themeUrl]);
-
-  out = outputData[0];
-
-  carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
-  lightHouseData[`${data.themeKey}`] = {
-    performance: out.lighthouse.performance * 100,
-    bestPractices: out.lighthouse.bestPractices * 100,
-    accessibility: out.lighthouse.accessibility * 100,
-    seo: out.lighthouse.seo * 100,
-    carbon: carbonVal.toFixed(3),
-    firstContentfulPaint: Math.ceil(out.firstContentfulPaint / 100) / 10,
-    firstMeaningfulPaint: Math.ceil(out.largestContentfulPaint / 100) / 10,
-    firstCPUIdle: Math.ceil(out.totalBlockingTime / 100) / 10,
-    interactive: Math.ceil(out.timeToInteractive / 100) / 10,
-  };
-
-  writeFileSync(data.themeJsonFilename, JSON.stringify(lightHouseData));
-};
-
-(() => {
-  for (const theme of themeFiles) {
-    processTheme(theme);
-  }
+  writeFileSync(join(__dirname, `../data/themes.json`), JSON.stringify(lightHouseData), { encoding: 'utf8' });
+  // writeFileSync(join(__dirname, `../data/test.json`), JSON.stringify(fData), { encoding: 'utf8' });
 })();
