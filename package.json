@@ -3,7 +3,7 @@
     "process": "node ./scripts/capture-screenshots.js && node ./scripts/generate-thumbnails.js && node ./scripts/capture-lighthouse.js",
     "deploy": "node ./scripts/pre-deploy.js && node ./scripts/sort.js && hugo && node ./scripts/post-deploy-live.js",
     "serve": "node ./scripts/pre-deploy.js && node ./scripts/sort.js && hugo serve && node ./scripts/post-deploy-live.js",
-    "github": "node ./scripts/pre-deploy.js && node ./scripts/sort.js && node ./scripts/post-deploy-gh.js",
+    "github": "node ./scripts/pre-deploy.jss && node ./scripts/post-deploy-gh.js",
     "capture-screenshots": "node ./scripts/capture-screenshots.js",
     "capture-lighthouse": "node ./scripts/capture-lighthouse.js",
     "generate-thumbnails": "node ./scripts/generate-thumbnails.js",
