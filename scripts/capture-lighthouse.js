@@ -11,16 +11,21 @@ const {
 } = require("fs");
 const { join } = require("path");
 const { loadFront } = require("yaml-front-matter");
+const reachableUrls = require('reachable-urls');
 
 const themesFolder = join(__dirname, "../content/theme");
-const themeFiles = readdirSync(themesFolder);
 const root = process.cwd();
+const urlsForAudit = [];
+const dataForAudit = [];
 
 if (!existsSync(`${root}/data`)) {
   mkdirSync(`${root}/data`);
 }
 
-const processTheme = (theme) => {
+for (const [idx, theme] of readdirSync(themesFolder).entries()) {
+  if (theme.startsWith("_")) {
+    continue;
+  }
   const frontmatter = loadFront(readFileSync(join(themesFolder, theme)));
   const themeJsonFilename = `data/${theme
     .replace(".md", "")
@@ -46,12 +51,17 @@ const processTheme = (theme) => {
   let lightHouseData = {};
 
   if (existsSync(themeJsonFilename)) {
+    let lightHouseDataTmp;
     try {
-      lightHouseData = JSON.parse(readFileSync(themeJsonFilename));
+      lightHouseDataTmp = JSON.parse(readFileSync(themeJsonFilename));
     } catch (er) {
       // Invalid JSON
       unlinkSync(themeJsonFilename);
       lightHouseData = {};
+    }
+
+    if (lightHouseDataTmp) {
+      lightHouseData[`${themeKey}`] = lightHouseDataTmp;
     }
   }
 
@@ -61,54 +71,53 @@ const processTheme = (theme) => {
     theme === "joomlashine-ares.md"
   ) {
     // console.log(`${theme} Lighthouse skipped, already processed`)
-    return;
+    // return;
   }
 
-  lh({
-    themeName: theme,
-    themeKey: themeKey,
-    themeUrl: url,
-    themeJsonFilename: themeJsonFilename,
-    lightHouseData: {},
-  });
-};
-
-const lh = async (data) => {
-  if (data.themeUrl === "") return;
-
-  const lightHouseData = {};
-
-  data.themeUrl += "?nocache=true";
-
-  console.log(`Processing: ${data.themeName}`);
-
-  const outputData = await PerfLeaderboard([data.themeUrl]);
-
-  // If there was an error, bail out
-  if (!outputData) {
-    return;
+  if (10 < idx < 21) {
+    urlsForAudit.push(url);
+    dataForAudit.push({
+      themeName: theme,
+      themeKey: themeKey,
+      themeUrl: url,
+      themeJsonFilename: themeJsonFilename,
+      lightHouseData: {},
+    });
   }
+}
 
-  out = outputData[0];
+(async () => {
+  // const existingUrls = await reachableUrls(urlsForAudit.join(' '));
 
-  carbonVal = (out.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
-  lightHouseData[`${data.themeKey}`] = {
-    performance: out.lighthouse.performance * 100,
-    bestPractices: out.lighthouse.bestPractices * 100,
-    accessibility: out.lighthouse.accessibility * 100,
-    seo: out.lighthouse.seo * 100,
-    carbon: carbonVal.toFixed(3),
-    firstContentfulPaint: Math.ceil(out.firstContentfulPaint / 100) / 10,
-    firstMeaningfulPaint: Math.ceil(out.largestContentfulPaint / 100) / 10,
-    firstCPUIdle: Math.ceil(out.totalBlockingTime / 100) / 10,
-    interactive: Math.ceil(out.timeToInteractive / 100) / 10,
-  };
+  // console.dir(existingUrls)
+  // return;
 
-  writeFileSync(data.themeJsonFilename, JSON.stringify(lightHouseData));
-};
+  const fData = await PerfLeaderboard(urlsForAudit, 3, { launchOptions: {} });
+  const allData = {};
 
-(() => {
-  for (const theme of themeFiles) {
-    processTheme(theme);
-  }
+  fData.forEach(fd => {
+    dataForAudit.forEach(data => {
+      if (fd.requestedUrl.includes(data.themeUrl)) {
+        const tempVal = {};
+        carbonVal = (fd.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
+        const tempCur = {
+          performance: fd.lighthouse.performance * 100,
+          bestPractices: fd.lighthouse.bestPractices * 100,
+          accessibility: fd.lighthouse.accessibility * 100,
+          seo: fd.lighthouse.seo * 100,
+          carbon: carbonVal.toFixed(3),
+          firstContentfulPaint: Math.ceil(fd.firstContentfulPaint / 100) / 10,
+          firstMeaningfulPaint: Math.ceil(fd.largestContentfulPaint / 100) / 10,
+          firstCPUIdle: Math.ceil(fd.totalBlockingTime / 100) / 10,
+          interactive: Math.ceil(fd.timeToInteractive / 100) / 10,
+        };
+        tempVal[`${data.themeKey}`] = tempCur;
+        allData[`${data.themeKey}`] = tempCur;
+        writeFileSync(data.themeJsonFilename, JSON.stringify(tempVal));
+      }
+    })
+  })
+
+  writeFileSync(join(__dirname, `../data/themes.json`), JSON.stringify(allData), { encoding: 'utf8' });
+  writeFileSync(join(__dirname, `../data/test.json`), JSON.stringify(fData), { encoding: 'utf8' });
 })();
