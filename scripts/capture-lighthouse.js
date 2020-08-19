@@ -16,6 +16,7 @@ const themesFolder = join(__dirname, "../content/theme");
 const root = process.cwd();
 const urlsForAudit = [];
 const dataForAudit = [];
+let lightHouseData = {};
 
 if (!existsSync(`${root}/data`)) {
   mkdirSync(`${root}/data`);
@@ -25,6 +26,8 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
   if (theme.startsWith("_")) {
     continue;
   }
+  if (['icetheme-zen.md', 'joomlashine-ares.md'].includes(theme)) { continue; }
+
   const frontmatter = loadFront(readFileSync(join(themesFolder, theme)));
   const themeJsonFilename = `data/${theme
     .replace(".md", "")
@@ -47,8 +50,6 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     url = frontmatter.audit;
   }
 
-  let lightHouseData = {};
-
   if (existsSync(themeJsonFilename)) {
     let lightHouseDataTmp;
     try {
@@ -56,21 +57,12 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     } catch (er) {
       // Invalid JSON
       unlinkSync(themeJsonFilename);
-      lightHouseData = {};
     }
 
     if (lightHouseDataTmp) {
-      lightHouseData[`${themeKey}`] = lightHouseDataTmp;
+      lightHouseData[`${themeKey}`] = lightHouseDataTmp[`${themeKey}`];
+      continue;
     }
-  }
-
-  if (
-    lightHouseData[`${themeKey}`] ||
-    // The following url is breaking the script
-    theme === "joomlashine-ares.md"
-  ) {
-    // console.log(`${theme} Lighthouse skipped, already processed`)
-    // return;
   }
 
   if (10 < idx < 21) {
@@ -92,7 +84,6 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
   // return;
 
   const fData = await PerfLeaderboard(urlsForAudit, 3, { launchOptions: {} });
-  const allData = {};
 
   fData.forEach(fd => {
     dataForAudit.forEach(data => {
@@ -111,12 +102,12 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
           interactive: Math.ceil(fd.timeToInteractive / 100) / 10,
         };
         tempVal[`${data.themeKey}`] = tempCur;
-        allData[`${data.themeKey}`] = tempCur;
+        lightHouseData[`${data.themeKey}`] = tempCur;
         writeFileSync(data.themeJsonFilename, JSON.stringify(tempVal));
       }
     })
   })
 
-  writeFileSync(join(__dirname, `../data/themes.json`), JSON.stringify(allData), { encoding: 'utf8' });
-  writeFileSync(join(__dirname, `../data/test.json`), JSON.stringify(fData), { encoding: 'utf8' });
+  writeFileSync(join(__dirname, `../data/themes.json`), JSON.stringify(lightHouseData), { encoding: 'utf8' });
+  // writeFileSync(join(__dirname, `../data/test.json`), JSON.stringify(fData), { encoding: 'utf8' });
 })();
