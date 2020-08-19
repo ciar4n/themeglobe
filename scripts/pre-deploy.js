@@ -9,9 +9,13 @@ let combinedData = {};
 move(data, tmpData)
     .then(() => {
         mkdirSync(data);
-        const originalData = readdirSync(tmpData);
 
-        for (const theme of originalData) {
+        for (const theme of readdirSync(tmpData)) {
+            // skip some files
+            if (['accessibility.json', 'best-practices.json', 'seo.json', 'performance.json'].includes(theme)) {
+                continue;
+            }
+
             console.log(`${tmpData}/${theme}`)
             processTheme(`${tmpData}/${theme}`);
         }
