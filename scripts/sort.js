@@ -1,6 +1,12 @@
-const { readFileSync, writeFileSync } = require("fs");
+const { readFileSync, writeFileSync, existsSynnc } = require("fs");
 const { join } = require("path");
-const fileData = JSON.parse(readFileSync(join(__dirname, "../data/themes.json")))
+const fileThemes = join(__dirname, "../data/themes.json");
+let fileData = false;
+
+if (existsSync(fileThemes)) {
+    fileData = JSON.parse(readFileSync(fileThemes));
+}
+
 
 const sortElements = ({ items, sortBy, direction, maxItems, fileName }) => {
     let resultItems = Object.entries(items);
