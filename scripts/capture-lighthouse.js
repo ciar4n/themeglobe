@@ -60,20 +60,6 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
     }
 
     if (lightHouseDataTmp) {
-      // Fix the floating nums
-      // const newNums = {
-      //   performance: (Math.round((lightHouseDataTmp[`${themeKey}`].performance + Number.EPSILON) * 100) / 100),
-      //   bestPractices: (Math.round((lightHouseDataTmp[`${themeKey}`].bestPractices + Number.EPSILON) * 100) / 100),
-      //   accessibility: (Math.round((lightHouseDataTmp[`${themeKey}`].accessibility + Number.EPSILON) * 100) / 100),
-      //   seo: (Math.round((lightHouseDataTmp[`${themeKey}`].seo + Number.EPSILON) * 100) / 100),
-      //   carbon: lightHouseDataTmp[`${themeKey}`].carbon,
-      //   firstContentfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstContentfulPaint + Number.EPSILON) * 100) / 100),
-      //   firstMeaningfulPaint: (Math.round((lightHouseDataTmp[`${themeKey}`].firstMeaningfulPaint + Number.EPSILON) * 100) / 100),
-      //   firstCPUIdle: (Math.round((lightHouseDataTmp[`${themeKey}`].firstCPUIdle + Number.EPSILON) * 100) / 100),
-      //   interactive: (Math.round((lightHouseDataTmp[`${themeKey}`].interactive + Number.EPSILON) * 100) / 100),
-      // }
-      // writeFileSync(themeJsonFilename, JSON.stringify({ [`${themeKey}`]: newNums }));
-
       const newNums = {
         performance: lightHouseDataTmp[`${themeKey}`].performance,
         bestPractices: lightHouseDataTmp[`${themeKey}`].bestPractices,
@@ -104,17 +90,11 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
 }
 
 (async () => {
-  // const existingUrls = await reachableUrls(urlsForAudit.join(' '));
-
-  // console.dir(existingUrls)
-  // return;
-
   const fData = await PerfLeaderboard(urlsForAudit, 3, { launchOptions: {} });
 
   fData.forEach(fd => {
     dataForAudit.forEach(data => {
       if (fd.requestedUrl.includes(data.themeUrl)) {
-        const tempVal = {};
         carbonVal = (fd.weight.total / 1024 / 1024 / 1024) * 0.06 * 1000;
         const tempCur = {
           performance: (Math.round((fd.lighthouse.performance + Number.EPSILON) * 100) / 100),
@@ -127,13 +107,9 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
           firstCPUIdle: (Math.round((fd.totalBlockingTime + Number.EPSILON) * 100) / 100),
           interactive: (Math.round((fd.timeToInteractive + Number.EPSILON) * 100) / 100),
         };
-        tempVal[`${data.themeKey}`] = tempCur;
-        lightHouseData[`${data.themeKey}`] = tempCur;
-        writeFileSync(data.themeJsonFilename, JSON.stringify(tempVal));
+
+        writeFileSync(data.themeJsonFilename, JSON.stringify({ [`${data.themeKey}`]: tempCur }));
       }
     })
   })
-
-  writeFileSync(join(__dirname, `../data/themes.json`), JSON.stringify(lightHouseData), { encoding: 'utf8' });
-  // writeFileSync(join(__dirname, `../data/test.json`), JSON.stringify(fData), { encoding: 'utf8' });
 })();
