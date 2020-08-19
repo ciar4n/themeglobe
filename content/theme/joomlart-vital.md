@@ -17,8 +17,8 @@ archetype:
 
 ---
 
-Looking to open a beauty business? We’ve got you covered!
+JA Vital is a professional Joomla template for Hospitals, and Health Care centers, featuring cosmetic clinics. Its oriented & creative design, many beautiful content blocks to represent your website content in smart layouts.
 
-Welcome to our JA Spa - a creative and fancy beauty Joomla template, designed for beauty parlor, hair salon, nail salon owners. It offers multiple ready-to-use pages: Homepage, service list, service details, blog with details and a special full-screen menu.
+The medical Joomla template provides specifically designed sections and pages for Healthcare website: Department directory, Services, Doctors, and beautiful bonus pages: Blog, Contact, and all Joomla default pages with customized style to fit the template design.
 
-The beauty Joomla template is developed on JoomlArt's T4 Framework that utilizes the latest Bootstrap 4 library, fully-responsive and advanced template dashboard with amazing features: layout builder, mega menu builder, theme custom tool and many more. 
+The Joomla medical template is built with the robust T4 Joomla Template Framework, fully responsive at core, optimized for SEO and performance. It supports Acymailing for newsletter signup and marketing plans.
