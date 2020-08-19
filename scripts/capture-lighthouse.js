@@ -93,7 +93,7 @@ for (const [idx, theme] of readdirSync(themesFolder).entries()) {
           interactive: (Math.round((fd.timeToInteractive + Number.EPSILON) * 100) / 100),
         };
 
-        writeFileSync(data.themeJsonFilename, JSON.stringify({ [`${data.themeKey}`]: tempCur }));
+        writeFileSync(join(__dirname, `../${data.themeJsonFilename}`), JSON.stringify({ [`${data.themeKey}`]: tempCur }));
       }
     })
   })
