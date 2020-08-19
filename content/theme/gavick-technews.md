@@ -7,6 +7,7 @@ date: 2018-01-08
 
 cms: 
   - Joomla
+  - Wordpress
 
 provider:
   - Gavick
