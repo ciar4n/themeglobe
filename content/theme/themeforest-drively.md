@@ -2,7 +2,7 @@
 title: "Drively"
 details: https://themeforest.net/item/drively-driving-school-joomla-template-drivers/28211157
 demo: https://drively.codelayers.net/
-date: 2017-08-26
+date: 2020-08-20
 
 cms: 
   - Joomla
