@@ -89,7 +89,21 @@
       </div>
     </div>
 
-
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Top SEO Leaderboard</h2>
+      </div>
+      <div class="grid">
+        {{ $topSeo := .Site.Data.seo }}
+        {{ range $template_key, $value := $topSeo}}
+          {{ $lighthouse := index $seo $template_key }}
+            {{ $path := print "/theme/" $template_key ".md" }}
+            {{ with $.Site.GetPage $path }}
+              {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+            {{ end }}
+        {{ end }}
+      </div>
+    </div>
 
     <div class="controls-pagination">
       <div class="mixitup-page-list"></div>
