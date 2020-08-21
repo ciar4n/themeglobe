@@ -1,5 +1,5 @@
 ---
-title: "Hestia Pro"
+title: "Hestia"
 details: https://themeisle.com/themes/hestia-pro/
 demo: https://demo.themeisle.com/hestia/
 date: 2019-07-11
