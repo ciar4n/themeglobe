@@ -105,6 +105,22 @@
       </div>
     </div>
 
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Top Best Practices Leaderboard</h2>
+      </div>
+      <div class="grid">
+        {{ $topBestPractices := .Site.Data.best-practices }}
+        {{ range $template_key, $value := $topBestPractices}}
+          {{ $lighthouse := index $bestpractices $template_key }}
+            {{ $path := print "/theme/" $template_key ".md" }}
+            {{ with $.Site.GetPage $path }}
+              {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+            {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
     <div class="controls-pagination">
       <div class="mixitup-page-list"></div>
       <div class="mixitup-page-stats"></div>
