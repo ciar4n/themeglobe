@@ -80,7 +80,7 @@
       <div class="grid">
         {{ $topAccessibility := .Site.Data.accessibility }}
         {{ range $template_key, $value := $topAccessibility }}
-          {{ $lighthouse := index $accessibility $template_key }}
+          {{ $lighthouse := index $topAccessibility $template_key }}
             {{ $path := print "/theme/" $template_key ".md" }}
             {{ with $.Site.GetPage $path }}
               {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
@@ -96,7 +96,7 @@
       <div class="grid">
         {{ $topSeo := .Site.Data.seo }}
         {{ range $template_key, $value := $topSeo}}
-          {{ $lighthouse := index $seo $template_key }}
+          {{ $lighthouse := index $topSeo $template_key }}
             {{ $path := print "/theme/" $template_key ".md" }}
             {{ with $.Site.GetPage $path }}
               {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
@@ -112,7 +112,7 @@
       <div class="grid">
         {{ $topBestPractices := .Site.Data.best-practices }}
         {{ range $template_key, $value := $topBestPractices}}
-          {{ $lighthouse := index $bestpractices $template_key }}
+          {{ $lighthouse := index $topBestPractices $template_key }}
             {{ $path := print "/theme/" $template_key ".md" }}
             {{ with $.Site.GetPage $path }}
               {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
