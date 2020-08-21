@@ -110,7 +110,7 @@
         <h2>Top Best Practices Leaderboard</h2>
       </div>
       <div class="grid">
-        {{ $topBestPractices := .Site.Data.best-practices }}
+        {{ $topBestPractices := .Site.Data.bestpractices }}
         {{ range $template_key, $value := $topBestPractices}}
           {{ $lighthouse := index $topBestPractices $template_key }}
             {{ $path := print "/theme/" $template_key ".md" }}

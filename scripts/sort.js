@@ -57,6 +57,6 @@ if (fileData) {
         sortBy: 'best-practices',
         direction: 'desc',
         maxItems: 13,
-        fileName: 'best-practices',
+        fileName: 'bestpractices',
     });
 }
