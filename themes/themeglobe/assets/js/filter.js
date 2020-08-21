@@ -30,7 +30,7 @@ const mixer = mixitup('#grids-homepage', {
   }
 });
 
-const providerGroup = ["gavick", "elegantthemes", "joomdev", "joomforest", "joomjunk", "joomla51", "joomlabamboo", "joomlart", "joomlashine", "joomshaper", "rockettheme", "shape5", "studiopress", "teslathemes", "themeforest", "themify", "yootheme", "youjoomla"]
+const providerGroup = ["gavick", "elegantthemes", "joomdev", "joomforest", "joomjunk", "joomla51", "joomlabamboo", "joomlart", "joomlashine", "joomshaper", "rockettheme", "shape5", "studiopress", "teslathemes", "themeisle", "themeforest", "themify", "yootheme", "youjoomla"]
 const archetypeGroup = ["advocate", "athlete", "caregiver", "creative", "explorer", "intellectual", "performer", "rebel", "royal", "tastemaker", "visionary"]
 const themeFrameworkGroup = ["gantry", "gavern", "helix", "standalone", "sun", "t4", "vertex", "wright"]
 
