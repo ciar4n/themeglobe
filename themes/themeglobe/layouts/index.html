@@ -61,7 +61,6 @@
       <div class="card-block-header">
         <h2>Top Performance Leaderboard</h2>
       </div>
-
       <div class="grid">
         {{ $topPerformance := .Site.Data.performance }}
         {{ range $template_key, $value := $topPerformance }}
@@ -72,8 +71,25 @@
             {{ end }}
         {{ end }}
       </div>
-
     </div>
+
+    <div class="card-block">
+      <div class="card-block-header">
+        <h2>Top Accessibility Leaderboard</h2>
+      </div>
+      <div class="grid">
+        {{ $topAccessibility := .Site.Data.accessibility }}
+        {{ range $template_key, $value := $topAccessibility }}
+          {{ $lighthouse := index $accessibility $template_key }}
+            {{ $path := print "/theme/" $template_key ".md" }}
+            {{ with $.Site.GetPage $path }}
+              {{ partial "template-card.html" (dict "theme" . "performance" $lighthouse.performance "bestPractices" $lighthouse.bestPractices "accessibility" $lighthouse.accessibility "seo" $lighthouse.seo) }}
+            {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+
 
     <div class="controls-pagination">
       <div class="mixitup-page-list"></div>
