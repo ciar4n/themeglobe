@@ -1,7 +1,7 @@
 ---
 title: "Public Opinion"
 details: https://www.cssigniter.com/themes/public-opinion/
-demo: https://www.cssigniter.com/themes/public-opinion/
+demo: https://www.cssigniter.com/preview/public-opinion/
 date: 2020-05-24
 
 cms: 
