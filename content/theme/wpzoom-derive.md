@@ -2,7 +2,7 @@
 title: "Derive"
 details: https://www.wpzoom.com/themes/derive/
 demo: https://demo.wpzoom.com/derive/
-date: 2020-07-05
+date: 2020-08-05
 
 cms: 
   - Wordpress
