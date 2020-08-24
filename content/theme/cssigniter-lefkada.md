@@ -2,7 +2,7 @@
 title: "Lefkada"
 details: https://www.cssigniter.com/themes/lefkada/
 demo: https://www.cssigniter.com/preview/lefkada/
-date: 2019-08-24
+date: 2020-08-24
 
 cms: 
   - Wordpress
