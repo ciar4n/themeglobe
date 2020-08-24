@@ -31,3 +31,9 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .home-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+}
