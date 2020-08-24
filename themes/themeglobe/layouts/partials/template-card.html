@@ -27,7 +27,7 @@
     <a href="{{ .theme.Permalink }}" title="{{ .theme.Params.title }}">
       {{ $template_key := .theme.Page.File.BaseFileName | urlize }}
       {{ $imagePath := print "images/theme/thumbnail/" $template_key ".jpg" }}
-      <img src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" />
+      <img src="{{ $imagePath | relURL }}" alt="{{ .Title }} screenshot" loading=lazy width="280" height="210"/>
     </a>
 
     <div class="card-cms">

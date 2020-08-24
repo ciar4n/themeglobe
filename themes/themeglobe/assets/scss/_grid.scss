@@ -9,3 +9,25 @@
 .grid-item {
   margin: 0 auto;
 }
+
+.home-blocks-grid {
+  display: grid;
+  flex-wrap: wrap;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+
+  .grid-block {
+    background: white;
+    padding: 1rem 2rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .card-details {
+    flex-direction: column;
+  }
+}
