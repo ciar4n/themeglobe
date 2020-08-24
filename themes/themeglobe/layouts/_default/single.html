@@ -1,5 +1,6 @@
 {{ define "header_css" }}{{ end }}
 {{ define "body_classes" }}page-default-single{{ end }}
+{{ define "title" }}{{ .Title }} by {{- range .Params.provider }} {{ . }}{{ end }}{{ end }}
 
 {{ define "main" }}
 
