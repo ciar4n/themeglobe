@@ -2,7 +2,7 @@
 title: "Gourmand"
 details: https://www.wpzoom.com/themes/gourmand/
 demo: https://demo.wpzoom.com/gourmand/
-date: 2020-08-05
+date: 2020-08-25
 
 cms: 
   - Wordpress
