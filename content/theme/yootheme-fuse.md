@@ -7,7 +7,6 @@ date: 2016-10-10
 
 cms: 
   - Joomla
-  - Wordpress
 
 provider:
   - YOOtheme

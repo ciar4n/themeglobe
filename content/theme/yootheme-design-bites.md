@@ -6,7 +6,6 @@ date: 2020-03-13
 
 cms: 
   - Joomla
-  - Wordpress
 
 provider:
   - YOOtheme

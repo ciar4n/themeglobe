@@ -7,7 +7,6 @@ date: 2019-03-10
 
 cms: 
   - Joomla
-  - Wordpress
 
 provider:
   - YOOtheme
