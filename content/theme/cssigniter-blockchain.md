@@ -1,7 +1,7 @@
 ---
 title: "Blockchain"
 details: https://www.cssigniter.com/themes/blockchain/
-demo: https://www.cssigniter.com/themes/blockchain/
+demo: https://www.cssigniter.com/preview/blockchain/
 date: 2019-06-24
 
 cms: 

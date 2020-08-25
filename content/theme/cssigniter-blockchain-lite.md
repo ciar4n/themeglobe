@@ -1,5 +1,5 @@
 ---
-title: "blockchain-lite"
+title: "Blockchain Lite"
 details: https://www.cssigniter.com/themes/blockchain-lite/
 demo: https://www.cssigniter.com/preview/blockchain-lite/
 date: 2019-08-24
