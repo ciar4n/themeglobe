@@ -2,7 +2,7 @@
 title: "Exposure"
 details: https://graphpaperpress.com/themes/exposure/
 demo: https://demo.graphpaperpress.com/exposure/
-date: 2020-09-25
+date: 2020-07-25
 
 cms: 
   - Wordpress
