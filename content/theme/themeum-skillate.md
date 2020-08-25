@@ -1,5 +1,5 @@
 ---
-title: "Blockchain Lite"
+title: "Skillate"
 details: https://www.themeum.com/product/skillate/
 demo: https://demo.themeum.com/wordpress/skillate/
 date: 2020-09-26
