@@ -10,6 +10,9 @@ cms:
 provider: 
   - GraphPaperPress
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   

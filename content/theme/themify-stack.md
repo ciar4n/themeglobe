@@ -10,6 +10,9 @@ cms:
 provider: 
   - Themify
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   - Visionary

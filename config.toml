@@ -20,6 +20,7 @@ pygmentsUseClasses = true
   provider = "provider"
   archetype = "archetype"
   theme_framework = "theme_framework"
+  pricing = "pricing"
 
 [outputs]
   home = ["HTML","RSS","JSON"]

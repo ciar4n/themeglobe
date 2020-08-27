@@ -10,6 +10,9 @@ cms:
 provider: 
   - ElegantThemes
 
+pricing:
+  - Paid
+
 archetype:
   - Intellectual
   

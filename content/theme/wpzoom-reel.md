@@ -10,6 +10,9 @@ cms:
 provider: 
   - WPZoom
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   

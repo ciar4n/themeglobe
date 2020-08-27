@@ -10,6 +10,9 @@ cms:
 provider: 
   - TeslaThemes
 
+pricing:
+  - Paid
+
 archetype:
   - Advocate
   

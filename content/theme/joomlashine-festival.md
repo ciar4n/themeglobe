@@ -12,6 +12,9 @@ provider:
 
 theme_framework: Sun
 
+pricing:
+  - Paid
+
 archetype:
   - Performer
   - Rebel

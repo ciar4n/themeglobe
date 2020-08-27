@@ -10,6 +10,9 @@ cms:
 provider: 
   - StudioPress
 
+pricing:
+  - Paid
+
 archetype:
   - Visionary
   - Creative

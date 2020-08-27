@@ -12,6 +12,9 @@ provider:
   - RocketTheme
 
 theme_framework: Gantry
+pricing:
+  - Paid
+
 archetype:
   - Athlete
 

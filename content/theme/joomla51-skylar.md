@@ -11,6 +11,9 @@ cms:
 provider:
   - Joomla51
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   - Visionary

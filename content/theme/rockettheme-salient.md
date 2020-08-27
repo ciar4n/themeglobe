@@ -13,6 +13,9 @@ provider:
 
 theme_framework: Gantry
 
+pricing:
+  - Paid
+
 archetype:
   - Advocate
   - Creative

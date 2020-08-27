@@ -10,6 +10,9 @@ cms:
 provider: 
   - CSSIgniter
 
+pricing:
+  - Paid
+
 archetype:
   - Performer
   - Spiritual

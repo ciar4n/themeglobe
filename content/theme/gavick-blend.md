@@ -13,6 +13,9 @@ provider:
 
 theme_framework: Gavern
 
+pricing:
+  - Paid
+
 archetype:
   - Tastemaker
 ---

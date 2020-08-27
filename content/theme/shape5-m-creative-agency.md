@@ -12,6 +12,9 @@ provider:
 
 theme_framework: Vertex
 
+pricing:
+  - Paid
+
 archetype:
   - Visionary
 ---

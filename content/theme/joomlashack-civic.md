@@ -12,6 +12,9 @@ provider:
 
 theme_framework: Wright
 
+pricing:
+  - Paid
+
 archetype:
   - Advocate
 ---

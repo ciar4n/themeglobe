@@ -68,6 +68,7 @@ function getUiState() {
   var uiState = {
     provider: mixer.getFilterGroupSelectors("provider").map(getValueFromSelector),
     archetype: mixer.getFilterGroupSelectors("archetype").map(getValueFromSelector),
+    pricing: mixer.getFilterGroupSelectors("pricing").map(getValueFromSelector),
   };
 
   return uiState;
@@ -125,6 +126,7 @@ function syncMixerWithPreviousUiState(uiState, animate) {
 
   mixer.setFilterGroupSelectors("provider", provider.map(getSelectorFromValue));
   mixer.setFilterGroupSelectors("archetype", archetype.map(getSelectorFromValue));
+  mixer.setFilterGroupSelectors("pricing", archetype.map(getSelectorFromValue));
 
   // Parse the filter groups (passing `false` will perform no animation)
 

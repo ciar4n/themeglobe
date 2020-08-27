@@ -2,7 +2,7 @@
 
 <div
   id="{{ .theme.Params.Title | urlize }}"
-  class="grid-item card {{ .classes }} {{ range .theme.Params.provider }}{{ . | urlize }} {{ end }}{{ range .theme.Params.archetype }}{{ . | urlize }} {{end}}{{ .theme.Params.theme_framework | urlize }}"
+  class="grid-item card {{ .classes }} {{ range .theme.Params.provider }}{{ . | urlize }} {{ end }}{{ range .theme.Params.archetype }}{{ . | urlize }} {{end}}{{ .theme.Params.theme_framework | urlize }} {{ range .theme.Params.pricing }}{{ . | urlize }} {{ end }}"
   data-submitted="{{ .theme.Lastmod.Format "Jan 2, 2006" }}"
   data-name="{{ .theme.Params.title }}"
   data-performance="{{ .performance }}"

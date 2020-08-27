@@ -13,6 +13,9 @@ provider:
 
 theme_framework: Standalone
 
+pricing:
+  - Paid
+
 archetype:
   - Advocate
   - Creative

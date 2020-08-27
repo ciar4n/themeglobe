@@ -10,6 +10,9 @@ cms:
 provider: 
   - ThemeForest
 
+pricing:
+  - Paid
+
 archetype:
   - Visionary
   - Creative

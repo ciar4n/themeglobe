@@ -11,6 +11,9 @@ cms:
 provider:
   - YOOtheme
 
+pricing:
+  - Paid
+
 archetype:
   - Advocate
   - Creative

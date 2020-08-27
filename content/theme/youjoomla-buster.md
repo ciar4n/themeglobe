@@ -10,6 +10,9 @@ cms:
 provider:
   - YouJoomla
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   - Rebel

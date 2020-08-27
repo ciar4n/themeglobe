@@ -60,6 +60,26 @@
     </ul>
   </div>
 
+  <div id="filter-group-pricing" class="filter filter-group-pricing closed" data-filter-group="pricing">
+    <div class="filter-title">
+      <h3>Pricing</h3>
+      {{ partial "toggle-icon.html" . }}
+    </div>
+    <ul class="filter-list">
+      {{ range .Site.Taxonomies.pricing }}
+        {{ $count := 0 }}
+        {{ range (where .Pages ".Params.cms" "intersect" (slice $.Title)) }}
+            {{ $count = add $count 1 }}
+        {{ end }}
+      <li id="filter-{{ .Page.Title | urlize }}" class="filter-item"{{ if eq $count 0 }} style="display:none"{{ end }}>
+        <span class="filter-name">{{ .Page.Title }}</span>
+        <span class="filter-count" id="filter-count-{{ .Page.Title | urlize}}">{{ $count }}</span>
+        <button aria-label="filter-button-{{ .Page.Title | urlize }}" id="filter-button-{{ .Page.Title | urlize }}" class="filter-button" data-toggle=".{{ .Page.Title | urlize }}"></button>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
 </div>
 <div class="submit">
   <a class="button submit-button" href="https://github.com/ciar4n/themeglobe" target="_blank" rel="nofollow">

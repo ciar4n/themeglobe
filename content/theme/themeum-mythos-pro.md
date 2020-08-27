@@ -10,6 +10,9 @@ cms:
 provider: 
   - Themeum
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   - Visionary

@@ -11,6 +11,9 @@ cms:
 provider:
   - JoomDev
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
 ---

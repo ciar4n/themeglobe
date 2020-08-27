@@ -12,6 +12,9 @@ provider:
 
 theme_framework: Helix
 
+pricing:
+  - Paid
+
 archetype:
   - Visionary
   - Rebel

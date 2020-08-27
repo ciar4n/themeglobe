@@ -10,6 +10,9 @@ cms:
 provider:
   - YOOtheme
 
+pricing:
+  - Paid
+
 archetype:
   - Creative
   - Visionary
