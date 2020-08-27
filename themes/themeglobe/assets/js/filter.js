@@ -30,7 +30,7 @@ const mixer = mixitup('#grids-homepage', {
   }
 });
 
-const providerGroup = ["cssigniter", "gavick", "graphpaperpress", "elegantthemes", "joomdev", "joomforest", "joomjunk", "joomla51", "joomlabamboo", "joomlart", "joomlashine", "joomshaper", "rockettheme", "shape5", "studiopress", "teslathemes", "themeforest", "themeum", "themify", "wpzoom", "yootheme", "youjoomla"]
+const providerGroup = ["athemes", "cssigniter", "gavick", "graphpaperpress", "elegantthemes", "joomdev", "joomforest", "joomjunk", "joomla51", "joomlabamboo", "joomlart", "joomlashine", "joomshaper", "rockettheme", "shape5", "studiopress", "teslathemes", "themeforest", "themeum", "themify", "wpzoom", "yootheme", "youjoomla"]
 const archetypeGroup = ["advocate", "athlete", "caregiver", "creative", "explorer", "intellectual", "performer", "rebel", "royal", "tastemaker", "visionary"]
 const themeFrameworkGroup = ["gantry", "gavern", "helix", "standalone", "sun", "t4", "vertex", "wright"]
 const pricingGroup = ["free", "paid"]
