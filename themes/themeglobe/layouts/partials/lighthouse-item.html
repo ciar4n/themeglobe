@@ -12,7 +12,7 @@
         <circle class="lighthouse-item-circle-bg" stroke-width="0" cx="50%" cy="50%" r="17" style="stroke: white;"></circle>
         <circle class="lighthouse-item-highlight" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="{{ .value }},100" fill="none" cx="50%" cy="50%" r="15.9" transition-delay="600" style="stroke: ;"></circle>
         <g class="lighthouse-item-value" transition-delay="600">
-        <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ .value }}</text>
+        <text class="circle-chart__percent" x="17" y="22" text-anchor="middle" font-size="14">{{ lang.NumFmt 0 .value }}</text>
         </g>
     </svg>
 </div>
