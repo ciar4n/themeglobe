@@ -14,7 +14,7 @@ pricing:
   - Paid
 
 archetype:
-  - Creaive
+  - Creative
   
 ---
 
