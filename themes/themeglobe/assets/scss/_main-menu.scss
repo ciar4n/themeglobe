@@ -1,7 +1,6 @@
 .main-menu {
-  display: none;
-  padding: 10px 25px;
-  margin-right: auto;
+  display: block;
+  margin: 5px auto 5px 0;
 
   @include breakpoint("medium") {
     display: inline-block;

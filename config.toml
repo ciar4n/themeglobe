@@ -31,8 +31,9 @@ pygmentsUseClasses = true
 
 # Main Menu
 [[menu.main]]
-	name = "List All"
-	url = "/"
-    weight = 1
+	name = "Joomla"
+	url = "/cms/joomla/"
 
-
+[[menu.main]]
+  name = "Wordpress"
+	url = "/cms/wordpress/"
