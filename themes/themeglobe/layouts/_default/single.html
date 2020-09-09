@@ -1,6 +1,7 @@
 {{ define "header_css" }}{{ end }}
 {{ define "body_classes" }}page-default-single{{ end }}
 {{ define "title" }}{{ .Title }} by {{- range .Params.provider }} {{ . }}{{ end }}{{ end }}
+{{ define "description" }}Performance and features of the {{ .Title }} {{if in .Params.cms "Joomla" }}Joomla template{{ else }}Wordpress theme{{ end }} by {{- range .Params.provider }} {{ . }}{{ end }}{{ end }}
 
 {{ define "main" }}
 
