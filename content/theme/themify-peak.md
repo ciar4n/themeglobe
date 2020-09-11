@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Explorer
+  - Travel
   
 ---
 

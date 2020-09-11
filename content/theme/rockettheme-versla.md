@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Online Store
   
 description: Put your products on center stage with the new Versla theme from RocketTheme. Versla utilizes the lean and powerful Snipcart to take your online store to the next level. Showcase your products and drive sales like never before.
 ---

@@ -15,9 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Visionary
+tags:
+  - Business
 
 description: Wayne Corp is a modern and purpose oriented Joomla template for corporate and financial institutions. This corporate Joomla template will be a strong ally for businesses, financial consultants and agencies who want intuitive & modern websites.
 ---

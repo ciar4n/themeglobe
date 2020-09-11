@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Magazine
   
 description: Audacity is designed for the mass content market, perfectly suited for news, magazine or other similar sites that require the delivery of large volumes of text-centric content, whilst maintaining an elegant, contemporary and usable visual experience.
 ---

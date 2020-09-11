@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
+tags:
   - Advocate
-  - Intellectual
+  - Magazine
   - Royal
 
 description: Themis is a professional Joomla law firm template. It's the ideal choice for attorneys, advocates, solicitors, and law firms. The Themis template is versatile and highly customizable that can be used for all types of legal consultations and other relevant corporate websites.

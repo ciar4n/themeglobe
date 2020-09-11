@@ -15,10 +15,9 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
-  - Royal
+tags:
+  - Business
+  - Magazine
   
 description: Joomla Template for Finance and Business site
 ---

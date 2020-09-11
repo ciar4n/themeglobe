@@ -16,8 +16,9 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
+
 ---
 
 GK Blend is a professional Joomla template for bar, cafe, bistro, drinks, restaurant and any other eatery businesses websites with modern and functional design, additional custom pages: menu, blog, gallery and all default Joomla pages. It is built with Gavern Framework, supports megamenu, fully responsive and ease of customization.

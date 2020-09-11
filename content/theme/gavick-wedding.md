@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Spiritual
+tags:
+  - Wedding
 ---
 
 Having a wedding website for wedding day could be very helpful to help you connect with your friends, show more info about your wedding party, share happy moments and more. GK Wedding Joomla template is the perfect solution to quickly build beautiful website for your wedding party. It's super easy to install and setup, using the quickstart package, you have a complete website like our demo site, just update graphics, content then you can get it live and share with your guests.

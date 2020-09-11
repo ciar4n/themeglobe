@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Travel
 ---
 
 ### Travertine is a Joomla directory template

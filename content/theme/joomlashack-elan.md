@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Neutral
 ---
 
 ### Élan is a blogging Joomla template

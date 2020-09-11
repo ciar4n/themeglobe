@@ -15,10 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
-  - Rebel
+tags:
+  - Automotive
   
 description: Automobile and Car Service Template for Joomla
 ---

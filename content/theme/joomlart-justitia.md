@@ -16,8 +16,9 @@ theme_framework: T4
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Law
+  - Business
 
 ---
 

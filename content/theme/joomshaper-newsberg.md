@@ -15,8 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Magazine
 
 ---
 

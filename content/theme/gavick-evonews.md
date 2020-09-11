@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Magazine
 ---
 
 Evo Newsis our next beautiful Joomla template fornews, magazine and editorial websiteswith modern and responsive design to present news across devices. The template can be used for reporters and journalists to bring the latest news to the public eye. The advanced social sharing will help share your news easily via popular social networks.

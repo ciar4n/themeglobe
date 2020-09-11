@@ -15,9 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
-  - Advocate
+tags:
+  - Magazine
 ---
 
 ### Novitas is a Joomla template for magazines and newspapers

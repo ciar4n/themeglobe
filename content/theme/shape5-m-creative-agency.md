@@ -15,8 +15,8 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Software
 ---
 
 With the release of M Creative Agencyresponsive Joomla templatecomes a versatile template suitable for a broad range of sites. Great for a creative agency, web design firm, standard business site or even personal portfolio. We've included the most amount of modules and styled to match the design to give you great flexibility in putting together a site. Image and Content Fader, Photo Showcase, Tab Show and many more are all included and styled. This month we also released a new module that will type predefined text out in an animation. We call it the S5 Typed Text module and its available for download to free and paid members.

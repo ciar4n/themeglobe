@@ -15,9 +15,9 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Neutral
+  - Education
   
 ---
 

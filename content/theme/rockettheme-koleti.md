@@ -16,10 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
-  - Visionary
+tags:
+  - Education
+  - Magazine
   
 description: Koleti brings a new generation of web design to your campus.
 ---

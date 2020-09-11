@@ -15,8 +15,9 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
+tags:
   - Spiritual
+  - Event
 ---
 
 After many request we decided it was time to produce a newresponsive Joomla templatedesigned for a church. Of course the theme can be used for any website but we designed it to include features that are specific and beneficial to a church website layout. We did something a bit different this month with the Flex Menu. We went for minimal menu items with a large bold look. We then added an off screen right menu where you can add in additional menu items that you may need.

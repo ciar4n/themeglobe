@@ -13,8 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Listing
   
 ---
 

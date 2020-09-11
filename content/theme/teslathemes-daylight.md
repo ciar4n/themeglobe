@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Visionary
+tags:
+  - Software
+  - Business
   
 ---
 

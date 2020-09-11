@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Neutral
+  - Sport & Fitness
   
 description: Notio is a beautifully-designed template for magazines, news, and other content-rich websites. Featuring a variety of dynamic particles that enable you to easily create custom items or pull content directly from the CMS.
 ---

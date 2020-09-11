@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Business
 ---
 
 JF Corporate is Free Responsive and Professional Joomla! Template. It is well suited for corporate, business, portfolio or social websites.

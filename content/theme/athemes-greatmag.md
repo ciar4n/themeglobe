@@ -13,8 +13,8 @@ provider:
 pricing:
   - Free
 
-archetype:
-  - Intellectual
+tags:
+  - News
   
 ---
 

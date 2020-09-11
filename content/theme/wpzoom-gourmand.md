@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
-  - Explorer
+tags:
+  - Restaurant
+  - Travel
   
 ---
 

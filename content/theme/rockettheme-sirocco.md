@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Neutral
+  - Magazine
   
 description: Sirocco features a variety of sharp and elegant visual options for site content via RokSprocket, with its many layouts and themes. The design paradigm behind Sirocco is a flat and contemporary approach, to keep a fresh but engaging site experience.
 ---

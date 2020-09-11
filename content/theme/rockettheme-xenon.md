@@ -16,8 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Magazine
+  - Neutral
   
 description: Xenon is an excellent example of precision design, with refined elements and structures to combine vibrancy, elegance and flexibility within one entity. The template is saturated with rich typographical elements to enhance your content.
 ---

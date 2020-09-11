@@ -13,8 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
   
 ---
 

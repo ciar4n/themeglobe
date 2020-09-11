@@ -31,13 +31,13 @@ const mixer = mixitup('#grids-homepage', {
 });
 
 const providerGroup = ["athemes", "cssigniter", "gavick", "graphpaperpress", "elegantthemes", "joomdev", "joomforest", "joomjunk", "joomla51", "joomlabamboo", "joomlart", "joomlashine", "joomshaper", "rockettheme", "shape5", "studiopress", "teslathemes", "themeforest", "themeum", "themify", "wpzoom", "yootheme", "youjoomla"]
-const archetypeGroup = ["advocate", "athlete", "caregiver", "creative", "explorer", "intellectual", "performer", "rebel", "royal", "tastemaker", "visionary"]
+
 const themeFrameworkGroup = ["gantry", "gavern", "helix", "standalone", "sun", "t4", "vertex", "wright"]
 const pricingGroup = ["free", "paid"]
 
 const groups = {
   provider: providerGroup,
-  archetype: archetypeGroup,
+  tags: tagsGroup,
   themeFramework: themeFrameworkGroup,
   pricing: pricingGroup
 }
@@ -98,6 +98,7 @@ function updateCount(group, matches) {
       return match.includes(term);
     })
     document.querySelector(`#filter-count-${term}`).innerText = count.length
+    document.querySelector(`#filter-button-${term}`).setAttribute('data-count', count.length)
   })
 }
 
@@ -107,6 +108,7 @@ function resetCount(group, matches) {
       return match.includes(term);
     })
     document.querySelector(`#filter-count-${term}`).innerText = count.length
+    document.querySelector(`#filter-button-${term}`).setAttribute('data-count', count.length)
   })
 }
 

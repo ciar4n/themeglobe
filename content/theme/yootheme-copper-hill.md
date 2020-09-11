@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
 ---
 
 With its minimal style and some handmade illustrations, this YOOtheme Pro theme package is perfect for restaurants, cafes, bars and gastronomy websites. It's available for WordPress and Joomla.

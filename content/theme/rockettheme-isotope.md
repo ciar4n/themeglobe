@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Visionary
+tags:
+  - Neutral
   
 description: Isotope is an elegant, interactive and animated template, bursting with colors and imagery, in a highly flexible structure. Stylistic features include Parallax backgrounds and the versatile FlexSlider particle, with several layout options and animation effects.
 ---

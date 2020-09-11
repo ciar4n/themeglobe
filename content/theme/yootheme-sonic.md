@@ -14,9 +14,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Rebel
-  - Explorer
+  - Travel
   - Creative
 ---
 

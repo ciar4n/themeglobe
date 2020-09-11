@@ -15,9 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
-  - Advocate
+tags:
+  - Services
 
 description: Fixter is JoomShaper’s May 2018 Joomla template. It is a great choice (ready solution) for plumber, painter, carpenter, electrician, handyman, house cleaning, housekeeping, domestic cleaning & repair service websites.
 ---

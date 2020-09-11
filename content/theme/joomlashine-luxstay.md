@@ -15,8 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Hotel
 ---
 
 JSN LuxStay is a magnificent homestay booking template with all the necessary goodies that will just take you a little time. The Joomla tourism template package is bundled with Solidres, which means you will be able to offer homestay reservations, showcase travel facilities, and other related services. JSN LuxStay also follows all the current web trends to ensure the smooth and stable operation of your fresh homestay pages.

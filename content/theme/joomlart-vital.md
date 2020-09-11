@@ -15,8 +15,8 @@ theme_framework: T4
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - Medical
 
 ---
 

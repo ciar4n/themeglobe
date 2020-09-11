@@ -13,8 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Agency
+  - Creative
 ---
 
 ## 10 Types of Creative Header & Menu Style

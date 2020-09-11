@@ -16,9 +16,11 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Visionary
+  - Neutral
+  - Beauty
+  - Sports & Fitness
   
 description: Calla is a fresh, bold design built on the powerful, state-of-the-art Gantry 5 framework.
 ---

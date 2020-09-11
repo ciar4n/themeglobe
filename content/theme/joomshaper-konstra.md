@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Rebel
-  - Creative
+tags:
+  - Services
+  - Business
 
 description: Konstra is a website template for construction company of any size. This Joomla construction template has been designed dedicatedly for construction companies, real estate developers, architectural agencies, renovation service providers, and those that offer relevant building services.
 ---

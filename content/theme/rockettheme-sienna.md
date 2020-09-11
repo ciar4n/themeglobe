@@ -16,8 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Hotel
+  - Neutral
   
 description: Sienna is a beautiful theme, perfect for a wide range of sites from travel agencies and hotels to apartment complexes and event venues. It features a brilliant layout and unique particles to help you create the perfect website.
 ---

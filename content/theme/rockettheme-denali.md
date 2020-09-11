@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Visionary
-  - Explorer
+tags:
+  - Event
+  - Travel
+  - Neutral
   
 description: Denali is a flexible and exclusive design built on the powerful, state-of-the-art Gantry 5 framework.
 ---

@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Rebel
+tags:
+  - Neutral
   
 description: Antares is a template bolstered with bold and impressive visual elements, to add depth to your site, whilst remaining within an elegant and acute design paradigm. Reimagine your site with this vibrant, adaptable and highly customizable theme.
 ---

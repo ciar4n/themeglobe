@@ -16,8 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Rebel
+tags:
+  - Gaming
+  - Magazine
 
 ---
 

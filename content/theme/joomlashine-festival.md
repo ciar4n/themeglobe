@@ -15,9 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Performer
-  - Rebel
+tags:
+  - Event
   
 description: A Festival & Event Booking Joomla Template
 ---

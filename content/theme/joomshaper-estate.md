@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Real Estate
+  - Listing
 
 description: Estate is a complete and ready solution for any kind of real estate, developments, residentials, and rental properties. This Joomla real estate template can be used for vacation rental, real estate listing, and apartment rental pages as well.
 ---

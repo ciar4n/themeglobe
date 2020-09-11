@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Business
 ---
 
 JF Chrome is a Powerful Professional Responsive Template for Joomla, JomSocial and Kunena - with lots of features and settings.

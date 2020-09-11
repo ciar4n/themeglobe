@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Visionary
+tags:
+  - Neutral
+  - Blog
+  - Magazine
   
 description: Topaz is a modern, professional theme that combines simplicity and elegance. It features a range of beautifully-designed particles that bring out the best in your content, a perfect choice for individuals, professionals and corporations alike.
 ---

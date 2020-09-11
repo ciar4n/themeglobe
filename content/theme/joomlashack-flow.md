@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Neutral
 ---
 
 ### Flow is a Joomla template that enables you to create highly-effective landing pages

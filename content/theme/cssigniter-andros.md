@@ -13,8 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Royal
+tags:
+  - Blog
+  - Hotel
   
 ---
 

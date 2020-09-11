@@ -13,8 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Photography
+  - Portfolio
   
 ---
 

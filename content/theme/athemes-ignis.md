@@ -13,8 +13,10 @@ provider:
 pricing:
   - Free
 
-archetype:
-  - Visionary
+tags:
+  - Blog
+  - Online Store
+  - Creative
   
 ---
 

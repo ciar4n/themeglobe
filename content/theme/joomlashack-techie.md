@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Neutral
 ---
 
 ### Techie is a fresh, corporate Joomla template

@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Travel
+  - Sport & Fitness
 
 description: The way rental business is thriving nowadays, anybody with a similar endeavour can start a rental service business and hit the jackpot. 
 ---

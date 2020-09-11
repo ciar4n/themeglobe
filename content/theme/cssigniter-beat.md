@@ -13,8 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Performer
+tags:
+  - Blog
+  - Entertainment
+  - Online Store
   
 ---
 

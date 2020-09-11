@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Visionary
-  - Explorer
+tags:
+  - Business
+  - Neutral
   
 description: Protean is an exclusive, modern design suited for product showcases, company profiles, and professional portfolios. It features an array of easy-to-navigate particles designed to let you swipe, tab, and slide your way through your content.
 ---

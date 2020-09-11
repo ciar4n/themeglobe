@@ -15,9 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Caregiver
+tags:
+  - Nonprofit
 
 description: Giver is an inclusive charity Joomla template for fundraising, non-profit, NGO and social enterprise organizations of any size. This Joomla charity template has been designed for charity and donation organizations that are doing something positive, helpful and constructive.
 ---

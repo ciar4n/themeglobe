@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Event
   - Performer
   
 description: Tune up your site with Remnant, a versatile and modern theme that really rocks. Bring the noise with integrated music players that support SoundCloud, External, and Local audio files. Even more, showcase your latest videos with the new Video Grid particle.

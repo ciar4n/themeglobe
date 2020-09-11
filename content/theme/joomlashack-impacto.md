@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Neutral
 ---
 
 ### Impacto is a best-selling Landing Page Joomla template

@@ -15,8 +15,8 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Magazine
 ---
 
 This month we've got a content packedresponsive Joomla templatecalled News Blog. As the title indicates it can be used for a news style site or a blog website. Of course you can always use it for any website but this was the general theme in the design and modules included. We've set the Image and Content Fader to article mode so it automatically pulls in all your articles in a specific category. But we've also added some features to article mode to display the category, author and publish date of each article if you wish.

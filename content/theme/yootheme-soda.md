@@ -14,7 +14,7 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
   - Visionary
 ---

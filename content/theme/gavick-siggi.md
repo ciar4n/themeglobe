@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Blog
 ---
 
 GK Siggi is a creative Joomla template for blog, personal websites with clean and minimal design, additional custom pages: Projects, About, and all default Joomla pages. It is built with Gavern Framework, fully responsive and ease of customization.

@@ -15,8 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Beauty
 
 description: Salon is JoomShaper’s August 2018 Joomla template. It is a perfect choice for any beauty care website. We’ve crafted dedicated solution for beauty salon, beauty parlour, hair salon, nail salon, barber lounge websites, and all other relevant businesses. 
 ---

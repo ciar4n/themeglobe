@@ -15,9 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Magazine
 
 description: Gazette is a complete and ready solution for any kind of Newspaper or Magazine website to deliver daily news, celebrity gossip or interesting facts.
 ---

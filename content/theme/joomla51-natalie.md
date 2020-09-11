@@ -14,11 +14,12 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
+  - Magazine
+  - Education
   - Creative
-  - Visionary
-  - Intellectual
-  - Caregiver
+  - Neutral
+  - Business
 ---
 
 We are delighted to introduce our latest addition to the Joomla51 collection, Natalie is a professional and versatile template solution that offers bold styling, strong typography and great functionality to any Joomla project. This template comes bundled with a collection of great module extensions making creating common elements a breeze. A fully responsive layout with a host of module positions and layout options, Natalie gives yous the ideal platform to build great designs for all screen sizes and devices. Create a beautiful and functional website today with this robust Joomla template solution!

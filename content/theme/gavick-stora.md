@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Online Store
 ---
 
 GK Stora eCommerce Joomla template comes with beautiful design concept to show off your products in smartest ways, represent your product content and graphics in beautiful layout. Every area of your shop store can be as beautiful and enthralling as the last.

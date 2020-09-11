@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Performer
-  - Spiritual
+tags:
+  - Education
+  - Sport & Fitness
   
 ---
 

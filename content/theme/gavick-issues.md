@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Magazine
 ---
 
 Welcome GK ISSUES, a modern Joomla template designed for creative blog, personal blogging, travel blog, and any kind of blogging website. GK Issues can be used for portfolio and resume websites. The Joomla template is powerful and highly customizable.

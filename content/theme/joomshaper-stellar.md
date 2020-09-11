@@ -15,7 +15,7 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
+tags:
   - Rebel
   - Creative
 

@@ -15,9 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Royal
-  - Intellectual
+tags:
+  - Neutral
   
 description: A Portfolio & Wedding Joomla Template
 ---

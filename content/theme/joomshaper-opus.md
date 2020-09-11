@@ -15,10 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Rebel
-  - Visionary
+tags:
   - Creative
+  - Business
 
 description: Opus is the perfect choice and ready solution for any kind of creative agency or business website. 
 ---

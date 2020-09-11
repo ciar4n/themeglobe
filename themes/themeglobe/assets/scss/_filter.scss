@@ -76,111 +76,146 @@
         transform: rotate(270deg);
       }
     }
-  }
+  } 
+}
 
-  .filter-list {
+.filter-list {
+  margin: 0;
+  padding: 0;
+
+  .filter-item {
     margin: 0;
     padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
 
-    .filter-item {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      margin-bottom: 10px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
-      &:last-of-type {
-        margin-bottom: 0;
+    .filter-button {
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 20px;
+      height: 20px;
+      background: $bg-dark;
+      background: var(--bg-dark);
+      border: 0px solid $primary;
+      border-radius: 3px;
+      padding: 2px;
+      cursor: pointer;
+
+      &:hover {
+        border: 2px solid $primary-lighter;
+        border: 2px solid (--primary-lighter);
       }
 
-      .filter-button {
-        margin-left: 10px;
-        display: inline-block;
-        vertical-align: text-top;
-        width: 20px;
-        height: 20px;
-        background: $bg-dark;
-        background: var(--bg-dark);
-        border: 0px solid $primary;
-        border-radius: 3px;
-        padding: 2px;
-        cursor: pointer;
-
-        &:hover {
-          border: 2px solid $primary-lighter;
-          border: 2px solid (--primary-lighter);
-        }
-
-        &:focus {
-          outline: none;
-          box-shadow: 0 0 5px $primary-light;
-          box-shadow: 0 0 5px var(--primary-light);
-        }
-
-        &:focus:not(:focus-visible) {
-          box-shadow: none;
-        }
-
-        &.mixitup-control-active {
-          background: $primary;
-          border: 2px solid $primary;
-          background-image: url("../images/ui/check-solid.svg");
-          background-size: 12px 12px;
-          background-position: center center;
-          background-repeat: no-repeat;
-        }
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px $primary-light;
+        box-shadow: 0 0 5px var(--primary-light);
       }
 
-      .filter-icon {
-        width: 18px;
-        height: 18px;
-        margin-right: 7px;
+      &:focus:not(:focus-visible) {
+        box-shadow: none;
       }
 
-      .filter-name {
-
-        a {
-          color: black;
-          text-decoration: none;
-        }
-
-        @include breakpoint('small') {
-          display: block;
-        }
-      }
-
-      .filter-link {
-        display: none;
-        color: $primary;
-        text-decoration: none;
-        padding: 2px 5px;
-
-        @include breakpoint('small') {
-          display: block;
-        }
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .filter-count {
-        color: white;
-        background-color: $primary-light;
-        background-color: var(--primary-light);
-        width: 18px;
-        line-height: 16px;
-        font-size: .65em;
-        font-weight: bold;
-        text-align: center;
-        border-radius: 2px;
-        margin-right: 5px;
-        order: -1;
-
+      &.mixitup-control-active {
+        background: $primary;
+        border: 2px solid $primary;
+        background-image: url("../images/ui/check-solid.svg");
+        background-size: 12px 12px;
+        background-position: center center;
+        background-repeat: no-repeat;
       }
     }
+
+    .filter-tag {
+      padding: 4px 5px;
+      margin: 3px 0 3px 3px;
+      font-size: .9em;
+      background-color: #242e3d;
+      text-transform: lowercase;
+
+      .filter-count {
+        background: #121822;
+      }
+
+      &.mixitup-control-active {
+        background-color: $primary;
+
+        .filter-count {
+          background: #14477d;
+        }
+      }
+    }
+
+    .filter-icon {
+      width: 18px;
+      height: 18px;
+      margin-right: 7px;
+    }
+
+    .filter-name {
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+
+      @include breakpoint('small') {
+        display: block;
+      }
+    }
+
+    .filter-link {
+      display: none;
+      color: $primary;
+      text-decoration: none;
+      padding: 2px 5px;
+
+      @include breakpoint('small') {
+        display: block;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .filter-count {
+      color: white;
+      background-color: $primary-light;
+      background-color: var(--primary-light);
+      width: 18px;
+      line-height: 16px;
+      font-size: .65em;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 2px;
+      margin-right: 5px;
+      order: -1;
+    }
+  }
+}
+
+.filter-group-tags {
+  .filter-list {
+    text-align: right;
+  }
+
+  .filter-item {
+    display: inline;
+    text-align: right;
+  }
+
+  [data-count="0"],
+  .filter-count {
+    display: none;
   }
 }
 

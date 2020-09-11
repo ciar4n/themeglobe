@@ -13,8 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Performer
+  - Online Store
   
 ---
 

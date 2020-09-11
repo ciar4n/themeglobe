@@ -16,7 +16,7 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
   - Visionary
 

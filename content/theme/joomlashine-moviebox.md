@@ -15,9 +15,9 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Rebel
-  - Creative
+tags:
+  - Entertainment
+  - Film & Theater
   
 ---
 

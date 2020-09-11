@@ -13,8 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Magazine
+  - Blog
+  - Neutral
   
 ---
 

@@ -13,8 +13,9 @@ provider:
 pricing:
   - Free
 
-archetype:
-  - Visionary
+tags:
+  - Blog
+  - News
   
 ---
 

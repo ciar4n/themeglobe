@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - Education
 ---
 
 ## JD KidZone - Kindergarten & Pre-school Joomla Template

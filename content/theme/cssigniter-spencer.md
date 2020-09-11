@@ -13,8 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Education
+  - Online Store
+  - Blog
   
 ---
 

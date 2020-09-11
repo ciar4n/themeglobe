@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Explorer
-  - Intellectual
+tags:
+  - Travel
+  - Magazine
   
 ---
 

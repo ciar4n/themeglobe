@@ -15,8 +15,8 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - nonprofit
 ---
 
 Our Charity Joomla Template is designed for any charity, or non-profit organization website. Large pictures, clear call to actions for donations, ways to showcase project goals, and the ability to advertise recent events, make Charity the perfect fit for your charity organization.

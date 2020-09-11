@@ -15,9 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Royal
-  - Tastemaker
+tags:
+  - Restaurant
   
 description: A minimalist Single-product eCommerce Template for Joomla
 ---

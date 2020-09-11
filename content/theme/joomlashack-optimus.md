@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Magazine
 ---
 
 ### Optimus is a perfect template for small businesses and organizations

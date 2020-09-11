@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Business
 ---
 
 JF Business is Free Responsive Business Joomla! Template. It is well suited for business, corporate, portfolio or social websites.

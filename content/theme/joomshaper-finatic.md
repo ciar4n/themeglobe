@@ -15,10 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Caregiver
-  - Intellectual
+tags:
+  - Business
+  - Magazine
 
 description: Finatic is a functional, multipurpose Joomla finance website template. It's the ideal choice for financial business owners, corporate firms, advisors, accountants, consulting and relevant companies.
 ---

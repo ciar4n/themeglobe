@@ -16,10 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - performer
-  - rebel
-  - athlete
+tags:
+  - Business
+  - Neutral
 
 ---
 

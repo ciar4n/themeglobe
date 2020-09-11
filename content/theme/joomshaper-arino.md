@@ -15,8 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Online Store
 
 description: Arino is a robust and functional Joomla eCommerce template. It's the perfect choice for online sellers, business owners, retailers, and store owners to promote & sell products.
 ---

@@ -16,9 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
+tags:
+  - Business
 ---
 
 JF Social is a Professional Responsive Premium Joomla Template with lots of amazing features. It is well suited for any kind of website, specially for Social/Community/Forum, Blog, Corporate, Business, Portfolio . . . and much, much more!

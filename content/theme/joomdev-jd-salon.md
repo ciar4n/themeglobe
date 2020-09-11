@@ -14,8 +14,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Business
+  - Beauty
 ---
 
 ### Showcase Your Menu with JD Price List

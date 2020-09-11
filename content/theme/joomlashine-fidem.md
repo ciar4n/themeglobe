@@ -15,7 +15,7 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
+tags:
   - Spiritual
   
 ---

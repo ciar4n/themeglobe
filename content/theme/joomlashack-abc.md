@@ -15,9 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
-  - Intellectual
+tags:
+  - Education
 ---
 
 ### ABC is an excellent Joomla template for schools and online learning sites

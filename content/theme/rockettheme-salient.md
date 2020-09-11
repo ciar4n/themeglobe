@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Magazine
   - Creative
+  - Neutral
   
 description: Salient is an admirable, clean design with a fresh approach for the ever-changing Web. Integrated with the modern Gantry 5 template framework, it is infinitely customizable, incredibly powerful, and remarkably simple. Download it today!
 ---

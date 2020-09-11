@@ -13,8 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Business
 ---
 
 JD Finance is the Best Joomla Template for All Types of Financial Professionals, Loan Providers, & Insurance Companies. It allows you to design a highly responsive and interactive website for your Finance business with this Joomla template. It is powered with Astroid Framework and Bootstrap 4

@@ -16,10 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
   - Performer
-  - Spiritual
+  - Blog
+  - Neutral
   
 description: Zenith combines the powerful Gantry 5 framework with a breathtaking modern design.
 ---

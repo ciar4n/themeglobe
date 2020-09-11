@@ -18,7 +18,7 @@ pygmentsUseClasses = true
 [taxonomies]
   cms = "cms"
   provider = "provider"
-  archetype = "archetype"
+  tags = "tags"
   theme_framework = "theme_framework"
   pricing = "pricing"
 

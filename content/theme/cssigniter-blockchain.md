@@ -13,8 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Business
+  - Technology
+  - Blog
   
 ---
 

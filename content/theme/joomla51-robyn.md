@@ -16,9 +16,10 @@ theme_framework: Standalone
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
   - Creative
+  - Neutral
+  - Business
   
 ---
 

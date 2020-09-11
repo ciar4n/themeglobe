@@ -16,9 +16,10 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Royal
+tags:
+  - Hotel
+  - Travel
+  - Restaurant
 ---
 
 Paradise is a professional Joomla template designed for resort, hotel, motels, serviced apartment and any kind of accommodation websites which require a booking system. The Joomla template is powerful and highly customizable.

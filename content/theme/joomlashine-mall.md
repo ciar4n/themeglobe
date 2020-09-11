@@ -15,9 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Visionary
+tags:
+  - Online Store
   
 description: Gadget and Fashion template for Joomla Store 
 ---

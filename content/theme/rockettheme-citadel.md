@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Neutral
   
 description: Citadel brings your site to life with integrated support for YouTube, Vimeo, and locally-hosted MP4, WebM, Mov, and Ogg videos. Citadel also provides a clean design that ensures that your content is exactly where it needs to be, center stage.
 ---

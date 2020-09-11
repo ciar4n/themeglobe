@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Magazine
   
 description: Ambrosia is a contemporary, flat design, ideal for a content-centric site that features high text volumes, such as for a Magazine or Newspaper. There is a collection of complementary typography to enhance and add sharpness to content elements.
 ---

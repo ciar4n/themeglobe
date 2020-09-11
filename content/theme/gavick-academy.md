@@ -15,8 +15,9 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Education
+
 ---
 
 Education websites should be easy to build now with Gavick University Joomla Template - ACADEMY. The template is created with elegant and modern design to help your education business stand out in the market.

@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Business
 ---
 
 ### Attract Customers Right From the Start

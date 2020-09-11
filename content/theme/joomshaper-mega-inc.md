@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Royal
+tags:
+  - Business
+  - Services
 
 description: Mega Inc is a clean, gorgeous, and fully responsive Joomla template for all kinds of businesses, corporate firms, and agencies. This template offers so many options so you can develop a unique online presence every time for every client.
 ---

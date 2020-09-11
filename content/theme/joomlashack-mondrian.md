@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Performer
+tags:
+  - Event
 ---
 
 ### Mondrian is a perfect Joomla template for events and conferences

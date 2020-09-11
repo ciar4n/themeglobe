@@ -15,8 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
 
 description: Restora is a deliciously designed Joomla restaurant template built for all types of restaurants and food-related businesses to launch a website quickly.
 ---

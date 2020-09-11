@@ -13,7 +13,7 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Advocate
   - Creative
   

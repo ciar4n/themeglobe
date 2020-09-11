@@ -15,8 +15,8 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Business
 ---
 
 Hexa Corp is an extremely powerful, corporate, and general business Joomla template. This template is designed to attract customers and put valuable content in an easy to read layout. The header area features an html5 video with overlay text to grab your visitor's attention. Further down the page you will find areas where you can showcase a company's services, testimonials, staff, statistics, and much more.

@@ -16,8 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Neutral
+  - Business
+  - Agency
   
 description: Interstellar features a clean, bold design featuring robust use of color, background elements, and a generous selection of unique particles that make creating your website a breeze, all configurable at the touch of a button.
 ---

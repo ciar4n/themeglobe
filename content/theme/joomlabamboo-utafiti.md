@@ -16,10 +16,9 @@ theme_framework: Standalone
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
-  - Caregiver
+tags:
+  - Magazine
+  - Medical
 
 ---
 

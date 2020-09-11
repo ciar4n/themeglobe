@@ -13,8 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Business
+  - Education
+  - Online Store
   
 ---
 

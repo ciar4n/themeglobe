@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Travel
+  - Listing
 
 description: Travus is a full-fledged travel agency Joomla template for tourism organizations, travel operators, tour agencies, and other relevant businesses.
 ---

@@ -16,10 +16,9 @@ theme_framework: Standalone
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
   - Creative
-  - Intellectual
+  - Magazine
 
 ---
 

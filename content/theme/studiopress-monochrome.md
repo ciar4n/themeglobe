@@ -13,10 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
-  - Visionary
-  - Advocate
+tags:
+  - Neutral
+  - Online Store
   
 ---
 

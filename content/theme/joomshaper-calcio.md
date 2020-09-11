@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Athlete
+tags:
+  - Sport & Fitness
+  - Magazine
 
 description: Calcio is the February 2018 Joomla template from JoomShaper. It’s a perfectly suited package for soccer news sites, football clubs, soccer-based websites dedicated to team fans & sports organizations, and so on.
 ---

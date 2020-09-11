@@ -13,10 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Visionary
-  - Creative
-  - Explorer
+tags:
+  - Agency
+  - Blog
+  - Travel
   
 ---
 

@@ -1,5 +1,12 @@
-<div class="filters">
+<script>const tagsGroup = [
+{{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+    "{{$name}}", 
+  {{end}}
+{{end}}
+]</script>
 
+<div class="filters">
   <div id="filter-group-provider" class="filter filter-group-provider" data-filter-group="provider">
     <div class="filter-title">
       <h3>Providers </h3>
@@ -20,21 +27,20 @@
     </ul>
   </div>
 
-  <div id="filter-group-archetype" class="filter filter-group-archetype closed" data-filter-group="archetype">
+  <div id="filter-group-tags" class="filter filter-group-tags closed" data-filter-group="tags">
     <div class="filter-title">
-      <h3>Archetype</h3>
+      <h3>Tags</h3>
       {{ partial "toggle-icon.html" . }}
     </div>
     <ul class="filter-list">
-      {{ range .Site.Taxonomies.archetype }}
+      {{ range .Site.Taxonomies.tags }}
         {{ $count := 0 }}
         {{ range (where .Pages ".Params.cms" "intersect" (slice $.Title)) }}
             {{ $count = add $count 1 }}
         {{ end }}
         <li id="filter-{{ .Page.Title | urlize }}" class="filter-item"{{ if eq $count 0 }} style="display:none"{{ end }}>
-          <span class="filter-name">{{ .Page.Title }}</span>
-          <span class="filter-count" id="filter-count-{{ .Page.Title | urlize}}">{{ $count }}</span>
-          <button aria-label="filter-button-{{ .Page.Title | urlize }}" id="filter-button-{{ .Page.Title | urlize }}" class="filter-button" data-toggle=".{{ .Page.Title | urlize }}"></button>
+          <button aria-label="filter-button-{{ .Page.Title | urlize }}" id="filter-button-{{ .Page.Title | urlize }}" class="filter-tag button" data-toggle=".{{ .Page.Title | urlize }}" data-count="{{ $count }}"><span class="filter-name">{{ .Page.Title }}</span>
+          <span class="filter-count" id="filter-count-{{ .Page.Title | urlize}}">{{ $count }}</span></button>
         </li>
       {{ end }}
     </ul>

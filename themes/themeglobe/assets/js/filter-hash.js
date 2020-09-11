@@ -67,7 +67,7 @@ function getUiState() {
 
   var uiState = {
     provider: mixer.getFilterGroupSelectors("provider").map(getValueFromSelector),
-    archetype: mixer.getFilterGroupSelectors("archetype").map(getValueFromSelector),
+    tags: mixer.getFilterGroupSelectors("tags").map(getValueFromSelector),
     pricing: mixer.getFilterGroupSelectors("pricing").map(getValueFromSelector),
   };
 
@@ -122,11 +122,11 @@ function setHash(state) {
 
 function syncMixerWithPreviousUiState(uiState, animate) {
   var provider = uiState && uiState.provider ? uiState.provider : [];
-  var archetype = uiState && uiState.archetype ? uiState.archetype : [];
+  var tags = uiState && uiState.tags ? uiState.tags : [];
 
   mixer.setFilterGroupSelectors("provider", provider.map(getSelectorFromValue));
-  mixer.setFilterGroupSelectors("archetype", archetype.map(getSelectorFromValue));
-  mixer.setFilterGroupSelectors("pricing", archetype.map(getSelectorFromValue));
+  mixer.setFilterGroupSelectors("tags", tags.map(getSelectorFromValue));
+  mixer.setFilterGroupSelectors("pricing", pricing.map(getSelectorFromValue));
 
   // Parse the filter groups (passing `false` will perform no animation)
 

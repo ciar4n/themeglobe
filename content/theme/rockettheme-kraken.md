@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Rebel
+  - Blog
+  - Neutral
   
 description: Looking for something unique for your next website? Release the Kraken! Kraken is our latest Joomla template and it's powered by our modern Gantry 5 framework, packed with features, and ready to take your site to new heights!
 ---

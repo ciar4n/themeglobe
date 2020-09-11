@@ -15,8 +15,9 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Neutral
+  - Beauty
 ---
 
 ### Civic is a multimedia Joomla template with a large video header

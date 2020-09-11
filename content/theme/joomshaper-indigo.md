@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Intellectual
+tags:
+  - Business
+  - Online Store
 
 description: Indigo is a well designed and fully responsive Joomla template for all kinds of businesses, corporate firms, and creative agencies. This Joomla multipurpose template offers eCommerce functionalities as well.
 ---

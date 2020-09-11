@@ -15,10 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Intellectual
-  - Visionary
+tags:
+  - Event
   
 description: Professional event template
 ---

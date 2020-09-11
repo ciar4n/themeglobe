@@ -13,8 +13,11 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Blog
+  - Online Store
+  - Photography
+  - Wedding
   
 ---
 

@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Advocate
-  - Intellectual
+  - Magazine
   
 ---
 

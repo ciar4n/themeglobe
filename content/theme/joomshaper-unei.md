@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Visionary
+  - Online Store
 
 ---
 

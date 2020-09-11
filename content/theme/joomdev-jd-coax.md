@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Business
 ---
 
 ## JD Coax - Industrial Joomla Template With Catalog Shop Integration

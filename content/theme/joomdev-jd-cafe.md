@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
 ---
 
 ## JD Cafe - Restaurant and Cafe Joomla Template

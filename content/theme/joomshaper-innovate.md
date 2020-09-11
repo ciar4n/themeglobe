@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Software
+  - Business
 
 ---
 

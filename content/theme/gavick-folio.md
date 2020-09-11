@@ -16,7 +16,7 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
 ---
 

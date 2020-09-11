@@ -13,9 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Royal
-  - Advocate
+tags:
+  - Business
   
 ---
 

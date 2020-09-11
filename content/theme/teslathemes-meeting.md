@@ -13,9 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
-  - Advocate
+tags:
+  - Event
   
 ---
 

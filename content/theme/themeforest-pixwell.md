@@ -13,10 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Visionary
   - Creative
-  - Tastemaker
+  - Restaurant
   - Caregiver
   
 ---

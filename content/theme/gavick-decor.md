@@ -16,8 +16,9 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Blog
+  - Online Store
 ---
 
 Gavick Decor Joomla template is designed for decor and interior design websites with creative, modern design, online shopping feature based on free Joomla eCommerce extension - Virtuemart. The template is built with Gavern Framework, fully responsive and supports all Joomla default pages.

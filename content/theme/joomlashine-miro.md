@@ -15,10 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Intellectual
-  - Visionary
+tags:
+  - Online Store
   
 ---
 

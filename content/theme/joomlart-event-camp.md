@@ -16,8 +16,8 @@ theme_framework: T4
 pricing:
   - Paid
 
-archetype:
-  - Performer
+tags:
+  - Event
 
 ---
 

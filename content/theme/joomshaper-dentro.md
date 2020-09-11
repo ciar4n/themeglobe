@@ -15,8 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - Medical
 
 description: Dentro is a well designed and fully responsive Joomla template for dentists, dental clinics, and other healthcare businesses. It can be quickly and confidently adapted to any relevant health project needs and goals.
 ---

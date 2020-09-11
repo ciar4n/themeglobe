@@ -13,8 +13,12 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Creative
+  - Agency
+  - Blog
+  - Neutral
+  - Online Store
   
 ---
 

@@ -15,8 +15,11 @@ theme_framework: Vertex
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Travel
+  - Event
+  - Blog
+
 ---
 
 The Attractionsresponsive Joomla templateis a creative, beautiful design great for any type of attraction such as a park, historical site, museum and more. We laid out the design in such a way that your visitors can be given a brief overview of what they can expect to see. The activities, restaurants, etc are powered by our S5 Horizontal Accordion menu which hasn't seen the light of day in quite some time. We've also introduced our brand new Instagram Feed module that will display your Instagram images on your site.

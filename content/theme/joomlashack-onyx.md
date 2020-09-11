@@ -15,8 +15,9 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Athlete
+tags:
+  - Sport & Fitness
+  - Neutral
 ---
 
 ### Onyx is a sports Joomla template

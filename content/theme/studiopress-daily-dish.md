@@ -13,10 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Spiritual
-  - Creative
-  - Tastemaker
+tags:
+  - Magazine
+  - Online Store
   
 ---
 

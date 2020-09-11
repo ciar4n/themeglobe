@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Athlete
+tags:
+  - Sport & Fitness
 ---
 
 JD YogaHut is an Astroid based template for Yoga, Gym, or fitness clubs. The Joomla template is designed with drag & drop Joomla Page builder & comes with J2Store Powered online shop.

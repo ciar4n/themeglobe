@@ -14,10 +14,11 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Visionary
-  - Intellectual
+  - Neutral
+  - Business
+  - Magazine
 ---
 
 Skylar is a content focused, super clean professional template for Joomla. With its fresh and modern look, this Joomla51 creative is a perfect solution for any journalistic website or blog. Skylar gives complete control of your design by providing a host of great features and tools without compromising ease of use. Included is a host of great module extensions to help deliver your content with ease and beauty. Great responsive styling ensure your website will look perfect across all devices and screen sizes. Building the perfect website for you or your client has never been easier!

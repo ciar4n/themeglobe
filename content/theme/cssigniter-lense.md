@@ -13,8 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Visionary
+tags:
+  - Blog
+  - Photography
   
 ---
 

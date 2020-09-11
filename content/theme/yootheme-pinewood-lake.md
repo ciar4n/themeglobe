@@ -14,9 +14,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Spiritual
-  - Explorer
+  - Travel
 ---
 
 With its authentic style and grunge elements, this YOOtheme Pro theme package is perfect for recreation hotels, restaurants and wildlife parks. It's available for WordPress and Joomla.

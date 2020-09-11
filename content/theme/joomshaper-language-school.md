@@ -15,8 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Education
+  - Magazine
 
 description: Language School is a professionally designed Joomla template for language schools, clubs, coachings, and other relevant institutions.
 ---

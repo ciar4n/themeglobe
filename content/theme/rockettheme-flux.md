@@ -16,8 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
+tags:
+  - Neutral
   
 description: Flux is a brilliant theme for displaying big, beautiful images alongside modern charts and text. It features several new premium particles that make it easy to create easy-to-read charts, calendars, content blocks, and more.
 ---

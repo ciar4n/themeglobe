@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Rebel
+tags:
+  - Gaming
 ---
 
 ### Alasse is a gaming Joomla template

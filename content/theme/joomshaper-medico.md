@@ -15,9 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
-  - Visionary
+tags:
+  - Medical
 
 description: Medico is a Joomla medical template from JoomShaper released in April 2018. It includes almost everything you’ll need to create a solid medical website. 
 ---

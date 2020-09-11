@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Caregiver
+tags:
+  - Magazine
+  - Neutral
   
 description: Callisto is the first RocketTheme Club template to be released on the new Gantry 5 Framework, marking the dawn of a new era of powerful, highly customizable and mobile friendly web building, and complemented by a vibrant, engaging visual design.
 ---

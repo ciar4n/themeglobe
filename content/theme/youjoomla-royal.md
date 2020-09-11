@@ -13,9 +13,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Royal
-  - Athlete
+  - Sport & Fitness
 
 --- 
 

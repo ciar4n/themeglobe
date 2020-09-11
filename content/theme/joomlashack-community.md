@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Intellectual
+tags:
+  - Neutral
 ---
 
 ### Community is a social Joomla template

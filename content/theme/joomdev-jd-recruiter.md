@@ -14,8 +14,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Advocate
+tags:
+  - Business
 ---
 
 ### Different Lead form for Job Seeker and Employers

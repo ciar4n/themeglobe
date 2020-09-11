@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Rebel
+tags:
+  - Neutral
 ---
 
 ### Tripod is a one-page photography and video Joomla template

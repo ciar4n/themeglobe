@@ -16,9 +16,11 @@ theme_framework: Standalone
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Travel
   - Creative
+  - Neutral
+  - Business
   
 ---
 

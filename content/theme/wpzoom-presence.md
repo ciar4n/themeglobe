@@ -13,10 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
   - Visionary
-  - Intellectual
+  - Magazine
   
 ---
 

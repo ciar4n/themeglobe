@@ -15,9 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Royal
+tags:
+  - Neutral
 ---
 
 ### Vintage is a blogging Joomla template with new styles

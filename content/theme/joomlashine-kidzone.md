@@ -15,8 +15,9 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - Education
+  - Kids
   
 ---
 

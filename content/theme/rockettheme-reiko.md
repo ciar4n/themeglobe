@@ -15,8 +15,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Athlete
+tags:
+  - Sport & Fitness
 
 description: Reiko is the new sports-themed design from RocketTheme.
 ---

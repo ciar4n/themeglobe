@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Explorer
+tags:
+  - Magazine
+  - Travel
   
 description: Fluent is a clean design with modern, transparent elements and powerful sliders.
 ---

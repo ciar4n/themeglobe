@@ -16,10 +16,8 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Intellectual
-  - Visionary
+tags:
+  - Neutral
   
 description: Requiem is an exquisitely designed template for the Gantry 5 template framework, offering a fixed side position, for the logo and other elements. Easy to style, configure and customize through an advanced, user friendly and modern interface.
 ---

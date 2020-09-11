@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Explorer
+  - Travel
+  - Neutral
   
 description: Iridescent is a vibrant design with various integrated elements to provide a seamless and versatile environment. A full page RokSprocket slideshow provides a rich interface to impress, aggregated by other layout options, to expand beyond its core base.
 ---

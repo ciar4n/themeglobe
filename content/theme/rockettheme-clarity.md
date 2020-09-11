@@ -16,8 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
+tags:
   - Performer
+  - Neutral
+  - Business
 
 ---
 

@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Visionary
+tags:
+  - Hotel
+  - Neutral
+  - Business
 
 description: Gemini is the integration of modern design and a next-generation framework in one seamless experience. This professional theme is perfect for a wide range of websites including design firms, architects, data science, finance, & more.
 ---

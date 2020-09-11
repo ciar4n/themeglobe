@@ -16,9 +16,10 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Visionary
+tags:
+  - Neutral
+  - Business
+  - Software
   
 description: Cygnet bridges the gap between corporate and hip! The template features contemporary design elements and structures, whilst maintaining a subtle, corporate-esque overall appearance to maximize professionalism and visual intrigue.
 ---

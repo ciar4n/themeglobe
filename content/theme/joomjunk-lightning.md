@@ -16,8 +16,8 @@ theme_framework: Standalone
 pricing:
   - Free
 
-archetype:
-  - Performer
+tags:
+  - Neutral
 ---
 
 Lightning is a FREE, blazing fast and open source Joomla 4 template using HiQ CSS, that focuses on simplicity and performance. It also comes with a build in dark theme which can be triggered an the flick of a switch

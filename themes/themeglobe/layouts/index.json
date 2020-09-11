@@ -4,6 +4,6 @@
     "details": "{{ .Params.details }}",
     "demo": "{{ .Params.demo }}",
     "provider": [{{ range $index, $category := .Params.provider }}"{{.}}"{{ end }}],
-    "archetype": [{{ range $index, $category := .Params.archetype }}{{ if $index }},{{ end }}"{{.}}"{{ end }}]
+    "tags": [{{ range $index, $category := .Params.tags }}{{ if $index }},{{ end }}"{{.}}"{{ end }}]
   }{{ end }}
 ]

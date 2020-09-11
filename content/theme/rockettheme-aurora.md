@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Rebel
-  - Creative
+tags:
+  - Business
+  - Neutral
   
 description: Aurora is a masterfully crafted theme created for business, professional, and corporate websites. 
 ---

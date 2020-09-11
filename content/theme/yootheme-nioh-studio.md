@@ -14,9 +14,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Spiritual
-  - Athlete
+  - Sport & Fitness
 ---
 
 With its vibrant style, bold typography and borders, this YOOtheme Pro theme package is perfect for fitness studios, medical practices and health care websites. It's available for WordPress and Joomla.

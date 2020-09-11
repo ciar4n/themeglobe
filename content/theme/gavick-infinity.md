@@ -16,8 +16,8 @@ theme_framework: Gavern
 pricing:
   - Paid
 
-archetype:
-  - Explorer
+tags:
+  - Business
 ---
 
 Infinity is our new Joomla template designed for company, agency, company and business websites with creative design and beautiful additional pages: Services, Case Study, to present business info, services, portfolio and company profile. The business template also supports all Joomla default pages.

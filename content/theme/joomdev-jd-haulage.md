@@ -16,9 +16,8 @@ theme_framework: Standalone
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Explorer
+tags:
+  - Business
 ---
 
 JD Haulage is a logistic Joomla template which is powered with Astroid Framework and Styled with JD Builder -The drag and drop Joomla page builder. The Joomla template is specially designed for logistics, truking, transportation companies & small freight businesses. So if you are looking for a template for transportation company website, JD Haulage is the best choice.

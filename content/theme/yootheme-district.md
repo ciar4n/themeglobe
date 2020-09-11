@@ -14,9 +14,9 @@ provider:
 pricing:
   - Paid
 
-archetype:
+tags:
   - Creative
-  - Tastemaker
+  - Restaurant
 ---
 
 With its clear, modern design, this YOOtheme Pro theme package is perfect for your bakery, cafe, restaurant or other gastronomy related websites. It's available for WordPress and Joomla.

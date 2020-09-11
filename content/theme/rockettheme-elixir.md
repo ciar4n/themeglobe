@@ -16,9 +16,9 @@ theme_framework: Gantry
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Tastemaker
+tags:
+  - Neutral
+  - Restaurant
 
 description: Elixir is abeautiful responsive themebuilt using anext-generation framework. It ispacked with features and particlesthat are a perfect fit forcafés, coffee shops, pubs, pizzerias, burger joints,and more!Your customers will love it!
 ---

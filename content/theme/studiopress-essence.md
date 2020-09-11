@@ -13,9 +13,10 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Explorer
-  - Spiritual
+tags:
+  - Travel
+  - Blog
+  - Online Store
   
 ---
 

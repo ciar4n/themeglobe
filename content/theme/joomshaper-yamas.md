@@ -15,10 +15,8 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Creative
-  - Performer
-  - Athlete
+tags:
+  - Sport & Fitness
 
 description: Yamas is the ideal solution for any wellness or yoga studio planning to start or refresh an official website. It is the perfect fit for all kinds of yoga classes, fitness studios, dance, gyms, aerobics and gymnastic classes, and everything related to health activity.
 ---

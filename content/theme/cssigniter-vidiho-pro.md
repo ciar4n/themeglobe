@@ -13,9 +13,8 @@ provider:
 pricing:
   - Paid
 
-archetype:
-  - Visionary
-  - Explorer
+tags:
+  - Magazine
   
 ---
 

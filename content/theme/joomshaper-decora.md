@@ -15,9 +15,9 @@ theme_framework: Helix
 pricing:
   - Paid
 
-archetype:
-  - Rebel
-  - Visionary
+tags:
+  - Neutral
+  - Creative
 
 description: Decora is the template in dark colors for any architect or design studio planning to start or refresh an official website. It is the perfect solution to present all kinds of interior & exterior design ideas, architecture projects, and everything related to creativity.
 ---

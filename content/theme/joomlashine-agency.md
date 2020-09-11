@@ -15,9 +15,9 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Advocate
-  - Visionary
+tags:
+  - Neutral
+  - Agency
   
 description: A creative Joomla Template for Agency
 ---

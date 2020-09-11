@@ -15,8 +15,8 @@ theme_framework: Wright
 pricing:
   - Paid
 
-archetype:
-  - Caregiver
+tags:
+  - Medical
 ---
 
 ### Clementine is an excellent Joomla template for health and medical sites

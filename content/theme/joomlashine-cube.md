@@ -15,8 +15,8 @@ theme_framework: Sun
 pricing:
   - Paid
 
-archetype:
-  - Tastemaker
+tags:
+  - Restaurant
   
 ---
 
