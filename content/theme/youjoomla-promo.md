@@ -15,7 +15,7 @@ pricing:
 
 tags:
   - Creative
-  - Performer
+  - Portfolio
 --- 
 
 Template for the month of January is Promo, Photography Joomla Template made for an artist in you.

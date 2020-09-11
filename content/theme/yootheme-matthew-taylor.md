@@ -15,9 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Rebel
-  - Travel
-  - Creative
+  - Portfolio
 ---
 
 With its fresh, modern look and clean style, this YOOtheme Pro theme package is perfect for a personal website for a developer, speaker or a book author. It's available for WordPress and Joomla.

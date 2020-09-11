@@ -15,6 +15,7 @@ pricing:
 
 tags:
   - Creative
+  - Portfolio
 --- 
 
 Template for the month of November is Teamspot, a creative agency Joomla template with beautiful full screen smooth scroll frontpage, collapsible sticky scroll menu and slick layout designed to present your portfolio and team in best way possible. 

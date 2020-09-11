@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Performer
-  - Rebel
+  - Film & Theater
 --- 
 
 Template for the month of July is Cinematico. An amazing movies magazine Joomla template loaded with metro grid layouts filled with movie previews and  gorgeous movies posters.  

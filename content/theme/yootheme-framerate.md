@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
-  - Creative
+  - Magazine
 ---
 
 With its flat style, white page border, and bold typography, Framerate is perfect for all sorts of review websites as well as any other media related websites. It's available for WordPress and Joomla.

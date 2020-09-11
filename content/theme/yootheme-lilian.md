@@ -16,6 +16,7 @@ pricing:
 
 tags:
   - Spiritual
+  - Wedding
 ---
 
 With its individual and minimalistic style, this YOOtheme Pro theme package is perfect for weddings and other event related websites. It's available for WordPress and Joomla.

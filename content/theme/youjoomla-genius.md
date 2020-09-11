@@ -14,7 +14,9 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
+  - Business
+  - Creative
+  - Agency
 
 --- 
 

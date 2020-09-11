@@ -14,7 +14,8 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
+  - Business
+  - Law
 
 --- 
 

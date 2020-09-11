@@ -16,6 +16,7 @@ pricing:
 
 tags:
   - Restaurant
+  - Blog
 ---
 
 With its minimal style and some handmade illustrations, this YOOtheme Pro theme package is perfect for restaurants, cafes, bars and gastronomy websites. It's available for WordPress and Joomla.

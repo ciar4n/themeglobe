@@ -15,7 +15,6 @@ pricing:
   - Paid
 
 tags:
-  - Spiritual
   - Sport & Fitness
 ---
 

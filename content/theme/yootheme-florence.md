@@ -15,8 +15,8 @@ pricing:
   - Paid
 
 tags:
-  - Caregiver
-  - Creative
+  - Services
+  - Beauty
 ---
 
 With its minimalistic and classical style, this YOOtheme Pro theme package is perfect for hair and beauty salons and fashion related websites. It's available for WordPress and Joomla.

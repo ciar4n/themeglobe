@@ -15,7 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Visionary
+  - Software
   - Creative
 ---
 

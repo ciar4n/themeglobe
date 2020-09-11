@@ -16,7 +16,7 @@ pricing:
   - Paid
 
 tags:
-  - Educational
+  - Education
   
 ---
 

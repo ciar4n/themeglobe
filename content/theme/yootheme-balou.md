@@ -16,7 +16,9 @@ pricing:
 
 tags:
   - Caregiver
-  - Creative
+  - Kids
+  - Neutral
+  - Online Store
 
 description: Perfect for a kids-focused or fashion shop and other related websites.
 ---

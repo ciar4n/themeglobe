@@ -15,9 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Rebel
-  - Travel
-  - Creative
+  - Event
 ---
 
 With its clean, vibrant style with colorful gradients, this YOOtheme Pro theme package is perfect for events, conferences and other related websites. It's available for WordPress and Joomla.

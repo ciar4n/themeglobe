@@ -14,7 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Visionary
+  - Software
 --- 
 
 Are you an app or software developer and need a website to present your work? Apps, mobile applications Joomla Template is the perfect fit for you.

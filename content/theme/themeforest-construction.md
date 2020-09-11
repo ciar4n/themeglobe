@@ -14,7 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
+  - Services
   
 ---
 

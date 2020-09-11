@@ -14,7 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
+  - Magazine
 --- 
 
 For the month of September our developers bring you news Joomla template. Newscorp features crisp and clean magazine layout with plenty of space for all your news headlines and advertising banners. 

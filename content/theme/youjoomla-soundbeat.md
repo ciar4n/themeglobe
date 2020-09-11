@@ -14,7 +14,9 @@ pricing:
   - Paid
 
 tags:
-  - Creative
+  - Performer
+  - Event
+  - Online Store
 --- 
 
 Template for the month of October is SoundBeat. One of a kind music eCommerce Joomla template that presents your music store items in best way possible

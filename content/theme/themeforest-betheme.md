@@ -14,9 +14,9 @@ pricing:
   - Paid
 
 tags:
+  - Neutral
+  - Online Store
   - Magazine
-  - Advocate
-  - Creative
   
 ---
 

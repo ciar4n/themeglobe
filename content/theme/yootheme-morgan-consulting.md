@@ -15,9 +15,8 @@ pricing:
   - Paid
 
 tags:
-  - Rebel
-  - Travel
-  - Creative
+  - Business
+  - Law
 ---
 
 This YOOtheme Pro theme package for Joomla comes with 11 ready-to-use page layouts to get you started in no time. Each layout is well-thought-out and is perfect for Service websites.

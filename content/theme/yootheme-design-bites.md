@@ -15,8 +15,7 @@ pricing:
 
 tags:
   - Creative
-  - Visionary
-  - Rebel
+  - Portfolio
 ---
 
 With its material style, vibrant colors and bold typography, Design Bites is perfect for a resource or download directory as well as any creative business website. It's available for WordPress and Joomla.

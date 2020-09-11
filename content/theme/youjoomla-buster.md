@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Creative
-  - Rebel
+  - Film & Theater
 
 --- 
 

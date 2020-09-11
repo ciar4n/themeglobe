@@ -17,6 +17,7 @@ pricing:
 tags:
   - Travel
   - Sport & Fitness
+  - Business
 ---
 
 With its modern vintage look and outlined style, this YOOtheme Pro theme package is perfect for sports, health or other related websites. It's available for WordPress and Joomla.

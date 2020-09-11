@@ -16,7 +16,7 @@ pricing:
 
 tags:
   - Travel
-  - Creative
+  - Blog
 ---
 
 With its fresh colors, smooth shadows and textures, this YOOtheme Pro theme package is perfect for magazine, travel and adventure themed websites. It's available for WordPress and Joomla.

@@ -14,9 +14,8 @@ pricing:
   - Paid
 
 tags:
-  - Royal
-  - Magazine
-  - Advocate
+  - Law
+  - Business
 --- 
 
 Template for the month of December is Legalcorp, an attorney law firm Joomla template specifically designed for consultancy firms, attorneys, lawyers or legal offices.

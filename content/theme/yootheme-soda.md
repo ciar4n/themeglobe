@@ -16,7 +16,7 @@ pricing:
 
 tags:
   - Creative
-  - Visionary
+  - Portfolio
 ---
 
 With its clean minimal style and bold colors this YOOtheme Pro theme package is perfect for VFX and animation studios as well as media agencies. It's available for WordPress and Joomla.

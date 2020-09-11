@@ -16,6 +16,7 @@ pricing:
 
 tags:
   - Creative
+  - Portfolio
 ---
 
 With its minimal and elegant style with typographical details, this YOOtheme Pro theme package is perfect for design, marketing and advertising agencies. It's available for WordPress and Joomla.

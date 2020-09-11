@@ -15,9 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Spiritual
-  - Creative
-  - Visionary
+  - Business
 ---
 
 With its clear business-like style, this YOOtheme Pro theme package is perfect for real estate, interior, architecture or other related websites. It's available for WordPress and Joomla.

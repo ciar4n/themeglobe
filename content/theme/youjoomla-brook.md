@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Performer
-  - Creative
+  - Magazine
 
 --- 
 

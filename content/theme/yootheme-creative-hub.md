@@ -14,8 +14,8 @@ pricing:
   - Paid
 
 tags:
-  - Visionary
-  - Creative
+  - Services
+  - Portfolio
 ---
 
 With its modern, material style, vibrant colors and thick typography, Creative Hub is a versatile theme, perfect for portfolios or any other creative business websites. It's available for WordPress and Joomla.

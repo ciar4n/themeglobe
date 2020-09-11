@@ -15,7 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Performer
+  - Portfolio
 ---
 
 With its minimal black and white style, this YOOtheme Pro theme package is perfect for photography, product showcases and image galleries. It's available for WordPress and Joomla.

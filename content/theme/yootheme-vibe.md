@@ -16,8 +16,7 @@ pricing:
 
 tags:
   - Performer
-  - Creative
-  - Rebel
+  - Event
 ---
 
 With its dark background, colorful gradients and subtle textures, this YOOtheme Pro theme package is perfect for music artists, bands and DJs. It's available for WordPress and Joomla.

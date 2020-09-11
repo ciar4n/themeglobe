@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Visionary
-  - Creative
+  - Online Store
 ---
 
 With its flat style, vibrant colors and heavy headlines Tech Space is perfect for a product catalog, ecommerce shop or any technology related website. It's available for WordPress and Joomla.

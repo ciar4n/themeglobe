@@ -16,7 +16,8 @@ pricing:
 
 tags:
   - Creative
-  - Visionary
+  - Software
+  - Portfolio
 ---
 
 With its clear, straightforward style, this YOOtheme Pro theme package is perfect for modern design, marketing, media agencies and other related websites. It's available for WordPress and Joomla.

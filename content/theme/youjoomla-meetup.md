@@ -15,6 +15,7 @@ pricing:
 
 tags:
   - Performer
+  - Event
 --- 
 
 Template for the month of August is Meetup, unique, clean and modern Joomla template suitable for conferences, events, meetups and or exhibitions.

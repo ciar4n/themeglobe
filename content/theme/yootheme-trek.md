@@ -15,9 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Rebel
   - Travel
-  - Creative
 ---
 
 With its bold and colorful style, grungy textures and hand-drawn illustrations, this YOOtheme Pro theme package is perfect for travel, sports or other related website. It's available for WordPress and Joomla.

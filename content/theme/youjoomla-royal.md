@@ -14,7 +14,6 @@ pricing:
   - Paid
 
 tags:
-  - Royal
   - Sport & Fitness
 
 --- 

@@ -15,8 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Advocate
-  - Creative
+  - Services
 ---
 
 With its bold design, rich colors and complex animated illustrations, this YOOtheme Pro theme package is perfect for logistics, distribution services and other related websites

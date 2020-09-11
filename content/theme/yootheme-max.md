@@ -15,7 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Visionary
+  - Portfolio
 ---
 
 With its flat, colorful yet minimalistic style, this YOOtheme Pro theme package is perfect for personal or freelance portfolio websites. It's available for WordPress and Joomla.

@@ -15,8 +15,8 @@ pricing:
   - Paid
 
 tags:
-  - Creative
-  - Visionary
+  - Business
+  - Agency
 
 --- 
 

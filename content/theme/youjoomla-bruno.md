@@ -14,8 +14,7 @@ pricing:
   - Paid
 
 tags:
-  - Performer
-  - Rebel
+  - Online Store
 --- 
 
 Template for the month of June is Bruno. Sophisticated minimalist Joomla Shop template suitable for eCommerce  business or portfolio website. 

@@ -15,7 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Creative
+  - Magazine
 ---
 
 With its minimal style focused on lines and typography, this YOOtheme Pro theme package is perfect for fashion, food or lifestyle blogs. It's available for WordPress and Joomla.

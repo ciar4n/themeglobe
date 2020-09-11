@@ -15,8 +15,8 @@ pricing:
   - Paid
 
 tags:
-  - Creative
-  - Visionary
+  - Business
+  - Agency
 ---
 
 With its light and colorful style and hand-drawn illustrations, this YOOtheme Pro theme package is perfect for coaching, eLearning and other related websites. It's available for WordPress and Joomla.

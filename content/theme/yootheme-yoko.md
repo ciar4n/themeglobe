@@ -15,8 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Performer
-  - Creative
+  - Magazine
 ---
 
 With its clean but colorful style, fresh design and rich colors, this YOOtheme Pro theme package is perfect for magazine, blog, newspaper and other related websites.

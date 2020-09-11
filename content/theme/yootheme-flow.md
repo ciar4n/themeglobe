@@ -15,8 +15,7 @@ pricing:
   - Paid
 
 tags:
-  - Creative
-  - Visionary
+  - Software
 ---
 
 With its colorful and exciting design, this YOOtheme Pro theme package is perfect for software, app or other product-oriented websites. It's available for WordPress and Joomla.
