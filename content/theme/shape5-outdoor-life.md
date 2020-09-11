@@ -17,7 +17,7 @@ pricing:
 
 tags:
   - Travel
-  - Sports & Fitness
+  - Sport & Fitness
 ---
 
 Outdoor Life is an outdoor enthusiast Joomla template, and can easily be adapted for many other website types. One of the most noticeable features of this design is the video header area. Publish any short clip video to this area that you would like and amaze your website viewers. This video area is a module position, so if you want a static image or other module instead you can use these as well in the same area. This design also comes with areas to showcase instructors, packages you offer, customer testimonials, and much more.

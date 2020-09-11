@@ -20,7 +20,7 @@ tags:
   - Creative
   - Neutral
   - Beauty
-  - Sports & Fitness
+  - Sport & Fitness
   
 description: Calla is a fresh, bold design built on the powerful, state-of-the-art Gantry 5 framework.
 ---

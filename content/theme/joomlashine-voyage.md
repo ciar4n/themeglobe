@@ -17,7 +17,7 @@ pricing:
 
 tags:
   - Travel
-  - Directory
+  - Listing
   
 ---
 

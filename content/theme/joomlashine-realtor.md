@@ -16,7 +16,7 @@ pricing:
   - Paid
 
 tags:
-  - Directory
+  - Listing
   - Real Estate
   
 ---
